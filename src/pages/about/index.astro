@@ -1,0 +1,39 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+const BASE = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
+---
+
+<BaseLayout title="佐賀県農業法人協会とは | 佐賀県農業法人協会" description="佐賀県農業法人協会の目的・活動概要ページ">
+  <section class="mx-auto max-w-4xl space-y-6">
+    <article class="rounded-xl border border-line bg-card p-6 shadow-card md:p-8">
+      <h1 class="text-2xl font-black tracking-tight text-ink md:text-3xl">佐賀県農業法人協会とは</h1>
+      <p class="mt-4 text-sm leading-7 text-ink-soft">
+        佐賀県農業法人協会は、地域農業を担う法人同士の連携を深め、
+        経営力の向上と持続可能な一次産業の発展を目指す団体です。
+      </p>
+    </article>
+
+    <article class="grid grid-cols-1 gap-4 sm:grid-cols-3">
+      <div class="rounded-xl border border-line bg-card p-5 shadow-card">
+        <p class="text-sm font-bold text-ink">目的</p>
+        <p class="mt-2 text-sm text-ink-soft">会員法人の経営強化と、地域農業の持続的な発展に寄与します。</p>
+      </div>
+      <div class="rounded-xl border border-line bg-card p-5 shadow-card">
+        <p class="text-sm font-bold text-ink">活動</p>
+        <p class="mt-2 text-sm text-ink-soft">情報共有、課題整理、連携促進を通じて実践的な支援を行います。</p>
+      </div>
+      <div class="rounded-xl border border-line bg-card p-5 shadow-card">
+        <p class="text-sm font-bold text-ink">対象</p>
+        <p class="mt-2 text-sm text-ink-soft">佐賀県内の農業法人および関係する事業者・担い手の皆さま。</p>
+      </div>
+    </article>
+
+    <article class="rounded-xl border border-line bg-card p-5 shadow-card">
+      <h2 class="text-sm font-bold text-ink">関連ページ</h2>
+      <div class="mt-3 flex flex-wrap gap-3">
+        <a href={`${BASE}members/`} class="rounded-lg bg-brand px-4 py-2 text-sm font-semibold text-white no-underline hover:opacity-90">会員一覧を見る</a>
+        <a href={`${BASE}join/`} class="rounded-lg border border-line bg-bg-soft px-4 py-2 text-sm font-semibold text-ink no-underline hover:bg-card-soft">会員募集のご案内へ</a>
+      </div>
+    </article>
+  </section>
+</BaseLayout>

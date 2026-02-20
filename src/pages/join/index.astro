@@ -1,0 +1,43 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+// ここにGoogleフォームURLを設定してください
+const googleFormUrl = '';
+---
+
+<BaseLayout title="会員募集のご案内 | 佐賀県農業法人協会" description="佐賀県農業法人協会の会員募集ページ">
+  <section class="mx-auto max-w-4xl space-y-6">
+    <article class="rounded-xl border border-line bg-card p-6 shadow-card md:p-8">
+      <h1 class="text-2xl font-black tracking-tight text-ink md:text-3xl">会員募集のご案内</h1>
+      <p class="mt-4 text-sm leading-7 text-ink-soft">
+        佐賀県農業法人協会では、地域農業の発展にともに取り組む会員を募集しています。
+        ご関心のある方は、以下のフォームからお申し込みください。
+      </p>
+    </article>
+
+    <article class="rounded-xl border border-line bg-card p-5 shadow-card">
+      <h2 class="text-sm font-bold text-ink">入会までの流れ</h2>
+      <ol class="mt-3 list-decimal space-y-2 pl-5 text-sm text-ink-soft">
+        <li>フォーム送信</li>
+        <li>事務局よりご連絡</li>
+        <li>内容確認後、入会手続き</li>
+      </ol>
+    </article>
+
+    <article class="rounded-xl border border-line bg-card p-5 shadow-card">
+      <h2 class="text-sm font-bold text-ink">入会申込フォーム</h2>
+      {googleFormUrl ? (
+        <div class="mt-3 space-y-3">
+          <a href={googleFormUrl} target="_blank" rel="noreferrer" class="inline-flex rounded-lg bg-brand px-4 py-2 text-sm font-semibold text-white no-underline hover:opacity-90">
+            Googleフォームを開く
+          </a>
+          <p class="text-xs text-ink-soft">※ 外部サイト（Googleフォーム）へ移動します</p>
+        </div>
+      ) : (
+        <div class="mt-3 rounded-lg border border-dashed border-line bg-bg-soft p-4 text-sm text-ink-soft">
+          GoogleフォームURL未設定です。`src/pages/join/index.astro` の `googleFormUrl` にURLを設定してください。
+        </div>
+      )}
+    </article>
+  </section>
+</BaseLayout>

@@ -1,0 +1,31 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import MemberCard from '../../components/MemberCard.astro';
+import { getMembers } from '../../lib/members';
+
+const members = await getMembers();
+const BASE = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
+---
+
+<BaseLayout title="会員一覧 | 佐賀県農業法人協会">
+  <section>
+    <!-- Page Header with decorative background -->
+    <div class="relative -mx-4 -mt-6 mb-8 overflow-hidden rounded-none bg-gradient-to-br from-brand-dark via-brand to-leaf px-4 py-12 sm:-mx-6 sm:px-6 md:-mt-10 md:mb-10 md:py-16">
+      <div class="absolute inset-0 opacity-10" style="background-image: url(&quot;data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20 5 C17 12, 12 15, 8 20 C12 18, 17 16, 20 10 C23 16, 28 18, 32 20 C28 15, 23 12, 20 5z' fill='white' /%3E%3C/svg%3E&quot;);"></div>
+      <div class="relative z-10">
+        <h1 class="text-2xl font-black tracking-tight text-white md:text-3xl animate-fade-in-up">会員一覧</h1>
+        <p class="mt-2 text-sm text-white/80 animate-fade-in-up stagger-1">会員法人の基本情報、主な生産品、販売チャネルを掲載しています。</p>
+        <p class="mt-3 inline-flex items-center gap-1.5 rounded-full bg-white/15 px-3 py-1 text-xs font-medium text-white/90 backdrop-blur-sm animate-fade-in-up stagger-2">
+          <span class="h-1.5 w-1.5 rounded-full bg-sun"></span>
+          {members.length} 法人を掲載中
+        </p>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      {members.map((member) => (
+        <MemberCard member={member} href={`${BASE}members/${encodeURIComponent(member.id)}/`} />
+      ))}
+    </div>
+  </section>
+</BaseLayout>
