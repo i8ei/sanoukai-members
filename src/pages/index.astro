@@ -1,68 +1,143 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
-import { getGeneratedAt, getMembers } from '../lib/members';
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { getGeneratedAt, getMembers } from "../lib/members";
 
 const members = await getMembers();
 const generatedAt = await getGeneratedAt();
-const BASE = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
-const generatedAtText = generatedAt ? new Date(generatedAt).toLocaleString('ja-JP') : '情報準備中';
+const BASE = import.meta.env.BASE_URL.endsWith("/")
+  ? import.meta.env.BASE_URL
+  : `${import.meta.env.BASE_URL}/`;
+const generatedAtText = generatedAt
+  ? new Date(generatedAt).toLocaleString("ja-JP")
+  : "情報準備中";
 ---
 
-<BaseLayout title="会員紹介トップ | 佐賀県農業法人協会" description="佐賀県農業法人協会 会員法人の紹介サイト">
-
+<BaseLayout
+  title="会員紹介トップ | 佐賀県農業法人協会"
+  description="佐賀県農業法人協会 会員法人の紹介サイト"
+>
   <!-- ═══ Hero Section ═══ -->
-  <section class="hero-section -mx-4 -mt-6 mb-8 rounded-none px-4 py-16 sm:-mx-6 sm:px-6 md:-mt-10 md:mb-12 md:py-24">
+  <section
+    class="hero-section -mx-4 -mt-6 mb-8 rounded-none px-4 py-16 sm:-mx-6 sm:px-6 md:-mt-10 md:mb-12 md:py-24"
+    style={`background-image: linear-gradient(to right, rgba(27,67,50,0.85), rgba(45,106,79,0.5)), url('${BASE}images/hero-bg.png'); background-size: cover; background-position: center;`}
+  >
     <div class="relative z-10 mx-auto max-w-3xl text-center">
-            <h1 class="mt-4 animate-fade-in-up text-3xl font-black tracking-tight text-white sm:text-4xl md:text-5xl text-balance">佐賀県農業法人協会</h1>
-      <p class="mt-5 animate-fade-in-up text-base leading-7 text-white/85 stagger-1 sm:text-lg">
+      <h1
+        class="mt-4 animate-fade-in-up text-3xl font-black tracking-tight text-white sm:text-4xl md:text-5xl text-balance"
+      >
+        佐賀県農業法人協会
+      </h1>
+      <p
+        class="mt-5 animate-fade-in-up text-base leading-7 text-white/85 stagger-1 sm:text-lg"
+      >
         会員法人の地域・生産品・販路情報を、わかりやすく確認できます。
         まずは会員一覧からご覧ください。
       </p>
-      <div class="mt-8 flex flex-wrap items-center justify-center gap-3 animate-fade-in-up stagger-2">
-        <a href={`${BASE}members/`} class="inline-flex items-center gap-2 rounded-xl bg-white px-6 py-3 text-sm font-bold text-brand no-underline shadow-hero transition-all duration-200 hover:bg-sun-pale hover:shadow-lg hover:no-underline hover:-translate-y-0.5">
+      <div
+        class="mt-8 flex flex-wrap items-center justify-center gap-3 animate-fade-in-up stagger-2"
+      >
+        <a
+          href={`${BASE}members/`}
+          class="inline-flex items-center gap-2 rounded-xl bg-white px-6 py-3 text-sm font-bold text-brand no-underline shadow-hero transition-all duration-200 hover:bg-sun-pale hover:shadow-lg hover:no-underline hover:-translate-y-0.5"
+        >
           <span>🌾</span> 会員一覧を見る
         </a>
-        <span class="text-xs text-white/60">協会について・お問い合わせは順次整備予定</span>
+        <span class="text-xs text-white/60"
+          >協会について・お問い合わせは順次整備予定</span
+        >
       </div>
     </div>
   </section>
 
   <div class="space-y-6 md:space-y-8">
-
     <!-- ═══ Feature Cards ═══ -->
     <section class="grid grid-cols-1 gap-4 sm:grid-cols-3">
-      <article class="accent-border-leaf rounded-xl border border-line bg-card p-5 shadow-card card-interactive animate-fade-in-up stagger-1">
-        <div class="flex items-center gap-3">
-          <span class="flex h-10 w-10 items-center justify-center rounded-lg bg-leaf-pale text-xl">🌾</span>
-          <p class="text-sm font-bold text-ink">地域</p>
+      <article
+        class="accent-border-leaf group overflow-hidden rounded-xl border border-line bg-card shadow-card card-interactive animate-fade-in-up stagger-1 flex flex-col"
+      >
+        <div class="h-32 w-full overflow-hidden shrink-0">
+          <img
+            src={`${BASE}images/hero-bg.png`}
+            alt="地域"
+            class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+          />
         </div>
-        <p class="mt-3 text-sm leading-relaxed text-ink-soft">県内各エリアの会員法人を地域別に把握できます。</p>
+        <div class="p-5 flex-1">
+          <div class="flex items-center gap-3">
+            <span
+              class="flex h-10 w-10 items-center justify-center rounded-lg bg-leaf-pale text-xl"
+              >🌾</span
+            >
+            <p class="text-sm font-bold text-ink">地域</p>
+          </div>
+          <p class="mt-3 text-sm leading-relaxed text-ink-soft">
+            県内各エリアの会員法人を地域別に把握できます。
+          </p>
+        </div>
       </article>
-      <article class="accent-border-sun rounded-xl border border-line bg-card p-5 shadow-card card-interactive animate-fade-in-up stagger-2">
-        <div class="flex items-center gap-3">
-          <span class="flex h-10 w-10 items-center justify-center rounded-lg bg-sun-pale text-xl">🌱</span>
-          <p class="text-sm font-bold text-ink">生産</p>
+      <article
+        class="accent-border-sun group overflow-hidden rounded-xl border border-line bg-card shadow-card card-interactive animate-fade-in-up stagger-2 flex flex-col"
+      >
+        <div class="h-32 w-full overflow-hidden shrink-0">
+          <img
+            src={`${BASE}images/card-production.png`}
+            alt="生産"
+            class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+          />
         </div>
-        <p class="mt-3 text-sm leading-relaxed text-ink-soft">主な生産品や事業概要を会員ごとに確認できます。</p>
+        <div class="p-5 flex-1">
+          <div class="flex items-center gap-3">
+            <span
+              class="flex h-10 w-10 items-center justify-center rounded-lg bg-sun-pale text-xl"
+              >🌱</span
+            >
+            <p class="text-sm font-bold text-ink">生産</p>
+          </div>
+          <p class="mt-3 text-sm leading-relaxed text-ink-soft">
+            主な生産品や事業概要を会員ごとに確認できます。
+          </p>
+        </div>
       </article>
-      <article class="accent-border-water rounded-xl border border-line bg-card p-5 shadow-card card-interactive animate-fade-in-up stagger-3">
-        <div class="flex items-center gap-3">
-          <span class="flex h-10 w-10 items-center justify-center rounded-lg bg-water/10 text-xl">🚚</span>
-          <p class="text-sm font-bold text-ink">販路</p>
+      <article
+        class="accent-border-water group overflow-hidden rounded-xl border border-line bg-card shadow-card card-interactive animate-fade-in-up stagger-3 flex flex-col"
+      >
+        <div class="h-32 w-full overflow-hidden shrink-0">
+          <img
+            src={`${BASE}images/card-sales.png`}
+            alt="販路"
+            class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+          />
         </div>
-        <p class="mt-3 text-sm leading-relaxed text-ink-soft">販売チャネルの傾向を比較しながら閲覧できます。</p>
+        <div class="p-5 flex-1">
+          <div class="flex items-center gap-3">
+            <span
+              class="flex h-10 w-10 items-center justify-center rounded-lg bg-water/10 text-xl"
+              >🚚</span
+            >
+            <p class="text-sm font-bold text-ink">販路</p>
+          </div>
+          <p class="mt-3 text-sm leading-relaxed text-ink-soft">
+            販売チャネルの傾向を比較しながら閲覧できます。
+          </p>
+        </div>
       </article>
     </section>
 
     <!-- ═══ Stats Bar ═══ -->
-    <article class="rounded-xl border border-line bg-section-warm p-5 shadow-card animate-fade-in-up stagger-3">
+    <article
+      class="rounded-xl border border-line bg-section-warm p-5 shadow-card animate-fade-in-up stagger-3"
+    >
       <h2 class="text-sm font-bold text-ink">更新情報</h2>
       <div class="mt-3 flex flex-wrap gap-3 text-xs text-ink-soft">
-        <span class="inline-flex items-center gap-1.5 rounded-full bg-leaf-pale px-3 py-1.5 font-medium text-brand">
+        <span
+          class="inline-flex items-center gap-1.5 rounded-full bg-leaf-pale px-3 py-1.5 font-medium text-brand"
+        >
           <span class="h-1.5 w-1.5 rounded-full bg-brand"></span>
           掲載法人数: {members.length}
         </span>
-        <span class="inline-flex items-center gap-1.5 rounded-full bg-sun-pale px-3 py-1.5 font-medium text-soil">
+        <span
+          class="inline-flex items-center gap-1.5 rounded-full bg-sun-pale px-3 py-1.5 font-medium text-soil"
+        >
           <span class="h-1.5 w-1.5 rounded-full bg-sun"></span>
           更新日時: {generatedAtText}
         </span>
@@ -70,7 +145,9 @@ const generatedAtText = generatedAt ? new Date(generatedAt).toLocaleString('ja-J
     </article>
 
     <!-- ═══ About ═══ -->
-    <article class="rounded-xl border border-line bg-section-green p-5 shadow-card md:p-6 animate-fade-in-up stagger-4">
+    <article
+      class="rounded-xl border border-line bg-section-green p-5 shadow-card md:p-6 animate-fade-in-up stagger-4"
+    >
       <h2 class="flex items-center gap-2 text-sm font-bold text-ink">
         <span class="text-base">🏛️</span> 協会情報（概要）
       </h2>
@@ -81,17 +158,24 @@ const generatedAtText = generatedAt ? new Date(generatedAt).toLocaleString('ja-J
     </article>
 
     <!-- ═══ Contact ═══ -->
-    <article class="rounded-xl border border-line bg-card p-5 shadow-card md:p-6 animate-fade-in-up stagger-5">
+    <article
+      class="rounded-xl border border-line bg-card p-5 shadow-card md:p-6 animate-fade-in-up stagger-5"
+    >
       <h2 class="flex items-center gap-2 text-sm font-bold text-ink">
         <span class="text-base">✉️</span> お問い合わせ
       </h2>
-      <p class="mt-2 text-sm text-ink-soft">お問い合わせフォームは準備中です。公開後この枠からご案内します。</p>
+      <p class="mt-2 text-sm text-ink-soft">
+        お問い合わせフォームは準備中です。公開後この枠からご案内します。
+      </p>
       <div class="mt-4">
-        <button type="button" class="rounded-xl border border-line bg-bg-soft px-5 py-2.5 text-sm font-medium text-ink-soft transition-colors hover:bg-earth-pale" disabled>
+        <button
+          type="button"
+          class="rounded-xl border border-line bg-bg-soft px-5 py-2.5 text-sm font-medium text-ink-soft transition-colors hover:bg-earth-pale"
+          disabled
+        >
           お問い合わせ（準備中）
         </button>
       </div>
     </article>
-
   </div>
 </BaseLayout>
