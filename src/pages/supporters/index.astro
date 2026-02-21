@@ -1,28 +1,39 @@
 ---
-import BaseLayout from '../../layouts/BaseLayout.astro';
+import BaseLayout from "../../layouts/BaseLayout.astro";
 
 const supporters = [
-  { name: 'aaa', category: '賛助会員', area: '佐賀県内' },
-  { name: 'bbb', category: '賛助会員', area: '佐賀県内' },
-  { name: 'ccc', category: '賛助会員', area: '佐賀県内' },
+  { name: "aaa", category: "賛助会員", area: "佐賀県内" },
+  { name: "bbb", category: "賛助会員", area: "佐賀県内" },
+  { name: "ccc", category: "賛助会員", area: "佐賀県内" },
 ];
 ---
 
-<BaseLayout title="賛助会員一覧 | 佐賀県農業法人協会" description="佐賀県農業法人協会の賛助会員一覧ページ">
+<BaseLayout
+  title="賛助会員一覧 | 佐賀県農業法人協会"
+  description="佐賀県農業法人協会の賛助会員一覧ページ"
+>
   <section class="mx-auto max-w-5xl space-y-6">
-    <article class="rounded-xl border border-line bg-card p-6 shadow-card md:p-8">
-      <h1 class="text-2xl font-black tracking-tight text-ink md:text-3xl">賛助会員一覧</h1>
-      <p class="mt-3 text-sm text-ink-soft">現在公開している賛助会員（仮）です。正式情報は順次更新します。</p>
+    <article
+      class="rounded-xl border border-line bg-card p-6 shadow-card md:p-8"
+    >
+      <h1 class="text-2xl font-black tracking-tight text-ink md:text-3xl">
+        賛助会員一覧
+      </h1>
+      <p class="mt-3 text-base leading-relaxed text-ink-soft">
+        現在公開している賛助会員（仮）です。正式情報は順次更新します。
+      </p>
     </article>
 
     <article class="grid grid-cols-1 gap-4 md:grid-cols-3">
-      {supporters.map((s) => (
-        <div class="rounded-xl border border-line bg-card p-5 shadow-card">
-          <p class="text-lg font-semibold text-ink">{s.name}</p>
-          <p class="mt-1 text-sm text-ink-soft">{s.category}</p>
-          <p class="mt-2 text-xs text-ink-soft">{s.area}</p>
-        </div>
-      ))}
+      {
+        supporters.map((s) => (
+          <div class="rounded-xl border border-line bg-card p-5 shadow-card transition-all duration-300 hover:shadow-card-hover hover:-translate-y-0.5">
+            <p class="text-lg font-bold text-ink">{s.name}</p>
+            <p class="mt-1 text-base text-ink-soft">{s.category}</p>
+            <p class="mt-2 text-sm text-ink-soft">{s.area}</p>
+          </div>
+        ))
+      }
     </article>
   </section>
 </BaseLayout>

@@ -1,58 +1,97 @@
 ---
-import BaseLayout from '../../layouts/BaseLayout.astro';
-const BASE = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
+import BaseLayout from "../../layouts/BaseLayout.astro";
+const BASE = import.meta.env.BASE_URL.endsWith("/")
+  ? import.meta.env.BASE_URL
+  : `${import.meta.env.BASE_URL}/`;
 
 // ここにGoogleフォームURLを設定してください
-const googleFormUrl = 'https://forms.gle/rEwXrtKwM3EkXF6G9';
+const googleFormUrl = "https://forms.gle/rEwXrtKwM3EkXF6G9";
 ---
 
-<BaseLayout title="会員募集のご案内 | 佐賀県農業法人協会" description="佐賀県農業法人協会の会員募集ページ">
+<BaseLayout
+  title="会員募集のご案内 | 佐賀県農業法人協会"
+  description="佐賀県農業法人協会の会員募集ページ"
+>
   <section class="mx-auto max-w-5xl space-y-6">
-    <article class="rounded-xl border border-line bg-card p-6 shadow-card md:p-8">
-      <p class="text-xs font-semibold tracking-widest text-ink-soft uppercase">Join us</p>
-      <h1 class="mt-2 text-2xl font-black tracking-tight text-ink md:text-3xl">会員募集のご案内</h1>
-      <p class="mt-4 text-sm leading-7 text-ink-soft">
+    <article
+      class="rounded-xl border border-line bg-card p-6 shadow-card md:p-8"
+    >
+      <p class="text-sm font-semibold tracking-widest text-ink-soft uppercase">
+        Join us
+      </p>
+      <h1 class="mt-2 text-2xl font-black tracking-tight text-ink md:text-3xl">
+        会員募集のご案内
+      </h1>
+      <p class="mt-4 text-base leading-relaxed text-ink-soft">
         佐賀県農業法人協会では、地域農業の未来をともにつくる仲間を募集しています。
         「まず話を聞いてみたい」という段階でも歓迎です。
       </p>
       <div class="mt-5 flex flex-wrap gap-3">
-        {googleFormUrl ? (
-          <a href={googleFormUrl} target="_blank" rel="noreferrer" class="rounded-lg bg-brand px-4 py-2 text-sm font-semibold text-white no-underline hover:opacity-90">入会申込</a>
-        ) : (
-          <span class="rounded-lg bg-brand px-4 py-2 text-sm font-semibold text-white/80">入会相談はこちら</span>
-        )}
-        <a href={`${BASE}about/`} class="rounded-lg border border-line bg-bg-soft px-4 py-2 text-sm font-semibold text-ink no-underline hover:bg-card-soft">協会とは</a>
+        {
+          googleFormUrl ? (
+            <a
+              href={googleFormUrl}
+              target="_blank"
+              rel="noreferrer"
+              class="rounded-xl bg-brand px-6 py-3 text-base font-bold text-white no-underline hover:opacity-90 transition-opacity"
+            >
+              入会申込
+            </a>
+          ) : (
+            <span class="rounded-lg bg-brand px-4 py-2 text-sm font-semibold text-white/80">
+              入会相談はこちら
+            </span>
+          )
+        }
+        <a
+          href={`${BASE}about/`}
+          class="rounded-xl border border-line bg-bg-soft px-6 py-3 text-base font-bold text-ink no-underline hover:bg-card-soft transition-colors"
+          >協会とは</a
+        >
       </div>
     </article>
 
     <article class="grid grid-cols-1 gap-4 md:grid-cols-3">
       <div class="rounded-xl border border-line bg-card p-5 shadow-card">
-        <p class="text-sm font-bold text-ink">✅ 情報が集まる</p>
-        <p class="mt-2 text-sm leading-7 text-ink-soft">経営・販路・現場課題に関する情報を会員間で共有し、判断の精度を上げられます。</p>
+        <p class="text-base font-bold text-ink">✅ 情報が集まる</p>
+        <p class="mt-2 text-base leading-relaxed text-ink-soft">
+          経営・販路・現場課題に関する情報を会員間で共有し、判断の精度を上げられます。
+        </p>
       </div>
       <div class="rounded-xl border border-line bg-card p-5 shadow-card">
-        <p class="text-sm font-bold text-ink">✅ 相談しやすい</p>
-        <p class="mt-2 text-sm leading-7 text-ink-soft">同じ立場の法人同士で相談できるため、課題解決のスピードが上がります。</p>
+        <p class="text-base font-bold text-ink">✅ 相談しやすい</p>
+        <p class="mt-2 text-base leading-relaxed text-ink-soft">
+          同じ立場の法人同士で相談できるため、課題解決のスピードが上がります。
+        </p>
       </div>
       <div class="rounded-xl border border-line bg-card p-5 shadow-card">
-        <p class="text-sm font-bold text-ink">✅ 地域でつながる</p>
-        <p class="mt-2 text-sm leading-7 text-ink-soft">個社だけでなく、地域全体の農業価値を高める取り組みに参加できます。</p>
+        <p class="text-base font-bold text-ink">✅ 地域でつながる</p>
+        <p class="mt-2 text-base leading-relaxed text-ink-soft">
+          個社だけでなく、地域全体の農業価値を高める取り組みに参加できます。
+        </p>
       </div>
     </article>
 
-    <article class="rounded-xl border border-line bg-card p-5 shadow-card md:p-6">
-      <h2 class="text-lg font-semibold tracking-tight text-ink">入会までの流れ</h2>
-      <ol class="mt-3 list-decimal space-y-2 pl-5 text-sm leading-7 text-ink-soft">
+    <article
+      class="rounded-xl border border-line bg-card p-5 shadow-card md:p-6"
+    >
+      <h2 class="text-lg font-bold tracking-tight text-ink">入会までの流れ</h2>
+      <ol
+        class="mt-4 list-decimal space-y-3 pl-5 text-base leading-relaxed text-ink-soft"
+      >
         <li>フォーム送信（またはお問い合わせ）</li>
         <li>事務局よりご連絡・簡単なヒアリング</li>
         <li>内容確認後、入会手続きのご案内</li>
       </ol>
     </article>
 
-
-    <article class="rounded-xl border border-line bg-card p-5 shadow-card md:p-6">
-      <h2 class="text-lg font-semibold tracking-tight text-ink">申込時にわかるとスムーズな情報</h2>
-      <ul class="mt-3 space-y-2 text-sm leading-7 text-ink-soft">
+    <article
+      class="rounded-xl border border-line bg-card p-5 shadow-card md:p-6"
+    >
+      <h2 class="text-lg font-bold tracking-tight text-ink">
+        申込時にわかるとスムーズな情報
+      </h2>
+      <ul class="mt-4 space-y-3 text-base leading-relaxed text-ink-soft">
         <li>・法人名 / ご担当者名</li>
         <li>・主な作目・事業内容</li>
         <li>・連絡先（メール・電話）</li>
@@ -60,34 +99,57 @@ const googleFormUrl = 'https://forms.gle/rEwXrtKwM3EkXF6G9';
       </ul>
     </article>
 
-    <article class="rounded-xl border border-line bg-card p-5 shadow-card md:p-6">
-      <h2 class="text-lg font-semibold tracking-tight text-ink">よくあるご質問</h2>
-      <div class="mt-3 space-y-3 text-sm text-ink-soft">
-        <div class="rounded-lg bg-bg-soft p-3">
-          <p class="font-semibold text-ink">Q. まずは相談だけでも大丈夫ですか？</p>
-          <p class="mt-1">A. はい、検討段階でのご相談も歓迎しています。</p>
+    <article
+      class="rounded-xl border border-line bg-card p-5 shadow-card md:p-6"
+    >
+      <h2 class="text-lg font-bold tracking-tight text-ink">よくあるご質問</h2>
+      <div class="mt-4 space-y-4 text-ink-soft">
+        <div class="rounded-xl bg-bg-soft p-4">
+          <p class="text-base font-bold text-ink">
+            Q. まずは相談だけでも大丈夫ですか？
+          </p>
+          <p class="mt-2 text-base leading-relaxed">
+            A. はい、検討段階でのご相談も歓迎しています。
+          </p>
         </div>
-        <div class="rounded-lg bg-bg-soft p-3">
-          <p class="font-semibold text-ink">Q. どんな法人が対象ですか？</p>
-          <p class="mt-1">A. 佐賀県内の農業法人、または関連する事業者の皆さまが対象です。</p>
+        <div class="rounded-xl bg-bg-soft p-4">
+          <p class="text-base font-bold text-ink">
+            Q. どんな法人が対象ですか？
+          </p>
+          <p class="mt-2 text-base leading-relaxed">
+            A. 佐賀県内の農業法人、または関連する事業者の皆さまが対象です。
+          </p>
         </div>
       </div>
     </article>
 
-    <article class="rounded-xl border border-line bg-card p-5 shadow-card md:p-6">
-      <h2 class="text-lg font-semibold tracking-tight text-ink">入会申込フォーム</h2>
-      {googleFormUrl ? (
-        <div class="mt-3 space-y-3">
-          <a href={googleFormUrl} target="_blank" rel="noreferrer" class="inline-flex rounded-lg bg-brand px-4 py-2 text-sm font-semibold text-white no-underline hover:opacity-90">
-            入会申込
-          </a>
-          <p class="text-xs text-ink-soft">※ 外部サイト（Googleフォーム）へ移動します</p>
-        </div>
-      ) : (
-        <div class="mt-3 rounded-lg border border-dashed border-line bg-bg-soft p-4 text-sm text-ink-soft">
-          フォーム準備中です。入会のご相談は事務局までお願いします。
-        </div>
-      )}
+    <article
+      class="rounded-xl border border-line bg-card p-5 shadow-card md:p-6"
+    >
+      <h2 class="text-lg font-semibold tracking-tight text-ink">
+        入会申込フォーム
+      </h2>
+      {
+        googleFormUrl ? (
+          <div class="mt-3 space-y-3">
+            <a
+              href={googleFormUrl}
+              target="_blank"
+              rel="noreferrer"
+              class="inline-flex rounded-lg bg-brand px-4 py-2 text-sm font-semibold text-white no-underline hover:opacity-90"
+            >
+              入会申込
+            </a>
+            <p class="text-xs text-ink-soft">
+              ※ 外部サイト（Googleフォーム）へ移動します
+            </p>
+          </div>
+        ) : (
+          <div class="mt-3 rounded-lg border border-dashed border-line bg-bg-soft p-4 text-sm text-ink-soft">
+            フォーム準備中です。入会のご相談は事務局までお願いします。
+          </div>
+        )
+      }
       <p class="mt-2 text-xs text-ink-soft">※ 連絡先情報は追って掲載します</p>
     </article>
   </section>

@@ -13,7 +13,7 @@ export default {
         },
         ink: {
           DEFAULT: "#2C3315",
-          soft: "#5A6340",
+          soft: "#3D4A2A",
         },
         card: {
           DEFAULT: "#FFFFFF",
