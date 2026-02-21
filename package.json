@@ -1,0 +1,22 @@
+{
+  "name": "member-site-astro",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "validate:data": "python3 scripts/validate_dataset.py",
+    "check:urls": "python3 scripts/check_no_japanese_urls.py",
+    "sync:websites": "python3 scripts/sync_websites_from_md.py",
+    "verify": "npm run validate:data && npm run build && npm run check:urls",
+    "changelog:update": "python3 scripts/update_changelog.py",
+    "ci": "npm run validate:data && npm run build && npm run check:urls"
+  },
+  "dependencies": {
+    "astro": "^5.2.0",
+    "@astrojs/tailwind": "^6.0.0",
+    "tailwindcss": "^3.4.17"
+  }
+}

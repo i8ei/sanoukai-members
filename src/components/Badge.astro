@@ -1,0 +1,19 @@
+---
+export interface Props {
+  label: string;
+  tone?: 'neutral' | 'brand' | 'success';
+}
+
+const { label, tone = 'neutral' } = Astro.props;
+
+const toneClass =
+  tone === 'brand'
+    ? 'border-brand/20 bg-brand/10 text-brand font-medium'
+    : tone === 'success'
+      ? 'border-leaf/20 bg-leaf-pale text-brand font-medium'
+      : 'border-earth-light/30 bg-earth-pale text-ink-soft';
+---
+
+<span class={`inline-flex items-center rounded-full border px-3 py-1 text-xs leading-none tracking-wide ${toneClass}`}>
+  {label}
+</span>
