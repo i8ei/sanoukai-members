@@ -1,77 +1,184 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
-import { getGeneratedAt, getMembers } from '../lib/members';
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { getGeneratedAt, getMembers } from "../lib/members";
 
 const members = await getMembers();
 const generatedAt = await getGeneratedAt();
-const BASE = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
-const generatedAtText = generatedAt ? new Date(generatedAt).toLocaleString('ja-JP') : '情報準備中';
+const BASE = import.meta.env.BASE_URL.endsWith("/")
+  ? import.meta.env.BASE_URL
+  : `${import.meta.env.BASE_URL}/`;
+const generatedAtText = generatedAt
+  ? new Date(generatedAt).toLocaleString("ja-JP")
+  : "情報準備中";
 ---
 
-<BaseLayout title="会員紹介トップ | 佐賀県農業法人協会" description="佐賀県農業法人協会 会員法人の紹介サイト">
-
+<BaseLayout
+  title="会員紹介トップ | 佐賀県農業法人協会"
+  description="佐賀県農業法人協会 会員法人の紹介サイト"
+>
   <!-- ═══ Hero Section ═══ -->
-  <section class="hero-section -mx-4 -mt-6 mb-8 rounded-none px-4 py-16 sm:-mx-6 sm:px-6 md:-mt-10 md:mb-12 md:py-24">
-    <div class="relative z-10 mx-auto max-w-3xl text-center">
-            <h1 class="mt-4 animate-fade-in-up text-3xl font-black tracking-tight text-white sm:text-4xl md:text-5xl text-balance">佐賀県農業法人協会</h1>
-      <p class="mt-5 animate-fade-in-up text-base leading-7 text-white/85 stagger-1 sm:text-lg">
-        佐賀県内で農業法人として連携を広げたい方向けの案内サイトです。<br />
+  <section
+    class="hero-section -mx-4 -mt-6 mb-12 overflow-hidden rounded-none px-4 py-20 sm:-mx-6 sm:px-6 md:-mt-10 md:mb-16 md:py-32"
+  >
+    <div class="relative z-10 mx-auto max-w-4xl text-center">
+      <div
+        class="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-1.5 text-sm font-medium text-white shadow-glass backdrop-blur-md mb-6 animate-fade-in-up"
+      >
+        <span class="relative flex h-2 w-2">
+          <span
+            class="absolute inline-flex h-full w-full animate-ping rounded-full bg-sun-light opacity-75"
+          ></span>
+          <span class="relative inline-flex h-2 w-2 rounded-full bg-sun"></span>
+        </span>
+        佐賀の農業をつなぐネットワーク
+      </div>
+      <h1
+        class="animate-fade-in-up text-4xl font-black tracking-tight text-white sm:text-5xl md:text-6xl text-balance drop-shadow-md pb-2"
+      >
+        佐賀県農業法人協会
+      </h1>
+      <p
+        class="mt-6 animate-fade-in-up text-lg leading-relaxed text-white/90 stagger-1 sm:text-xl font-medium max-w-2xl mx-auto drop-shadow-sm"
+      >
+        佐賀県内で農業法人として連携を広げたい方向けの案内サイトです。<br
+          class="hidden sm:block"
+        />
         まずは会員募集ページをご確認ください。
       </p>
-      <div class="mt-8 flex flex-wrap items-center justify-center gap-3 animate-fade-in-up stagger-2">
-        <a href={`${BASE}join/`} class="inline-flex items-center gap-2 rounded-xl bg-white px-6 py-3 text-sm font-bold text-brand no-underline shadow-hero transition-all duration-200 hover:bg-sun-pale hover:shadow-lg hover:no-underline hover:-translate-y-0.5">
-          <span>✅</span> 入会申込
+      <div
+        class="mt-10 flex flex-wrap items-center justify-center gap-4 animate-fade-in-up stagger-2"
+      >
+        <a
+          href={`${BASE}join/`}
+          class="group relative inline-flex items-center gap-2 overflow-hidden rounded-2xl bg-white px-8 py-4 text-base font-bold text-brand shadow-hero transition-all duration-300 hover:-translate-y-1 hover:shadow-card-hover no-underline hover:no-underline"
+        >
+          <div
+            class="absolute inset-0 bg-gradient-to-r from-leaf-pale to-sun-pale opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+          >
+          </div>
+          <span class="relative z-10">✅ 入会申込</span>
         </a>
-        <a href={`${BASE}members/`} class="inline-flex items-center gap-2 rounded-xl border border-white/40 bg-white/10 px-6 py-3 text-sm font-bold text-white no-underline transition-all duration-200 hover:bg-white/20 hover:no-underline">
+        <a
+          href={`${BASE}members/`}
+          class="inline-flex items-center gap-2 rounded-2xl border border-white/30 bg-white/10 backdrop-blur-sm px-8 py-4 text-base font-bold text-white shadow-glass no-underline transition-all duration-300 hover:bg-white/20 hover:border-white/50 hover:-translate-y-1 hover:no-underline"
+        >
           <span>🌾</span> 会員一覧を見る
         </a>
       </div>
     </div>
   </section>
 
-  <div class="space-y-6 md:space-y-8">
-
+  <div class="space-y-8 md:space-y-12">
     <!-- ═══ Stats Bar ═══ -->
 
     <!-- ═══ 協会について（統合） ═══ -->
-    <article class="rounded-xl border border-line bg-section-green p-5 shadow-card md:p-6 animate-fade-in-up stagger-4">
-      <h2 class="flex items-center gap-2 text-sm font-bold text-ink">
-        <span class="text-base">🏛️</span> 佐賀県農業法人協会について
+    <article
+      class="relative overflow-hidden rounded-2xl border border-line bg-card p-6 shadow-card md:p-10 animate-fade-in-up stagger-4 transition-all duration-300 hover:shadow-card-hover"
+    >
+      <div
+        class="absolute right-0 top-0 -mr-16 -mt-16 h-32 w-32 rounded-full bg-brand/5 blur-3xl"
+      >
+      </div>
+
+      <h2
+        class="flex items-center gap-3 text-lg font-black tracking-tight text-ink md:text-xl"
+      >
+        <span
+          class="flex h-12 w-12 items-center justify-center rounded-xl bg-leaf-pale text-2xl shadow-inner inline-block"
+          >🏛️</span
+        >
+        佐賀県農業法人協会について
       </h2>
-      <p class="mt-3 text-sm leading-7 text-ink-soft">
+      <p class="mt-6 text-base leading-relaxed text-ink-soft max-w-3xl">
         佐賀県農業法人協会は、会員同士のつながりを強め、経営力向上と地域農業の持続的発展を目指す団体です。
         情報共有・連携・実践支援を通じて、各法人の成長と地域価値の向上に取り組んでいます。
       </p>
 
-      <div class="mt-4 grid grid-cols-1 gap-3 md:grid-cols-3">
-        <div class="rounded-lg border border-line bg-card p-3">
-          <p class="text-sm font-semibold text-ink">🌱 つながる</p>
-          <p class="mt-1 text-xs leading-6 text-ink-soft">会員同士の情報共有・相談で、課題を一人で抱え込まない体制をつくります。</p>
+      <div class="mt-8 grid grid-cols-1 gap-5 md:grid-cols-3">
+        <div
+          class="group rounded-2xl border border-line bg-gradient-to-b from-white to-bg-soft/50 p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-leaf/30 hover:shadow-md"
+        >
+          <div
+            class="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-lg bg-leaf/10 text-xl group-hover:bg-leaf group-hover:text-white transition-colors duration-300"
+          >
+            🌱
+          </div>
+          <p class="text-base font-bold text-ink mb-2">つながる</p>
+          <p class="text-sm leading-relaxed text-ink-soft">
+            会員同士の情報共有・相談で、課題を一人で抱え込まない体制をつくります。
+          </p>
         </div>
-        <div class="rounded-lg border border-line bg-card p-3">
-          <p class="text-sm font-semibold text-ink">📈 伸ばす</p>
-          <p class="mt-1 text-xs leading-6 text-ink-soft">経営・販路・人材の観点から、各法人の成長につながる実践的な取り組みを進めます。</p>
+        <div
+          class="group rounded-2xl border border-line bg-gradient-to-b from-white to-bg-soft/50 p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-sun/30 hover:shadow-md"
+        >
+          <div
+            class="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-lg bg-sun/10 text-xl group-hover:bg-sun group-hover:text-white transition-colors duration-300"
+          >
+            📈
+          </div>
+          <p class="text-base font-bold text-ink mb-2">伸ばす</p>
+          <p class="text-sm leading-relaxed text-ink-soft">
+            経営・販路・人材の観点から、各法人の成長につながる実践的な取り組みを進めます。
+          </p>
         </div>
-        <div class="rounded-lg border border-line bg-card p-3">
-          <p class="text-sm font-semibold text-ink">🌾 守り育てる</p>
-          <p class="mt-1 text-xs leading-6 text-ink-soft">地域農業の持続性を高め、次世代につながる土台づくりを大切にしています。</p>
+        <div
+          class="group rounded-2xl border border-line bg-gradient-to-b from-white to-bg-soft/50 p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-water/30 hover:shadow-md"
+        >
+          <div
+            class="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-lg bg-water/10 text-xl group-hover:bg-water group-hover:text-white transition-colors duration-300"
+          >
+            🌾
+          </div>
+          <p class="text-base font-bold text-ink mb-2">守り育てる</p>
+          <p class="text-sm leading-relaxed text-ink-soft">
+            地域農業の持続性を高め、次世代につながる土台づくりを大切にしています。
+          </p>
         </div>
       </div>
 
-      <h3 class="mt-4 text-sm font-semibold text-ink">主な活動内容</h3>
-      <ul class="mt-2 space-y-2 text-sm leading-7 text-ink-soft">
-        <li>・会員法人の情報共有と相互連携の促進</li>
-        <li>・生産・販路・経営に関する実践的な支援</li>
-        <li>・次世代へつながる地域農業基盤づくり</li>
-      </ul>
+      <div
+        class="mt-10 grid grid-cols-1 gap-8 md:grid-cols-2 rounded-xl bg-section-warm p-6"
+      >
+        <div>
+          <h3 class="text-base font-bold text-ink mb-3 flex items-center gap-2">
+            <span class="text-brand">■</span> 主な活動内容
+          </h3>
+          <ul class="space-y-3 text-base leading-relaxed text-ink-soft">
+            <li class="flex items-start gap-2">
+              <span class="text-brand">✓</span>
+              <span>会員法人の情報共有と相互連携の促進</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-brand">✓</span>
+              <span>生産・販路・経営に関する実践的な支援</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-brand">✓</span>
+              <span>次世代へつながる地域農業基盤づくり</span>
+            </li>
+          </ul>
+        </div>
 
-      <h3 class="mt-4 text-sm font-semibold text-ink">入会するとできること</h3>
-      <ul class="mt-2 space-y-2 text-sm leading-7 text-ink-soft">
-        <li>・同じ立場の法人同士で課題相談・情報交換ができる</li>
-        <li>・販路や生産の知見を共有し、判断の精度を上げられる</li>
-        <li>・地域と連携した取り組みを広げやすくなる</li>
-      </ul>
+        <div>
+          <h3 class="text-base font-bold text-ink mb-3 flex items-center gap-2">
+            <span class="text-sun-dark">■</span> 入会するとできること
+          </h3>
+          <ul class="space-y-3 text-base leading-relaxed text-ink-soft">
+            <li class="flex items-start gap-2">
+              <span class="text-sun">★</span>
+              <span>同じ立場の法人同士で課題相談・情報交換ができる</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-sun">★</span>
+              <span>販路や生産の知見を共有し、判断の精度を上げられる</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-sun">★</span>
+              <span>地域と連携した取り組みを広げやすくなる</span>
+            </li>
+          </ul>
+        </div>
+      </div>
     </article>
-
   </div>
 </BaseLayout>
