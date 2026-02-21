@@ -1,7 +1,12 @@
 ---
-import '../styles/global.css';
-const { title = '佐賀県農業法人協会 会員紹介', description = '会員法人紹介サイト' } = Astro.props;
-const BASE = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
+import "../styles/global.css";
+const {
+  title = "佐賀県農業法人協会 会員紹介",
+  description = "会員法人紹介サイト",
+} = Astro.props;
+const BASE = import.meta.env.BASE_URL.endsWith("/")
+  ? import.meta.env.BASE_URL
+  : `${import.meta.env.BASE_URL}/`;
 ---
 
 <!doctype html>
@@ -17,17 +22,45 @@ const BASE = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL :
   </head>
   <body>
     <!-- Desktop Header -->
-    <header class="sticky top-0 z-40 border-b border-leaf/10 bg-white/90 backdrop-blur-md">
-      <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 sm:px-6">
-        <a href={BASE} class="flex items-center gap-2 text-ink no-underline hover:no-underline group">
-          <span class="flex h-9 w-9 items-center justify-center rounded-xl bg-brand text-lg text-white shadow-sm transition-transform duration-200 group-hover:scale-105">🌾</span>
-          <span class="text-sm font-bold tracking-tight sm:text-base">佐賀県農業法人協会</span>
+    <header
+      class="sticky top-0 z-40 border-b border-white/20 bg-white/75 backdrop-blur-xl shadow-glass transition-all duration-300"
+    >
+      <div
+        class="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 sm:px-6"
+      >
+        <a
+          href={BASE}
+          class="flex items-center gap-2 text-ink no-underline hover:no-underline group"
+        >
+          <span
+            class="flex h-10 w-10 items-center justify-center rounded-2xl bg-gradient-to-br from-brand to-leaf text-xl text-white shadow-md transition-transform duration-300 group-hover:scale-110 group-hover:rotate-3"
+            >🌾</span
+          >
+          <span class="text-base font-black tracking-tight sm:text-lg"
+            >佐賀県農業法人協会</span
+          >
         </a>
-        <nav class="hidden items-center gap-1 sm:flex">
-          <a href={BASE} class="rounded-lg px-3 py-2 text-sm font-medium text-ink-soft no-underline transition-colors hover:bg-leaf-pale hover:text-brand hover:no-underline">トップ</a>
-          <a href={`${BASE}join/`} class="rounded-lg px-3 py-2 text-sm font-medium text-ink-soft no-underline transition-colors hover:bg-leaf-pale hover:text-brand hover:no-underline">会員募集</a>
-          <a href={`${BASE}members/`} class="rounded-lg px-3 py-2 text-sm font-medium text-ink-soft no-underline transition-colors hover:bg-leaf-pale hover:text-brand hover:no-underline">会員一覧</a>
-          <a href={`${BASE}supporters/`} class="rounded-lg px-3 py-2 text-sm font-medium text-ink-soft no-underline transition-colors hover:bg-leaf-pale hover:text-brand hover:no-underline">賛助会員</a>
+        <nav class="hidden items-center gap-2 sm:flex">
+          <a
+            href={BASE}
+            class="rounded-xl px-4 py-2 text-[15px] font-bold text-ink-soft no-underline transition-all duration-200 hover:bg-leaf-pale hover:text-brand hover:no-underline hover:shadow-sm"
+            >トップ</a
+          >
+          <a
+            href={`${BASE}join/`}
+            class="rounded-xl px-4 py-2 text-[15px] font-bold text-ink-soft no-underline transition-all duration-200 hover:bg-leaf-pale hover:text-brand hover:no-underline hover:shadow-sm"
+            >会員募集</a
+          >
+          <a
+            href={`${BASE}members/`}
+            class="rounded-xl px-4 py-2 text-[15px] font-bold text-ink-soft no-underline transition-all duration-200 hover:bg-leaf-pale hover:text-brand hover:no-underline hover:shadow-sm"
+            >会員一覧</a
+          >
+          <a
+            href={`${BASE}supporters/`}
+            class="rounded-xl px-4 py-2 text-[15px] font-bold text-ink-soft no-underline transition-all duration-200 hover:bg-leaf-pale hover:text-brand hover:no-underline hover:shadow-sm"
+            >賛助会員</a
+          >
         </nav>
         <!-- Mobile hamburger -->
         <button
@@ -36,8 +69,17 @@ const BASE = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL :
           aria-label="メニューを開く"
           type="button"
         >
-          <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+          <svg
+            class="h-5 w-5"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M4 6h16M4 12h16M4 18h16"></path>
           </svg>
         </button>
       </div>
@@ -51,14 +93,33 @@ const BASE = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL :
         aria-label="メニューを閉じる"
         type="button"
       >
-        <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+        <svg
+          class="h-5 w-5"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M6 18L18 6M6 6l12 12"></path>
         </svg>
       </button>
-      <a href={BASE} class="text-lg font-bold text-ink no-underline">🌾 トップ</a>
-      <a href={`${BASE}join/`} class="text-lg font-bold text-ink no-underline">✉️ 会員募集</a>
-      <a href={`${BASE}members/`} class="text-lg font-bold text-ink no-underline">📋 会員一覧</a>
-      <a href={`${BASE}supporters/`} class="text-lg font-bold text-ink no-underline">🏢 賛助会員</a>
+      <a href={BASE} class="text-lg font-bold text-ink no-underline"
+        >🌾 トップ</a
+      >
+      <a href={`${BASE}join/`} class="text-lg font-bold text-ink no-underline"
+        >✉️ 会員募集</a
+      >
+      <a
+        href={`${BASE}members/`}
+        class="text-lg font-bold text-ink no-underline">📋 会員一覧</a
+      >
+      <a
+        href={`${BASE}supporters/`}
+        class="text-lg font-bold text-ink no-underline">🏢 賛助会員</a
+      >
     </div>
 
     <main class="mx-auto max-w-6xl px-4 py-6 sm:px-6 md:py-10">
@@ -67,16 +128,36 @@ const BASE = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL :
 
     <footer class="border-t border-leaf/10 bg-brand-dark">
       <div class="mx-auto max-w-6xl px-4 py-8 sm:px-6 md:py-10">
-        <div class="flex flex-col items-center gap-4 sm:flex-row sm:justify-between">
+        <div
+          class="flex flex-col items-center gap-4 sm:flex-row sm:justify-between"
+        >
           <div class="flex items-center gap-2">
             <span class="text-lg">🌾</span>
-            <span class="text-sm font-semibold text-white/90">佐賀県農業法人協会</span>
+            <span class="text-sm font-semibold text-white/90"
+              >佐賀県農業法人協会</span
+            >
           </div>
           <nav class="flex items-center gap-4 text-sm">
-            <a href={BASE} class="text-white/70 no-underline transition-colors hover:text-white hover:no-underline">トップ</a>
-            <a href={`${BASE}join/`} class="text-white/70 no-underline transition-colors hover:text-white hover:no-underline">会員募集</a>
-            <a href={`${BASE}members/`} class="text-white/70 no-underline transition-colors hover:text-white hover:no-underline">会員一覧</a>
-            <a href={`${BASE}supporters/`} class="text-white/70 no-underline transition-colors hover:text-white hover:no-underline">賛助会員</a>
+            <a
+              href={BASE}
+              class="text-white/70 no-underline transition-colors hover:text-white hover:no-underline"
+              >トップ</a
+            >
+            <a
+              href={`${BASE}join/`}
+              class="text-white/70 no-underline transition-colors hover:text-white hover:no-underline"
+              >会員募集</a
+            >
+            <a
+              href={`${BASE}members/`}
+              class="text-white/70 no-underline transition-colors hover:text-white hover:no-underline"
+              >会員一覧</a
+            >
+            <a
+              href={`${BASE}supporters/`}
+              class="text-white/70 no-underline transition-colors hover:text-white hover:no-underline"
+              >賛助会員</a
+            >
           </nav>
         </div>
         <p class="mt-6 text-center text-xs text-white/40 sm:text-left">
@@ -86,25 +167,25 @@ const BASE = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL :
     </footer>
 
     <script>
-      const menuBtn = document.getElementById('mobile-menu-btn');
-      const mobileNav = document.getElementById('mobile-nav');
-      const closeBtn = document.getElementById('mobile-nav-close');
+      const menuBtn = document.getElementById("mobile-menu-btn");
+      const mobileNav = document.getElementById("mobile-nav");
+      const closeBtn = document.getElementById("mobile-nav-close");
 
       function openNav() {
-        mobileNav?.classList.add('is-open');
-        mobileNav?.setAttribute('aria-hidden', 'false');
-        document.body.style.overflow = 'hidden';
+        mobileNav?.classList.add("is-open");
+        mobileNav?.setAttribute("aria-hidden", "false");
+        document.body.style.overflow = "hidden";
       }
       function closeNav() {
-        mobileNav?.classList.remove('is-open');
-        mobileNav?.setAttribute('aria-hidden', 'true');
-        document.body.style.overflow = '';
+        mobileNav?.classList.remove("is-open");
+        mobileNav?.setAttribute("aria-hidden", "true");
+        document.body.style.overflow = "";
       }
 
-      menuBtn?.addEventListener('click', openNav);
-      closeBtn?.addEventListener('click', closeNav);
-      mobileNav?.querySelectorAll('a').forEach((link) => {
-        link.addEventListener('click', closeNav);
+      menuBtn?.addEventListener("click", openNav);
+      closeBtn?.addEventListener("click", closeNav);
+      mobileNav?.querySelectorAll("a").forEach((link) => {
+        link.addEventListener("click", closeNav);
       });
     </script>
   </body>
