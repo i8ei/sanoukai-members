@@ -1,0 +1,4768 @@
+{
+  "$schema": "members-v1",
+  "generated_at": "2026-02-06T12:41:26.373198+00:00",
+  "generator": "scripts/generate_members_json.py",
+  "source_dir": "会員情報/",
+  "total": 45,
+  "errors": [],
+  "members": [
+    {
+      "id": "minori-farm1961",
+      "name": "有限会社みのり農場",
+      "name_short": "みのり農場",
+      "entity_type": "有限会社",
+      "area": {
+        "code": "west",
+        "label": "西部",
+        "folder": "01_西部（唐津・伊万里・玄海）"
+      },
+      "location": {
+        "postal_code": null,
+        "address": "佐賀県唐津市浜玉町浜崎2269",
+        "city": "唐津市",
+        "lat": 33.440505,
+        "lng": 130.022347
+      },
+      "contact": {
+        "representative": "麻生茂幸",
+        "phone": null
+      },
+      "business": {
+        "summary": "",
+        "established": "1963年4月（創業1960年代初頭）",
+        "employees": null
+      },
+      "products": [
+        {
+          "category": "鶏卵",
+          "name": "平飼い卵「やさしい卵」",
+          "description": "自家配合の発酵飼料使用。生臭さがなく濃厚。卵かけご飯で臭みがないと評判"
+        },
+        {
+          "category": "鶏肉",
+          "name": "食肉用鶏",
+          "description": "自社飼養"
+        },
+        {
+          "category": "総菜",
+          "name": "鳥飯弁当（鶏めし弁当）",
+          "description": "看板商品。唐津名物。週末には行列ができる人気。年間10万食を販売"
+        },
+        {
+          "category": "総菜",
+          "name": "「鳥コロ焼き」、自家製コロッケ等",
+          "description": "唐揚げ・コロッケ等の総菜類"
+        },
+        {
+          "category": "野菜",
+          "name": "無農薬野菜",
+          "description": "鶏糞堆肥を活用した栽培。朝市等で販売"
+        }
+      ],
+      "sales_channels": [
+        "EC",
+        "スーパー",
+        "直売所"
+      ],
+      "certifications": [],
+      "awards": [
+        {
+          "name": "農林水産大臣賞",
+          "year": 2004,
+          "detail": "2004年度「食アメニティ・コンテスト」において有精卵・鶏肉加工品の販売実績が評価され受賞"
+        }
+      ],
+      "web_presence": {
+        "website": "https://minori-farm1961.com",
+        "sns": [
+          {
+            "platform": "Facebook",
+            "url": null
+          },
+          {
+            "platform": "Instagram",
+            "url": null
+          }
+        ],
+        "ec": [],
+        "media_mentions": [
+          "唐津観光協会サイトで直営店が特産品スポットとして紹介。養鶏の取り組みがOneStory記事で詳報された例あり"
+        ]
+      },
+      "shelf_potential": {
+        "categories": [
+          "畜産",
+          "野菜",
+          "加工品"
+        ],
+        "key_products": [
+          "平飼い卵「やさしい卵」",
+          "食肉用鶏",
+          "鳥飯弁当（鶏めし弁当）",
+          "「鳥コロ焼き」、自家製コロッケ等",
+          "無農薬野菜"
+        ],
+        "selling_points": [
+          "農林水産大臣賞"
+        ]
+      },
+      "unconfirmed_items": [
+        "法人公式のSNSアカウント名（FacebookページURL等） — **未確認**",
+        "鶏舎規模（飼養羽数）や具体的な有機野菜の生産量 — **公開情報なし**",
+        "法人としての有機JAS認証の有無 — **情報なし**"
+      ],
+      "interview_questions": [
+        "平飼い鶏舎とケージ飼い鶏舎の現在の割合はどの程度でしょうか？将来的に全て平飼いへ移行する計画はありますか？（※公開情報では両方で飼育しているが内訳は不明）",
+        "鶏肉を使った人気総菜「鳥飯弁当」や「鳥コロ焼き」はどのように開発されたのですか？また、これらの商品化によって売上や顧客層にどんな変化がありましたか？",
+        "無農薬で栽培されている野菜について、今後商品ラインナップに加える計画はありますか？それとも循環型農業の一環（鶏の餌や堆肥活用）としての位置づけでしょうか？",
+        "創業から60年以上経ちますが、今後の事業承継や展望についてどのようにお考えですか？特に次世代（ご家族や従業員）への引き継ぎ準備状況をお聞かせください。"
+      ],
+      "survey_responded": true,
+      "source_file": "01_西部（唐津・伊万里・玄海）/有限会社みのり農場.md",
+      "legacy_ids": [
+        "member-001",
+        "west-01"
+      ]
+    },
+    {
+      "id": "pig-yoshii",
+      "name": "有限会社よしい",
+      "name_short": "よしい",
+      "entity_type": "有限会社",
+      "area": {
+        "code": "west",
+        "label": "西部",
+        "folder": "01_西部（唐津・伊万里・玄海）"
+      },
+      "location": {
+        "postal_code": null,
+        "address": "佐賀県唐津市肥前町切木783",
+        "city": "唐津市",
+        "lat": 33.42778,
+        "lng": 129.898462
+      },
+      "contact": {
+        "representative": null,
+        "phone": null
+      },
+      "business": {
+        "summary": "養豚業、もみ殻シリカ生成、堆肥製造販売",
+        "established": null,
+        "employees": null
+      },
+      "products": [
+        {
+          "category": "豚肉",
+          "name": "九州ブランド豚「和豚もちぶた」",
+          "description": "主力。飼育・生産"
+        },
+        {
+          "category": "その他",
+          "name": "もみ殻シリカ",
+          "description": "生成事業"
+        },
+        {
+          "category": "その他",
+          "name": "堆肥",
+          "description": "製造・販売"
+        }
+      ],
+      "sales_channels": [
+        "EC",
+        "直売所"
+      ],
+      "certifications": [
+        "有機JAS"
+      ],
+      "awards": [
+        {
+          "name": "米の直接支払交付金",
+          "year": 2015,
+          "detail": "農林水産省より2015年・2017年に受給（gBizINFOで確認）"
+        }
+      ],
+      "web_presence": {
+        "website": "https://pig-yoshii.jp",
+        "sns": [],
+        "ec": [],
+        "media_mentions": [
+          "あり（「よしいさんちの養豚場」pig-yoshii.jp）— 会社概要・お問い合わせ先を掲載"
+        ]
+      },
+      "shelf_potential": {
+        "categories": [
+          "畜産",
+          "米"
+        ],
+        "key_products": [
+          "九州ブランド豚「和豚もちぶた」",
+          "もみ殻シリカ",
+          "堆肥"
+        ],
+        "selling_points": [
+          "有機JAS",
+          "米の直接支払交付金"
+        ]
+      },
+      "unconfirmed_items": [
+        "代表者以外の役員構成・人数 — **情報なし**",
+        "SNSアカウント（Facebook・Twitter等）の有無 — **情報なし**（独自公式アカウントは確認できず）",
+        "メディア掲載の具体的事例 — **情報なし**",
+        "「和豚もちぶた」の具体的な販売チャネル（直販・EC・卸等） — **公式情報で確認できず**",
+        "その他行政認定・受賞歴、学校・企業との連携事例 — **確認できず**"
+      ],
+      "interview_questions": [
+        "SNSやブログ等で情報発信を行っていない理由と、今後の広報予定はありますか？",
+        "「和豚もちぶた」の販売先（直売所・ネット通販・飲食店への卸など）は具体的にどのようになっていますか？",
+        "有機農業やSDGsに取り組んでいるようですが、認証取得（有機JAS等）や表彰・認定の実績はありますか？",
+        "学校・地域・企業など他者との連携や共同プロジェクトの経験はありますか？",
+        "経営や生産で現在最も課題と感じていることは何ですか？（補助金以外に受けた支援制度があれば教えてください）"
+      ],
+      "survey_responded": false,
+      "source_file": "01_西部（唐津・伊万里・玄海）/有限会社よしい.md",
+      "legacy_ids": [
+        "member-002",
+        "west-02"
+      ]
+    },
+    {
+      "id": "maruichi-nosan",
+      "name": "有限会社マルイチ農産",
+      "name_short": "マルイチ農産",
+      "entity_type": "有限会社",
+      "area": {
+        "code": "west",
+        "label": "西部",
+        "folder": "01_西部（唐津・伊万里・玄海）"
+      },
+      "location": {
+        "postal_code": null,
+        "address": "佐賀県唐津市柏崎1281番地1",
+        "city": "唐津市",
+        "lat": 33.411668,
+        "lng": 130.008251
+      },
+      "contact": {
+        "representative": "市丸房光",
+        "phone": null
+      },
+      "business": {
+        "summary": "| 品目 | 概要 |",
+        "established": null,
+        "employees": null
+      },
+      "products": [],
+      "sales_channels": [],
+      "certifications": [
+        "特別栽培認証"
+      ],
+      "awards": [],
+      "web_presence": {
+        "website": null,
+        "sns": [],
+        "ec": [],
+        "media_mentions": [
+          "未確認。行政機関・業界団体の基本情報リストへの掲載程度"
+        ]
+      },
+      "shelf_potential": {
+        "categories": [
+          "米"
+        ],
+        "key_products": [],
+        "selling_points": [
+          "特別栽培認証"
+        ]
+      },
+      "unconfirmed_items": [
+        "公式ウェブサイトおよび公式SNSアカウントの有無 — **確認できず**",
+        "自社ブランドの加工品や直販・ECでの販売展開 — **確認できず**",
+        "マスメディアやニュースサイトでの取材・掲載記事 — **確認できず**",
+        "学校・企業・地域団体との具体的な連携事例 — **確認できず**"
+      ],
+      "interview_questions": [
+        "主力である米や麦の販売経路はどのようになっていますか？（JAなど卸売中心なのか、直接販売や契約取引があるのか）",
+        "化学肥料・農薬を減らした特別栽培に取り組むきっかけや、その取り組みによる効果・課題は何でしょうか？",
+        "法人として今後栽培品目の拡大や新たな商品開発の計画はありますか？現在の米・麦以外にチャレンジしている作物があれば教えてください。",
+        "地域の農業法人として、行政や他団体と連携した取組（例えば人材確保や技術研修など）は行っていますか？"
+      ],
+      "survey_responded": false,
+      "source_file": "01_西部（唐津・伊万里・玄海）/有限会社マルイチ農産.md",
+      "legacy_ids": [
+        "member-003",
+        "west-03",
+        "west-01"
+      ]
+    },
+    {
+      "id": "yamanaka-farm",
+      "name": "有限会社ヤマナカ",
+      "name_short": "ヤマナカ",
+      "entity_type": "有限会社",
+      "area": {
+        "code": "west",
+        "label": "西部",
+        "folder": "01_西部（唐津・伊万里・玄海）"
+      },
+      "location": {
+        "postal_code": null,
+        "address": "佐賀県唐津市肥前町赤坂605",
+        "city": "唐津市",
+        "lat": 33.415736,
+        "lng": 129.894379
+      },
+      "contact": {
+        "representative": "山中謙志",
+        "phone": null
+      },
+      "business": {
+        "summary": "養豚業",
+        "established": null,
+        "employees": null
+      },
+      "products": [
+        {
+          "category": "豚肉",
+          "description": "佐賀ブランドの豚肉。生産しているとされる"
+        }
+      ],
+      "sales_channels": [],
+      "certifications": [],
+      "awards": [
+        {
+          "name": "補助金・認定・表彰",
+          "year": null,
+          "detail": "gBizINFOでは記録見当たらず"
+        }
+      ],
+      "web_presence": {
+        "website": null,
+        "sns": [],
+        "ec": [],
+        "media_mentions": [
+          "佐賀県サイト「SAGAPIN」に山中真二氏が肥前さくらポークの生産者として紹介されているが、法人との直接の関係は不明。その他の報道記事は見つからず"
+        ]
+      },
+      "shelf_potential": {
+        "categories": [
+          "畜産"
+        ],
+        "key_products": [
+          "豚肉"
+        ],
+        "selling_points": [
+          "補助金・認定・表彰"
+        ]
+      },
+      "unconfirmed_items": [
+        "公式Webサイト・SNSの有無 — **確認できず**",
+        "メディア掲載の具体的事例 — **情報なし**（SAGAPIN掲載ありだが法人との関係は不明）",
+        "販売形態（直販・EC・卸等）の詳細 — **不明**",
+        "補助金や表彰実績、他機関との連携事例 — **確認できず**"
+      ],
+      "interview_questions": [
+        "公式サイトやSNSで情報発信をしていない理由と、広報・販路開拓の方法はどのようにされていますか？",
+        "肥前さくらポークの販売ルート（直売・取引先・ネット通販等）はどうなっていますか？",
+        "表彰や認定を受けた経験、または参加している地域・業界団体などがあれば教えてください。",
+        "現在の経営課題は何ですか？（例えば補助金や支援策の利用、労働力確保など）",
+        "事業承継や後継者育成についての状況（山中謙志氏への継承時期や展望）はどのようになっていますか？"
+      ],
+      "survey_responded": false,
+      "source_file": "01_西部（唐津・伊万里・玄海）/有限会社ヤマナカ.md",
+      "legacy_ids": [
+        "member-004",
+        "west-04",
+        "west-02"
+      ]
+    },
+    {
+      "id": "yonekura-engei",
+      "name": "有限会社ヨネクラ園芸",
+      "name_short": "ヨネクラ園芸",
+      "entity_type": "有限会社",
+      "area": {
+        "code": "west",
+        "label": "西部",
+        "folder": "01_西部（唐津・伊万里・玄海）"
+      },
+      "location": {
+        "postal_code": null,
+        "address": "佐賀県唐津市半田3118-1",
+        "city": "唐津市",
+        "lat": 33.410697,
+        "lng": 130.028948
+      },
+      "contact": {
+        "representative": "米倉 博幸",
+        "phone": null
+      },
+      "business": {
+        "summary": "",
+        "established": null,
+        "employees": null
+      },
+      "products": [
+        {
+          "category": "生鮮",
+          "description": "主力。100g単位の小分けパックで出荷。ハウス栽培により葉・茎まで柔らかくクセのない食味。年間生産量約30トン"
+        },
+        {
+          "category": "生鮮",
+          "description": "冬季の副次作物。多肉質野菜、プチプチ食感とほのかな塩味。珍しい野菜として出荷"
+        }
+      ],
+      "sales_channels": [
+        "EC",
+        "ふるさと納税",
+        "直売所"
+      ],
+      "certifications": [],
+      "awards": [
+        {
+          "name": "食べチョクAWARD",
+          "year": 2024,
+          "detail": "2024年「食べチョクAWARD野菜部門」受賞。品質・販売実績で高い評価"
+        }
+      ],
+      "web_presence": {
+        "website": null,
+        "sns": [
+          {
+            "platform": "Instagram",
+            "url": "https://www.instagram.com/yonekura_engei_karatsu/"
+          }
+        ],
+        "ec": [
+          "ふるさと納税",
+          "食べチョク"
+        ],
+        "media_mentions": [
+          "自治体ふるさと納税サイト、食べチョク内での紹介記事・レビューが掲載"
+        ]
+      },
+      "shelf_potential": {
+        "categories": [
+          "野菜"
+        ],
+        "key_products": [
+          "生鮮",
+          "生鮮"
+        ],
+        "selling_points": [
+          "食べチョクAWARD"
+        ]
+      },
+      "unconfirmed_items": [
+        "公式サイトでの詳細な企業情報 — **情報なし**（独自サイト未保有のため、企業理念・沿革等は外部から未確認）",
+        "有機JAS・GAP認証等の品質認証取得 — **未確認**（特別栽培認証等の取得報告は公開情報に見当たらない）",
+        "地元農協・学校との協働事例 — **情報なし**（JA唐津等との提携や研修受入に関する公表情報なし）"
+      ],
+      "interview_questions": [
+        "モロヘイヤの周年栽培で苦労する点と克服法は？（季節ごとの生育管理や病害虫対策について）",
+        "アイスプラント栽培に取り組んだきっかけは？（珍しい作物を導入した経緯やメリット・市場の反応）",
+        "今後チャレンジしたい作物や新商品の計画は？（モロヘイヤ・アイスプラント以外の展開や加工品開発の構想）",
+        "生産量30トン規模を維持・拡大する上での課題は？（労働力確保や販売先の開拓、設備投資の考えなど）",
+        "法人化から約20年経過する中で感じる農業経営の変化は？（当初と比較した市場動向や経営手法の変遷、世代交代の展望）"
+      ],
+      "survey_responded": true,
+      "source_file": "01_西部（唐津・伊万里・玄海）/有限会社ヨネクラ園芸.md",
+      "legacy_ids": [
+        "member-005",
+        "west-05",
+        "west-03"
+      ]
+    },
+    {
+      "id": "imari-gf",
+      "name": "有限会社伊万里グリーンファーム",
+      "name_short": "伊万里グリーンファーム",
+      "entity_type": "有限会社",
+      "area": {
+        "code": "west",
+        "label": "西部",
+        "folder": "01_西部（唐津・伊万里・玄海）"
+      },
+      "location": {
+        "postal_code": null,
+        "address": "佐賀県伊万里市二里町八谷搦926番地",
+        "city": "伊万里市",
+        "lat": 33.268802,
+        "lng": 129.861169
+      },
+      "contact": {
+        "representative": null,
+        "phone": null
+      },
+      "business": {
+        "summary": "| 分野 | 概要 |",
+        "established": "1991年法人設立（創業1963年）",
+        "employees": null
+      },
+      "products": [
+        {
+          "category": "生鮮",
+          "description": "主力。生産・出荷"
+        },
+        {
+          "category": "加工品",
+          "description": "ネギ加工品"
+        },
+        {
+          "category": "加工品",
+          "description": "調味料"
+        },
+        {
+          "category": "加工品",
+          "description": "スープ"
+        },
+        {
+          "category": "加工品",
+          "description": "カット野菜"
+        }
+      ],
+      "sales_channels": [
+        "EC",
+        "JA・市場",
+        "直売所"
+      ],
+      "certifications": [],
+      "awards": [
+        {
+          "name": "地域未来牽引企業",
+          "year": 2017,
+          "detail": "2017年12月 農林水産省より認定"
+        },
+        {
+          "name": "ねぎ名人",
+          "year": 1997,
+          "detail": "1997年 佐賀県知事による逸品づくり農業者として認定"
+        },
+        {
+          "name": "総合化事業計画",
+          "year": null,
+          "detail": "農林水産省より認定。ネギ加工品の製造・販売に注力"
+        }
+      ],
+      "web_presence": {
+        "website": "https://imari-gf.com",
+        "sns": [
+          {
+            "platform": "Instagram",
+            "url": "https://www.instagram.com/imari_greenfarm/"
+          }
+        ],
+        "ec": [],
+        "media_mentions": [
+          "佐賀テレビ「kachi kachi plus」で取材記事。「伊万里香ネギ」の工場として1963年創業、1991年法人設立で生産・出荷・加工を行っていると紹介"
+        ]
+      },
+      "shelf_potential": {
+        "categories": [
+          "野菜",
+          "加工品"
+        ],
+        "key_products": [
+          "生鮮",
+          "加工品",
+          "加工品",
+          "加工品",
+          "加工品"
+        ],
+        "selling_points": [
+          "ねぎ名人",
+          "地域未来牽引企業",
+          "総合化事業計画"
+        ]
+      },
+      "unconfirmed_items": [
+        "SNS発信（Instagramの発信内容・更新状況、Twitter・Facebookの有無） — **情報なし**（Instagramアカウントは確認されるが詳細不明）",
+        "資本金・従業員数 — **公開情報に見当たらず**（gBizINFO等にも記載なし）",
+        "SAGATV以外の新聞・雑誌等での報道 — **確認できず**",
+        "流通形態の詳細（実店舗名・ECサイト名・取引先企業名） — **公開されていない**",
+        "地域未来牽引企業以外の最新の賞・認定 — **見当たらない**"
+      ],
+      "interview_questions": [
+        "ネギ加工品（乾燥ねぎ、ねぎスープ等）やカットネギの直販店舗・ECサイト名および取引先企業名は何ですか？",
+        "InstagramなどSNSでの発信内容や更新頻度、公式SNSの有無を確認したいです。",
+        "表彰歴や認定歴（特に6次産業化・地域ブランドに関するもの）がさらにあるか教えてください。",
+        "設立時からの事業拡大（従業員増加、資本金増強など）の経緯や現状の従業員数・売上高について教えてください。",
+        "新製品開発や海外展開など、今後の事業計画に関する情報をお聞かせください。"
+      ],
+      "survey_responded": true,
+      "source_file": "01_西部（唐津・伊万里・玄海）/有限会社伊万里グリーンファーム.md",
+      "legacy_ids": [
+        "member-006",
+        "west-06"
+      ]
+    },
+    {
+      "id": "shibata-livestock",
+      "name": "有限会社柴田畜産",
+      "name_short": "柴田畜産",
+      "entity_type": "有限会社",
+      "area": {
+        "code": "west",
+        "label": "西部",
+        "folder": "01_西部（唐津・伊万里・玄海）"
+      },
+      "location": {
+        "postal_code": null,
+        "address": "佐賀県唐津市肥前町切木甲943-205",
+        "city": "唐津市",
+        "lat": 33.439891,
+        "lng": 129.887729
+      },
+      "contact": {
+        "representative": "情報確認できず",
+        "phone": null
+      },
+      "business": {
+        "summary": "養豚業（豚の飼育・販売）",
+        "established": null,
+        "employees": null
+      },
+      "products": [
+        {
+          "category": "豚肉",
+          "description": "養豚業による豚の飼育・販売。豚肉生産のみで直販・加工品は未確認"
+        }
+      ],
+      "sales_channels": [],
+      "certifications": [],
+      "awards": [],
+      "web_presence": {
+        "website": null,
+        "sns": [],
+        "ec": [],
+        "media_mentions": []
+      },
+      "shelf_potential": {
+        "categories": [
+          "畜産"
+        ],
+        "key_products": [
+          "豚肉"
+        ],
+        "selling_points": []
+      },
+      "unconfirmed_items": [
+        "代表者・役員名以外の企業情報（資本金、従業員数等） — **情報なし**",
+        "飼育頭数、飼料の特徴や品種など養豚の具体情報 — **情報なし**",
+        "販売先（精肉業者、加工業者等）、自社ブランド名の有無 — **情報なし**",
+        "SNSや広告など広報活動の有無 — **情報なし**",
+        "公的補助金・支援事業の利用歴（畜産振興事業等） — **情報なし**"
+      ],
+      "interview_questions": [
+        "豚の飼育規模や品種、出荷量は？販売先（市場・業者など）も含めて教えてください。",
+        "使用している飼料や衛生管理・病気対策の状況について。",
+        "補助金や支援事業（畜産振興補助など）の利用歴があれば。",
+        "地域の畜産業者との連携（肥前町や唐津市の畜産団体参加など）について。",
+        "今後の設備投資計画（最新飼育施設導入の予定）や後継者計画について。"
+      ],
+      "survey_responded": false,
+      "source_file": "01_西部（唐津・伊万里・玄海）/有限会社柴田畜産.md",
+      "legacy_ids": [
+        "member-007",
+        "west-07",
+        "west-04"
+      ]
+    },
+    {
+      "id": "bm",
+      "name": "株式会社BMファーム",
+      "name_short": "BMファーム",
+      "entity_type": "株式会社",
+      "area": {
+        "code": "west",
+        "label": "西部",
+        "folder": "01_西部（唐津・伊万里・玄海）"
+      },
+      "location": {
+        "postal_code": null,
+        "address": "佐賀県唐津市神田1666番地",
+        "city": "唐津市",
+        "lat": 33.431281,
+        "lng": 129.961021
+      },
+      "contact": {
+        "representative": "青山定浩",
+        "phone": null
+      },
+      "business": {
+        "summary": "",
+        "established": "平成27年4月10日（2015年）",
+        "employees": null
+      },
+      "products": [
+        {
+          "category": "米",
+          "description": "主力。県奨励品種。減農薬の特別栽培米として生産。食味ランキング特Aを3年連続獲得"
+        },
+        {
+          "category": "麦",
+          "description": "高機能品種。近隣農家と協力し栽培・卸販売。関連会社㈱青山が卸部門を担当"
+        },
+        {
+          "category": "花卉",
+          "description": "栽培実施（詳細規模・品目は公開情報では言及わずか）"
+        }
+      ],
+      "sales_channels": [
+        "ふるさと納税"
+      ],
+      "certifications": [
+        "特別栽培認証"
+      ],
+      "awards": [
+        {
+          "name": "特別栽培農産物認証",
+          "year": null,
+          "detail": "佐賀県の認証事業に参加。減農薬・無化学肥料による米作りを実践"
+        }
+      ],
+      "web_presence": {
+        "website": "https://bmfarm.jp",
+        "sns": [
+          {
+            "platform": "Instagram",
+            "url": null
+          },
+          {
+            "platform": "Twitter",
+            "url": null
+          },
+          {
+            "platform": "Facebook",
+            "url": null
+          }
+        ],
+        "ec": [],
+        "media_mentions": [
+          "農機メーカーサタケのユーザー事例インタビューで紹介"
+        ]
+      },
+      "shelf_potential": {
+        "categories": [
+          "米",
+          "花卉"
+        ],
+        "key_products": [
+          "米",
+          "麦",
+          "花卉"
+        ],
+        "selling_points": [
+          "特別栽培認証",
+          "特別栽培農産物認証"
+        ]
+      },
+      "unconfirmed_items": [
+        "花卉（切り花）栽培事業の詳細規模・品目 — **未確認**（公開情報では言及わずか）",
+        "自社直営の小売店舗の有無 — **情報なし**（主な販売は卸・業務供給が中心）"
+      ],
+      "interview_questions": [
+        "花卉栽培事業について：現在どのような花の品目・栽培規模で展開されていますか？（※公開情報では米作中心で花卉の情報が少ないため）",
+        "2019年に新設された大型ライスセンターの稼働状況や効果はどうですか？今後の設備活用計画があれば教えてください。（※公開情報では設備導入まで確認）",
+        "米の販路拡大について：ふるさと納税以外で一般消費者向け直販や海外輸出など、新たな販売チャネル開拓の計画はありますか？",
+        "今後の地域農業への貢献計画：高齢化が進む中山間地農業を維持するために、今後どのような取り組みや人材育成をお考えでしょうか？"
+      ],
+      "survey_responded": false,
+      "source_file": "01_西部（唐津・伊万里・玄海）/株式会社BMファーム.md",
+      "legacy_ids": [
+        "west-08"
+      ]
+    },
+    {
+      "id": "y-k",
+      "name": "株式会社Y.Kカンパニー",
+      "name_short": "Y.Kカンパニー",
+      "entity_type": "株式会社",
+      "area": {
+        "code": "west",
+        "label": "西部",
+        "folder": "01_西部（唐津・伊万里・玄海）"
+      },
+      "location": {
+        "postal_code": null,
+        "address": "佐賀県唐津市浜玉町南山3181",
+        "city": "唐津市",
+        "lat": 33.438093,
+        "lng": 130.065014
+      },
+      "contact": {
+        "representative": "本田和也",
+        "phone": null
+      },
+      "business": {
+        "summary": "水菜・ほうれん草・小松菜など葉物野菜を中心に栽培",
+        "established": "2011年1月",
+        "employees": null
+      },
+      "products": [
+        {
+          "category": "葉物野菜",
+          "description": "水菜・ほうれん草・小松菜等を中心に栽培・出荷"
+        }
+      ],
+      "sales_channels": [],
+      "certifications": [
+        "JGAP"
+      ],
+      "awards": [
+        {
+          "name": "JGAP認証",
+          "year": 2016,
+          "detail": "2016年10月取得"
+        }
+      ],
+      "web_presence": {
+        "website": "https://ykcompany.co.jp",
+        "sns": [],
+        "ec": [],
+        "media_mentions": [
+          "佐賀県HPで「さが園芸888パートナー企業」として規模拡大事例に紹介。サラダクラブ社プレスリリースで葉物野菜栽培産地として紹介。農業関連企業サイトで事例紹介記事あり"
+        ]
+      },
+      "shelf_potential": {
+        "categories": [
+          "野菜"
+        ],
+        "key_products": [
+          "葉物野菜"
+        ],
+        "selling_points": [
+          "JGAP",
+          "JGAP認証"
+        ]
+      },
+      "unconfirmed_items": [
+        "代表者氏名以外の役員構成・資本金等 — **情報なし**",
+        "農産物の販売先（直売所・EC・卸等）や具体的な取引先 — **情報なし**",
+        "商品ブランド名や具体的な販売形態（食べチョク等以外での直販） — **情報なし**",
+        "SNS（Instagram以外）や広報活動の詳細 — **情報なし**",
+        "特定の補助金利用・地方創生事業の個別利用状況 — **情報なし**"
+      ],
+      "interview_questions": [
+        "主な販路や取引先は？（例：サラダメーカー向け契約やJA直売所出荷など）",
+        "直売所やインターネット販売の有無、取扱商品ブランドについて。",
+        "JGAP認証取得の経緯や今後の農法（有機栽培など）への取り組み計画。",
+        "「唐津アグリ旬」など地域農家団体での活動内容と成果。",
+        "5年後・10年後の事業目標や規模拡大に向けた課題と資金調達計画。"
+      ],
+      "survey_responded": false,
+      "source_file": "01_西部（唐津・伊万里・玄海）/株式会社Y.Kカンパニー.md",
+      "legacy_ids": [
+        "west-09"
+      ]
+    },
+    {
+      "id": "earthmind-co",
+      "name": "株式会社アースマインド伊万里",
+      "name_short": "アースマインド伊万里",
+      "entity_type": "株式会社",
+      "area": {
+        "code": "west",
+        "label": "西部",
+        "folder": "01_西部（唐津・伊万里・玄海）"
+      },
+      "location": {
+        "postal_code": "849-4271",
+        "address": "佐賀県伊万里市東山代町長浜2498-35",
+        "city": "伊万里市",
+        "lat": 33.27979,
+        "lng": 129.840638
+      },
+      "contact": {
+        "representative": "中倉大介",
+        "phone": null
+      },
+      "business": {
+        "summary": "オランダ式ハウスによるパプリカ専門農場の運営。低農薬でパプリカを生産・販売",
+        "established": null,
+        "employees": null
+      },
+      "products": [
+        {
+          "category": "野菜",
+          "name": "ロクマルパプリカ",
+          "description": "自社ブランド。完熟させた甘いパプリカ。「60日間熟成」する栽培方法が特徴"
+        }
+      ],
+      "sales_channels": [
+        "JA・市場",
+        "スーパー"
+      ],
+      "certifications": [
+        "JGAP"
+      ],
+      "awards": [
+        {
+          "name": "J-GAP認証",
+          "year": 2023,
+          "detail": "2023年 農業生産工程管理（J-GAP）認証を取得"
+        }
+      ],
+      "web_presence": {
+        "website": "https://earthmind.co.jp",
+        "sns": [
+          {
+            "platform": "Instagram",
+            "url": null
+          },
+          {
+            "platform": "Twitter",
+            "url": null
+          },
+          {
+            "platform": "X（旧Twitter）",
+            "url": null
+          },
+          {
+            "platform": "LINE",
+            "url": null
+          },
+          {
+            "platform": "Facebook",
+            "url": null
+          },
+          {
+            "platform": "YouTube",
+            "url": null
+          }
+        ],
+        "ec": [],
+        "media_mentions": [
+          "住友化学（住友ベークライト）サイトでパプリカ生産事例として紹介。伊万里市観光協会サイトに事業内容紹介（オランダ型ハウスでパプリカ栽培）あり"
+        ]
+      },
+      "shelf_potential": {
+        "categories": [
+          "野菜"
+        ],
+        "key_products": [
+          "ロクマルパプリカ"
+        ],
+        "selling_points": [
+          "J-GAP認証",
+          "JGAP"
+        ]
+      },
+      "unconfirmed_items": [
+        "資本金・従業員数 — **公表資料で確認できず**",
+        "新規作付品目（パプリカ以外）の栽培計画 — **情報なし**",
+        "独自技術（IT制御システム等）の詳細 — **公開情報では不明**"
+      ],
+      "interview_questions": [
+        "パプリカ以外の新たな作物や事業展開（例：米など）の予定はありますか？",
+        "百貨店・学校給食以外の販路開拓や輸出等、新規販路についての計画はありますか？",
+        "オランダ式環境制御システムや天敵利用など栽培技術の具体的効果と運用方法について伺いたいです。",
+        "地元農家との連携や地域貢献（農業体験、観光農園化など）の取り組みはありますか？",
+        "J-GAP認証取得の背景と今後の品質管理・生産管理への取り組みについて教えてください。"
+      ],
+      "survey_responded": false,
+      "source_file": "01_西部（唐津・伊万里・玄海）/株式会社アースマインド伊万里.md",
+      "legacy_ids": [
+        "member-010",
+        "west-10"
+      ]
+    },
+    {
+      "id": "clavel-japan",
+      "name": "株式会社クラベル・ジャパン",
+      "name_short": "クラベル・ジャパン",
+      "entity_type": "株式会社",
+      "area": {
+        "code": "west",
+        "label": "西部",
+        "folder": "01_西部（唐津・伊万里・玄海）"
+      },
+      "location": {
+        "postal_code": null,
+        "address": "佐賀県唐津市和多田本村8-51",
+        "city": "唐津市",
+        "lat": 33.434126,
+        "lng": 129.978475
+      },
+      "contact": {
+        "representative": null,
+        "phone": null
+      },
+      "business": {
+        "summary": "",
+        "established": null,
+        "employees": null
+      },
+      "products": [
+        {
+          "category": "生花",
+          "name": "カーネーション切花",
+          "description": "主力。約60品種・年間70万本規模で全国に出荷。国内希少な国産カーネーションのトップクラス生産者"
+        },
+        {
+          "category": "ギフト",
+          "name": "花束・フラワーボックス等",
+          "description": "オンラインストアで販売"
+        },
+        {
+          "category": "加工品",
+          "name": "カーネーション由来のアクセサリー",
+          "description": "認定事業の一環で開発"
+        },
+        {
+          "category": "体験",
+          "name": "「唐津花の大学」",
+          "description": "花のオーナー制度・体験農園。栽培体験プログラム"
+        },
+        {
+          "category": "新規事業",
+          "name": "一味唐辛子「赤獅子」「青獅子」",
+          "description": "唐辛子の栽培・加工品開発。唐津の新たな特産品として注目"
+        }
+      ],
+      "sales_channels": [],
+      "certifications": [],
+      "awards": [
+        {
+          "name": "6次産業化",
+          "year": 2016,
+          "detail": "2016年 国の「6次産業化中央サポート事業」において総合化事業計画の認定。農産物の加工・販売まで手がける経営革新に取り組み"
+        },
+        {
+          "name": "唐津ピリカラ協会",
+          "year": 2025,
+          "detail": "同社が発起人となり地元生産者・飲食店と結成。唐辛子による地域活性化を推進。2025年SAGAデザイン賞入賞"
+        }
+      ],
+      "web_presence": {
+        "website": null,
+        "sns": [
+          {
+            "platform": "Instagram",
+            "url": "https://www.instagram.com/clavel_japa/"
+          },
+          {
+            "platform": "Facebook",
+            "url": null
+          }
+        ],
+        "ec": [],
+        "media_mentions": [
+          "地元Webマガジン等で農園の取り組みが度々紹介"
+        ]
+      },
+      "shelf_potential": {
+        "categories": [
+          "花卉",
+          "加工品"
+        ],
+        "key_products": [
+          "カーネーション切花",
+          "花束・フラワーボックス等",
+          "カーネーション由来のアクセサリー",
+          "「唐津花の大学」",
+          "一味唐辛子「赤獅子」「青獅子」"
+        ],
+        "selling_points": [
+          "6次産業化",
+          "唐津ピリカラ協会"
+        ]
+      },
+      "unconfirmed_items": [
+        "従業員数・売上規模等の経営規模に関する詳細 — **非公表**",
+        "カーネーション以外の売上比率や販路の内訳（卸売・小売・輸出等） — **未確認**",
+        "今回確認できた以外の受賞歴・認定 — **情報なし**（追加表彰の可能性はあるが、公的資料で確認できたもの以外はなし）"
+      ],
+      "interview_questions": [
+        "6次産業化で取り組まれたカーネーションの加工品（アクセサリー等）について、具体的な商品内容や開発エピソードを教えてください。販売状況や消費者の反応はいかがですか？",
+        "新事業として始めた唐辛子栽培・「唐津ピリカラ協会」の活動について、今後の展望は？ カーネーション農家から唐辛子にも取り組んだ狙いと今後の計画をお聞きしたいです。",
+        "花のオーナー制度「唐津花の大学」には県内外から参加があるとのことですが、参加者に提供している体験や得られる効果はどのようなものですか？ この取り組みを通じて感じた手応えや課題があれば教えてください。",
+        "福祉施設との連携による人材活用（農福連携）を行っていますが、その経緯や具体的な取り組み内容、協働して感じるメリット・課題は何でしょうか？ このモデルを今後どのように発展させたいとお考えですか？"
+      ],
+      "survey_responded": false,
+      "source_file": "01_西部（唐津・伊万里・玄海）/株式会社クラベル・ジャパン.md",
+      "legacy_ids": [
+        "member-011",
+        "west-11",
+        "west-05"
+      ]
+    },
+    {
+      "id": "citrus-plus",
+      "name": "株式会社シトラスプラス",
+      "name_short": "シトラスプラス",
+      "entity_type": "株式会社",
+      "area": {
+        "code": "west",
+        "label": "西部",
+        "folder": "01_西部（唐津・伊万里・玄海）"
+      },
+      "location": {
+        "postal_code": null,
+        "address": "佐賀県唐津市",
+        "city": "唐津市",
+        "lat": 33.450097,
+        "lng": 129.968268
+      },
+      "contact": {
+        "representative": "上野勉",
+        "phone": null
+      },
+      "business": {
+        "summary": "ハウスみかんを中心とした柑橘栽培",
+        "established": null,
+        "employees": null
+      },
+      "products": [
+        {
+          "category": "柑橘",
+          "name": "ハウスみかん",
+          "description": "主力。中心に栽培"
+        }
+      ],
+      "sales_channels": [
+        "EC",
+        "直売所"
+      ],
+      "certifications": [],
+      "awards": [
+        {
+          "name": "農林水産大臣賞",
+          "year": 2019,
+          "detail": "2019年 全国農業者大会（園芸・特産部門）で受賞"
+        }
+      ],
+      "web_presence": {
+        "website": null,
+        "sns": [],
+        "ec": [],
+        "media_mentions": [
+          "農業専門Webメディア（スター農家クラウド、マイナビ農業等）で代表へのインタビュー記事が掲載"
+        ]
+      },
+      "shelf_potential": {
+        "categories": [
+          "果樹",
+          "加工品"
+        ],
+        "key_products": [
+          "ハウスみかん"
+        ],
+        "selling_points": [
+          "農林水産大臣賞"
+        ]
+      },
+      "unconfirmed_items": [
+        "所在地の詳細（番地等） — **記載なし**",
+        "公式サイトに掲載される事業内容の詳細（公式表現） — **確認できず**",
+        "EC（オンライン販売）・直売所での販路展開状況 — **公開情報では不明**",
+        "個別の商品名・加工品名 — **公表情報は見つからず**",
+        "補助金・認定取得歴 — **情報は確認できず**"
+      ],
+      "interview_questions": [
+        "主力商品の品種や年間生産量、主な販路（直売・卸先）について教えてください。",
+        "法人化の経緯や目的、法人化後の組織体制はどのようになっていますか？",
+        "直売所の運営状況やオンライン販売（EC）の計画はありますか？",
+        "助成金・補助金の利用状況や今後の支援ニーズについて教えてください。",
+        "今後の課題や新規事業、技術導入など経営ビジョンはどのようなものですか？"
+      ],
+      "survey_responded": false,
+      "source_file": "01_西部（唐津・伊万里・玄海）/株式会社シトラスプラス.md",
+      "legacy_ids": [
+        "member-012",
+        "west-12",
+        "west-06"
+      ]
+    },
+    {
+      "id": "fermakisu-co",
+      "name": "株式会社フェルマ木須",
+      "name_short": "フェルマ木須",
+      "entity_type": "株式会社",
+      "area": {
+        "code": "west",
+        "label": "西部",
+        "folder": "01_西部（唐津・伊万里・玄海）"
+      },
+      "location": {
+        "postal_code": "848-0044",
+        "address": "佐賀県伊万里市木須町4938",
+        "city": "伊万里市",
+        "lat": 33.288945,
+        "lng": 129.863873
+      },
+      "contact": {
+        "representative": "木須栄作",
+        "phone": null
+      },
+      "business": {
+        "summary": "米・麦等の穀類、大豆等の豆類の生産・加工・販売",
+        "established": null,
+        "employees": null
+      },
+      "products": [
+        {
+          "category": "加工品",
+          "name": "もち麦あわせみそ手作りキット",
+          "description": "加工食品"
+        },
+        {
+          "category": "加工品",
+          "name": "きゅうりアイス",
+          "description": "加工食品。農業専門メディアで紹介"
+        },
+        {
+          "category": "その他",
+          "name": "米・麦・大豆等",
+          "description": "穀類・豆類の生産・加工・販売"
+        }
+      ],
+      "sales_channels": [
+        "EC",
+        "直売所"
+      ],
+      "certifications": [],
+      "awards": [
+        {
+          "name": "佐賀農業賞",
+          "year": 2015,
+          "detail": "平成27年度（2015年）代表者が受賞"
+        },
+        {
+          "name": "全国優良農業経営体表彰",
+          "year": 2016,
+          "detail": "平成28年度（2016年）農林水産省経営局長賞を受賞"
+        },
+        {
+          "name": "交付金",
+          "year": null,
+          "detail": "農林水産省の「水田活用直接支払交付金」「畑作物直接支払交付金」等を複数年度にわたり受給"
+        }
+      ],
+      "web_presence": {
+        "website": "https://fermakisu.co.jp",
+        "sns": [
+          {
+            "platform": "Facebook",
+            "url": null
+          },
+          {
+            "platform": "Instagram",
+            "url": null
+          },
+          {
+            "platform": "YouTube",
+            "url": null
+          }
+        ],
+        "ec": [],
+        "media_mentions": [
+          "マイナビ農業（2021年4月）で「もち麦味噌手作りキット」等を紹介。SmartAgri（2021年9月）で麦わらストロー共同プロジェクト参画を紹介。Colocal（2020年9月）で「きゅうりアイス」"
+        ]
+      },
+      "shelf_potential": {
+        "categories": [
+          "加工品",
+          "米"
+        ],
+        "key_products": [
+          "もち麦あわせみそ手作りキット",
+          "きゅうりアイス",
+          "米・麦・大豆等"
+        ],
+        "selling_points": [
+          "交付金",
+          "佐賀農業賞",
+          "全国優良農業経営体表彰"
+        ]
+      },
+      "unconfirmed_items": [
+        "資本金・従業員数 — **公表情報なし**",
+        "具体的な作付面積・生産量 — **ウェブ上で確認できず**",
+        "有機認証・GAP認証取得の有無 — **情報なし**"
+      ],
+      "interview_questions": [
+        "今後予定している新商品（加工品）や体験会などの新サービス展開はありますか？",
+        "販路別（直売所、EC、自社直販など）の売上比率や今後の販路拡大計画を教えてください。",
+        "土づくりや減農薬・環境配慮について特に工夫していることは何ですか？具体的な取組みを伺いたいです。",
+        "現在管理している農地面積や、今後の作付面積拡大計画について聞かせてください。"
+      ],
+      "survey_responded": true,
+      "source_file": "01_西部（唐津・伊万里・玄海）/株式会社フェルマ木須.md",
+      "legacy_ids": [
+        "member-013",
+        "west-13"
+      ]
+    },
+    {
+      "id": "ii29",
+      "name": "株式会社中山牧場",
+      "name_short": "中山牧場",
+      "entity_type": "株式会社",
+      "area": {
+        "code": "west",
+        "label": "西部",
+        "folder": "01_西部（唐津・伊万里・玄海）"
+      },
+      "location": {
+        "postal_code": "847-1431",
+        "address": "佐賀県東松浦郡玄海町普恩寺912-1",
+        "city": "東松浦郡",
+        "lat": 33.499159,
+        "lng": 129.843244
+      },
+      "contact": {
+        "representative": "中山大悟",
+        "phone": null
+      },
+      "business": {
+        "summary": "食肉卸売業、牛肉加工品販売業、飲食業（直営店・レストラン経営）",
+        "established": null,
+        "employees": null
+      },
+      "products": [
+        {
+          "category": "精肉",
+          "name": "黒毛和牛（佐賀牛）",
+          "description": "自社肥育。佐賀牛として販売"
+        },
+        {
+          "category": "加工品",
+          "name": "黒毛和牛炙り焼き",
+          "description": "特上・上・中グレード"
+        },
+        {
+          "category": "加工品",
+          "name": "佐賀牛すじ万能だれ",
+          "description": "—"
+        },
+        {
+          "category": "加工品",
+          "name": "佐賀牛100%ハンバーグ",
+          "description": "—"
+        },
+        {
+          "category": "飲食",
+          "name": "中山牧場レストハウス",
+          "description": "直営レストラン。自社牛肉を用いた食事提供"
+        }
+      ],
+      "sales_channels": [
+        "EC",
+        "JA・市場",
+        "レストラン",
+        "直売所"
+      ],
+      "certifications": [],
+      "awards": [],
+      "web_presence": {
+        "website": "https://www.ii29.net",
+        "sns": [
+          {
+            "platform": "Instagram",
+            "url": null
+          },
+          {
+            "platform": "LINE",
+            "url": null
+          },
+          {
+            "platform": "Facebook",
+            "url": null
+          }
+        ],
+        "ec": [],
+        "media_mentions": [
+          "佐賀テレビ「かちかちPress」（2022年5月放送）で直売所・レストラン（レストハウス）営業を紹介"
+        ]
+      },
+      "shelf_potential": {
+        "categories": [
+          "畜産",
+          "加工品"
+        ],
+        "key_products": [
+          "黒毛和牛（佐賀牛）",
+          "黒毛和牛炙り焼き",
+          "佐賀牛すじ万能だれ",
+          "佐賀牛100%ハンバーグ",
+          "中山牧場レストハウス"
+        ],
+        "selling_points": []
+      },
+      "unconfirmed_items": [
+        "取扱い牛の飼養頭数・農場の総規模（面積・牛数）の詳細 — **情報なし**",
+        "近年の売上高・収支状況・資本金額の最新情報 — **情報なし**",
+        "農場・レストハウス以外の新規事業（畜産以外の展開等）の有無 — **情報なし**",
+        "環境対策（メタン削減等）やサステナビリティへの取り組み状況 — **情報なし**",
+        "公的補助金・支援事業の利用状況、認定（JGAP等）の取得有無 — **情報なし**"
+      ],
+      "interview_questions": [
+        "直営レストランや直売所での顧客層や売上構成はどうなっており、今後どのように販路を拡大する予定ですか？",
+        "自社牛肉の品質管理や差別化のために取り組んでいる工夫や技術はありますか？",
+        "新商品（加工品）開発や他地域への販路開拓など、今後の事業展開計画について教えてください。",
+        "補助金・支援事業の利用状況はどうですか？地域連携や業界団体との共同事業の事例はありますか？",
+        "後継者や従業員の育成・確保についての課題と対応策は何ですか？"
+      ],
+      "survey_responded": false,
+      "source_file": "01_西部（唐津・伊万里・玄海）/株式会社中山牧場.md",
+      "legacy_ids": [
+        "member-014",
+        "west-14"
+      ]
+    },
+    {
+      "id": "yamandori",
+      "name": "株式会社百姓屋",
+      "name_short": "百姓屋",
+      "entity_type": "株式会社",
+      "area": {
+        "code": "west",
+        "label": "西部",
+        "folder": "01_西部（唐津・伊万里・玄海）"
+      },
+      "location": {
+        "postal_code": "848-0114",
+        "address": "佐賀県伊万里市波多津町津留2482-1",
+        "city": "伊万里市",
+        "lat": 33.365447,
+        "lng": 129.910089
+      },
+      "contact": {
+        "representative": "市丸善登",
+        "phone": null
+      },
+      "business": {
+        "summary": "| 分野 | 概要 |",
+        "established": null,
+        "employees": null
+      },
+      "products": [
+        {
+          "category": "鶏肉",
+          "name": "骨太有明鶏",
+          "description": "佐賀県銘柄鶏。主力。生産・販売"
+        },
+        {
+          "category": "加工品",
+          "name": "山ん鶏（現：伊万里ヤマンドリ）",
+          "description": "ローストチキン、スモークチキン、ソーセージ等。無添加加工品は佐賀県内燻製技術者集団「燻や」と連携して製造"
+        },
+        {
+          "category": "花卉",
+          "name": "花苗",
+          "description": "栽培・販売"
+        }
+      ],
+      "sales_channels": [
+        "EC",
+        "直売所"
+      ],
+      "certifications": [],
+      "awards": [
+        {
+          "name": "農林水産大臣賞",
+          "year": null,
+          "detail": "複数回受賞"
+        },
+        {
+          "name": "内閣総理大臣賞",
+          "year": 2015,
+          "detail": "平成27年（2015年）受賞"
+        },
+        {
+          "name": "黄綬褒章",
+          "year": 2019,
+          "detail": "令和元年（2019年）受章"
+        }
+      ],
+      "web_presence": {
+        "website": "https://yamandori.com",
+        "sns": [
+          {
+            "platform": "Instagram",
+            "url": null
+          },
+          {
+            "platform": "Facebook",
+            "url": null
+          }
+        ],
+        "ec": [],
+        "media_mentions": [
+          "県公式サイト「さが農村ひろば」記事（2024年11月）、農業ポータルサイト「みんなの農業広場」の経営者紹介等で取り上げ"
+        ]
+      },
+      "shelf_potential": {
+        "categories": [
+          "畜産",
+          "加工品",
+          "花卉"
+        ],
+        "key_products": [
+          "骨太有明鶏",
+          "山ん鶏（現：伊万里ヤマンドリ）",
+          "花苗"
+        ],
+        "selling_points": [
+          "内閣総理大臣賞",
+          "農林水産大臣賞",
+          "黄綬褒章"
+        ]
+      },
+      "unconfirmed_items": [
+        "補助金・認定等の具体的な取得状況 — **確認できず**",
+        "学校・他団体との連携事例（研修、共同研究等） — **確認できず**",
+        "直売所以外の具体的な販売先（卸先・販路の内訳） — **公開情報で確認できず**",
+        "役員構成（代表以外の役員） — **公開情報に詳述なし**"
+      ],
+      "interview_questions": [
+        "自社ブランド「骨太有明鶏」の特長や飼育・品質管理のこだわりは何ですか？",
+        "加工品「山ん鶏（伊万里ヤマンドリ）」シリーズ開発の経緯や、今後の新商品計画について教えてください。",
+        "花苗事業ではどのような品目を栽培し、主な販売先はどこですか？",
+        "直売所運営の実態（営業頻度や直売比率）と、直売所経営上の課題についてお聞かせください。",
+        "今後の人材育成・後継者計画、地域・JA等との連携方針について教えてください。"
+      ],
+      "survey_responded": true,
+      "source_file": "01_西部（唐津・伊万里・玄海）/株式会社百姓屋.md",
+      "legacy_ids": [
+        "member-015",
+        "west-15"
+      ]
+    },
+    {
+      "id": "asou-engei",
+      "name": "株式会社麻生園芸",
+      "name_short": "麻生園芸",
+      "entity_type": "株式会社",
+      "area": {
+        "code": "west",
+        "label": "西部",
+        "folder": "01_西部（唐津・伊万里・玄海）"
+      },
+      "location": {
+        "postal_code": null,
+        "address": "佐賀県唐津市半田2585-1",
+        "city": "唐津市",
+        "lat": 33.414702,
+        "lng": 130.025961
+      },
+      "contact": {
+        "representative": "麻生 朗",
+        "phone": null
+      },
+      "business": {
+        "summary": "",
+        "established": null,
+        "employees": null
+      },
+      "products": [
+        {
+          "category": "生鮮",
+          "description": "有機肥料主体・減農薬栽培、周年栽培"
+        },
+        {
+          "category": "麺類",
+          "description": "看板商品"
+        },
+        {
+          "category": "飲料",
+          "description": "自社開発"
+        },
+        {
+          "category": "麺類",
+          "description": "公式オンラインショップ等で販売"
+        }
+      ],
+      "sales_channels": [
+        "EC",
+        "JA・市場"
+      ],
+      "certifications": [
+        "JGAP",
+        "特別栽培認証"
+      ],
+      "awards": [
+        {
+          "name": "特別栽培農産物認証",
+          "year": 2009,
+          "detail": "2009年 佐賀県の認証を取得"
+        },
+        {
+          "name": "JGAP認証",
+          "year": 2019,
+          "detail": "2019年 大葉・バジル分野で農場管理の認証を取得"
+        }
+      ],
+      "web_presence": {
+        "website": "https://asou-engei.com",
+        "sns": [
+          {
+            "platform": "Facebook",
+            "url": null
+          },
+          {
+            "platform": "Instagram",
+            "url": "https://www.instagram.com/asouengei_official/"
+          }
+        ],
+        "ec": [],
+        "media_mentions": [
+          "企業事例として果実堂テクノロジー社Webサイトに取り上げ。グリーンコープ生協の生産者紹介ページで無農薬大葉栽培の取り組みが詳報"
+        ]
+      },
+      "shelf_potential": {
+        "categories": [
+          "野菜",
+          "加工品"
+        ],
+        "key_products": [
+          "生鮮",
+          "麺類",
+          "飲料",
+          "麺類"
+        ],
+        "selling_points": [
+          "JGAP",
+          "JGAP認証",
+          "特別栽培認証",
+          "特別栽培農産物認証"
+        ]
+      },
+      "unconfirmed_items": [
+        "他メディアでの大きな特集記事や表彰歴 — **未確認**（地域新聞・業界紙での掲載情報は見当たらず）",
+        "学校との連携活動 — **情報なし**（産学連携や教育機関との取り組みは公開情報に確認できず）",
+        "特定の補助金採択や公的プロジェクト参画 — **未確認**（行政資料での言及は見つからず）"
+      ],
+      "interview_questions": [
+        "青じその安定生産で工夫している点は？（減農薬や収量安定の具体策について）",
+        "新商品の開発経緯と今後チャレンジしたい加工品は？（青しそジュースや麺以外の展開構想）",
+        "外国人スタッフとの協働で心掛けていることは？（多国籍な作業チームのマネジメントや言語・文化面の工夫）",
+        "地元若手人材の雇用・育成に向けた取組は？（地域の雇用創出や次世代への技術継承について）",
+        "今後目指す経営ビジョンは？（ハウス増設や販路拡大、新規事業計画など将来的な展望）"
+      ],
+      "survey_responded": true,
+      "source_file": "01_西部（唐津・伊万里・玄海）/株式会社麻生園芸.md",
+      "legacy_ids": [
+        "member-016",
+        "west-16"
+      ]
+    },
+    {
+      "id": "aa-saga",
+      "name": "有限会社アサヒ・アグリ佐賀",
+      "name_short": "アサヒ・アグリ佐賀",
+      "entity_type": "有限会社",
+      "area": {
+        "code": "center",
+        "label": "中部",
+        "folder": "02_中部（佐賀市・小城・多久）"
+      },
+      "location": {
+        "postal_code": "842-0303",
+        "address": "佐賀県佐賀市三瀬村杠1578番地",
+        "city": "佐賀市",
+        "lat": 33.421345,
+        "lng": 130.260462
+      },
+      "contact": {
+        "representative": "藤野兼治",
+        "phone": null
+      },
+      "business": {
+        "summary": "",
+        "established": null,
+        "employees": null
+      },
+      "products": [
+        {
+          "category": "米粉",
+          "name": "三瀬産米100%米粉",
+          "description": "自社生産米を使用"
+        },
+        {
+          "category": "米粉麺",
+          "name": "自家製粉米粉麺（ストレート麺）",
+          "description": "三瀬産米100%"
+        },
+        {
+          "category": "米粉麺",
+          "name": "「そば超えうどん」",
+          "description": "古代米（紫黒米）をブレンドした米粉うどん"
+        },
+        {
+          "category": "加工品",
+          "name": "**三瀬ぜんざい**",
+          "description": "レトルトぜんざい（看板商品）"
+        },
+        {
+          "category": "和菓子",
+          "name": "希少糖入り和菓子",
+          "description": "—"
+        },
+        {
+          "category": "飲料",
+          "name": "甘酒",
+          "description": "米糀を使用"
+        }
+      ],
+      "sales_channels": [
+        "EC",
+        "JA・市場",
+        "スーパー",
+        "直売所"
+      ],
+      "certifications": [],
+      "awards": [],
+      "web_presence": {
+        "website": "https://aa-saga.jp",
+        "sns": [
+          {
+            "platform": "Twitter",
+            "url": "https://twitter.com/asahi_aguri"
+          },
+          {
+            "platform": "Facebook",
+            "url": null
+          },
+          {
+            "platform": "Instagram",
+            "url": "https://www.instagram.com/mitsusemura_nouen_/"
+          }
+        ],
+        "ec": [],
+        "media_mentions": [
+          "あり（aa-saga.jp）— 自社ブランド「みつせ村農園」、店舗情報、商品紹介を掲載。ネットショップ（BASE）も運営",
+          "読売新聞・佐賀新聞から取材・掲載実績。佐賀市主催の農産物フェア等、地元イベントでの紹介事例あり"
+        ]
+      },
+      "shelf_potential": {
+        "categories": [
+          "米",
+          "加工品"
+        ],
+        "key_products": [
+          "三瀬産米100%米粉",
+          "自家製粉米粉麺（ストレート麺）",
+          "「そば超えうどん」",
+          "**三瀬ぜんざい**",
+          "希少糖入り和菓子",
+          "甘酒"
+        ],
+        "selling_points": []
+      },
+      "unconfirmed_items": [
+        "表彰・アワード受賞歴 — **情報なし**（行政計画の承認以外、受賞に関する公開情報は見当たらず）",
+        "大学・研究機関との協働 — **未確認**（公表された産学連携の事例なし）",
+        "海外展開 — **情報なし**（輸出や海外販路に関する言及は確認できず）"
+      ],
+      "interview_questions": [
+        "小麦粉アレルギー対応のグルテンフリー米粉商品に力を入れたきっかけは何でしょうか？その取り組みに対する顧客の反響は？",
+        "**米粉麺専門店「いい・麺亭」**を開業された経緯と、飲食事業によって得られている効果（ブランド認知向上など）についてお聞かせください。",
+        "創業から約40年になりますが、地域の農業環境や経営を取り巻く状況はどのように変化しましたか？それにどう適応してきたか教えてください。",
+        "**経営革新計画（甘酒強化・冷菓開発）**で掲げた新商品の開発状況はいかがですか？今後市場投入の予定や目標を伺いたいです。",
+        "将来的に目指す事業展開や、新たに挑戦したい農産加工・サービスがあれば教えてください。"
+      ],
+      "survey_responded": false,
+      "source_file": "02_中部（佐賀市・小城・多久）/有限会社アサヒ・アグリ佐賀.md",
+      "legacy_ids": [
+        "member-017",
+        "other-01"
+      ]
+    },
+    {
+      "id": "milne-farm",
+      "name": "有限会社ミルン牧場",
+      "name_short": "ミルン牧場",
+      "entity_type": "有限会社",
+      "area": {
+        "code": "center",
+        "label": "中部",
+        "folder": "02_中部（佐賀市・小城・多久）"
+      },
+      "location": {
+        "postal_code": null,
+        "address": "佐賀市鍋島町蛎久883",
+        "city": "市鍋島町",
+        "lat": 33.288851,
+        "lng": 130.271166
+      },
+      "contact": {
+        "representative": "横尾文三",
+        "phone": "0952-32-1777"
+      },
+      "business": {
+        "summary": "酪農業および乳製品の製造・卸販売",
+        "established": null,
+        "employees": null
+      },
+      "products": [
+        {
+          "category": "牛乳"
+        },
+        {
+          "category": "ヨーグルト"
+        },
+        {
+          "category": "チーズ"
+        },
+        {
+          "category": "その他"
+        }
+      ],
+      "sales_channels": [
+        "EC",
+        "ふるさと納税",
+        "直売所"
+      ],
+      "certifications": [],
+      "awards": [
+        {
+          "name": "行政・表彰",
+          "year": 2024,
+          "detail": "創業者・横尾文三氏は佐賀県酪農協議会会長を長年務め、酪農振興・乳製品消費拡大の功績で**佐賀県政功労者知事表彰**（令和6年度「産業・雇用」分野）を2024年に受賞"
+        }
+      ],
+      "web_presence": {
+        "website": "https://www.milne-farm.jp",
+        "sns": [
+          {
+            "platform": "Instagram",
+            "url": "https://www.instagram.com/milnefarm/"
+          },
+          {
+            "platform": "Facebook",
+            "url": null
+          }
+        ],
+        "ec": [],
+        "media_mentions": [
+          "[http://www.milne-farm.jp](http://www.milne-farm.jp) — 会社概要・商品情報・新着情報・メディア掲載実績を発信",
+          "佐賀市観光協会サイトなどにも事業者情報が掲載",
+          "地元テレビ（STSサガテレビ「かちかちPress」等）、全国誌（雑誌『anan』『CREA』など）に度々取り上げられ、公式サイトの「メディア掲載」欄で確認可能"
+        ]
+      },
+      "shelf_potential": {
+        "categories": [
+          "酪農",
+          "加工品"
+        ],
+        "key_products": [
+          "牛乳",
+          "ヨーグルト",
+          "チーズ",
+          "その他"
+        ],
+        "selling_points": [
+          "行政・表彰"
+        ]
+      },
+      "unconfirmed_items": [
+        "行政からの補助金の取得状況に関する公開情報は**情報なし**【調査メモ】",
+        "Twitter/X・YouTubeなど主要SNSに公式アカウントを開設しているかは**未確認**（InstagramとFacebook以外のSNS情報は見つからず）【調査メモ】"
+      ],
+      "interview_questions": [
+        "ミルン牧場の低温殺菌ノンホモ牛乳は全国的にも珍しいとのことですが、具体的に通常の牛乳と何が違うのか、風味や栄養面での特徴を詳しく知りたいです。",
+        "地元企業とのコラボ商品開発が行われていますが、最近発売された注目のコラボ商品や、今後予定されている地域連携プロジェクトについて詳しく教えてください。",
+        "ミルン牧場では現在何頭の乳牛を飼育し、一日当たりどのくらいの生乳を生産しているのか、また生乳は全て自社製品化しているのか知りたいです。（経営規模に関する詳細）"
+      ],
+      "survey_responded": false,
+      "source_file": "02_中部（佐賀市・小城・多久）/有限会社ミルン牧場.md",
+      "legacy_ids": [
+        "member-018",
+        "other-02"
+      ]
+    },
+    {
+      "id": "7740farm",
+      "name": "有限会社七島農産",
+      "name_short": "七島農産",
+      "entity_type": "有限会社",
+      "area": {
+        "code": "center",
+        "label": "中部",
+        "folder": "02_中部（佐賀市・小城・多久）"
+      },
+      "location": {
+        "postal_code": null,
+        "address": "佐賀県小城市三日月町久米1243番地",
+        "city": "小城市",
+        "lat": 33.287579,
+        "lng": 130.204789
+      },
+      "contact": {
+        "representative": "七島和美",
+        "phone": "0952-73-2719"
+      },
+      "business": {
+        "summary": "| 分野 | 概要 |",
+        "established": "2005年1月4日",
+        "employees": null
+      },
+      "products": [
+        {
+          "category": "米",
+          "name": "夢しずく（三日月の夢）",
+          "description": "ブランド米"
+        },
+        {
+          "category": "米",
+          "name": "コシヒカリ（三日月の光）",
+          "description": "ブランド米"
+        },
+        {
+          "category": "米",
+          "name": "さがびより（三日月日和）",
+          "description": "ブランド米"
+        },
+        {
+          "category": "米",
+          "name": "ヒヨクモチ（餅米）",
+          "description": "餅米"
+        },
+        {
+          "category": "麦",
+          "name": "もち麦",
+          "description": "自社生産・販売"
+        }
+      ],
+      "sales_channels": [
+        "直売所"
+      ],
+      "certifications": [
+        "特別栽培認証"
+      ],
+      "awards": [
+        {
+          "name": "交付金",
+          "year": null,
+          "detail": "水田活用・畑作物直接支払交付金等、複数の国庫補助金を受給"
+        }
+      ],
+      "web_presence": {
+        "website": "https://7740farm.net",
+        "sns": [
+          {
+            "platform": "Instagram",
+            "url": "https://www.instagram.com/nanashima.farm/"
+          }
+        ],
+        "ec": [],
+        "media_mentions": [
+          "農林水産省「農業女子プロジェクト」にメンバーとして紹介"
+        ]
+      },
+      "shelf_potential": {
+        "categories": [
+          "米",
+          "加工品"
+        ],
+        "key_products": [
+          "夢しずく（三日月の夢）",
+          "コシヒカリ（三日月の光）",
+          "さがびより（三日月日和）",
+          "ヒヨクモチ（餅米）",
+          "もち麦"
+        ],
+        "selling_points": [
+          "交付金",
+          "特別栽培認証"
+        ]
+      },
+      "unconfirmed_items": [
+        "従業員数・人員構成 — **公式情報で確認できず**",
+        "販売先の詳細（学校給食・企業等への具体的な販路・取引先） — **公開されていない**",
+        "補助金・認定以外の受賞歴 — **見当たらない**（情報なし）",
+        "その他SNS・活動内容（Facebook・YouTube等の発信内容、イベント出展履歴） — **未確認**"
+      ],
+      "interview_questions": [
+        "自社直売所以外の主要販路について（直販サイト以外での販売先や流通先）を教えてください。",
+        "無農薬・減農薬栽培への取り組みや品質管理の具体的手法について、詳細に伺いたいです。",
+        "新商品開発（例：冷凍おにぎりや加工品）や今後の事業拡大計画についてお聞かせください。",
+        "従業員の働き方や雇用体制（研修、待遇等）の状況について教えてください。",
+        "将来の経営方針や次世代継承（子息や家族への引継ぎ等）の計画はありますか？"
+      ],
+      "survey_responded": true,
+      "source_file": "02_中部（佐賀市・小城・多久）/有限会社七島農産.md",
+      "legacy_ids": [
+        "member-019",
+        "other-03"
+      ]
+    },
+    {
+      "id": "shimomura-farm",
+      "name": "有限会社下村ファーム",
+      "name_short": "下村ファーム",
+      "entity_type": "有限会社",
+      "area": {
+        "code": "center",
+        "label": "中部",
+        "folder": "02_中部（佐賀市・小城・多久）"
+      },
+      "location": {
+        "postal_code": null,
+        "address": "佐賀市久保泉町下和泉2331",
+        "city": "市久保泉町",
+        "lat": 33.303937,
+        "lng": 130.326222
+      },
+      "contact": {
+        "representative": "下村幸蔵",
+        "phone": "0952-98-0009"
+      },
+      "business": {
+        "summary": "米作を中心とした農産物の生産・販売",
+        "established": null,
+        "employees": null
+      },
+      "products": [
+        {
+          "category": "米",
+          "name": "「下村さん家の夢しずく」",
+          "description": "有機肥料・農薬低減の限定品、粘りと甘みがあり炊き上がりふっくら。収量より食味を優先した栽培"
+        },
+        {
+          "category": "米",
+          "name": "「幸蔵米（こうぞうまい）」",
+          "description": "自社精米・販売、佐賀海苔とのセット商品あり"
+        },
+        {
+          "category": "油",
+          "name": "菜種油「三吉」",
+          "description": "佐賀市久保泉産菜種100%、低温圧搾・一番搾り、和紙と布で濾過した無添加オイル。クセなく軽い風味"
+        },
+        {
+          "category": "野菜",
+          "name": "人参・大豆等",
+          "description": "米と輪作する季節野菜"
+        }
+      ],
+      "sales_channels": [
+        "EC",
+        "JA・市場",
+        "ふるさと納税",
+        "直売所"
+      ],
+      "certifications": [
+        "JGAP"
+      ],
+      "awards": [
+        {
+          "name": "JGAP認証",
+          "year": null,
+          "detail": "平成24年9月、米作分野で佐賀県内第1号取得。食の安全・環境保全に取り組む農場として認証"
+        },
+        {
+          "name": "教育協力",
+          "year": null,
+          "detail": "近隣小学校へ圃場を学習提供、非常勤講師として児童指導。指導に関わった小学生の作文が佐賀新聞社賞を受賞した例あり"
+        }
+      ],
+      "web_presence": {
+        "website": null,
+        "sns": [],
+        "ec": [
+          "ふるさとチョイス",
+          "ふるさと納税",
+          "ツナギ"
+        ],
+        "media_mentions": [
+          "2020年12月 KBCラジオ番組内で栽培方針・取り組みが紹介",
+          "生産者直販「ツナギ」に特集ページ（代表経歴・農業への情熱をインタビュー形式で掲載）",
+          "公式発信源はありませんが、行政・メディア・ECを通じた情報公開がなされています。"
+        ]
+      },
+      "shelf_potential": {
+        "categories": [
+          "米",
+          "加工品",
+          "野菜"
+        ],
+        "key_products": [
+          "「下村さん家の夢しずく」",
+          "「幸蔵米（こうぞうまい）」",
+          "菜種油「三吉」",
+          "人参・大豆等"
+        ],
+        "selling_points": [
+          "JGAP",
+          "JGAP認証",
+          "教育協力"
+        ]
+      },
+      "unconfirmed_items": [
+        "本法人の公式Webサイトおよび公式SNSアカウントは**確認できず**（情報なし）",
+        "行政からの補助金取得や営農表彰歴に関する公開情報は**見当たらず**、特筆すべき受賞歴は**未確認**【調査メモ】"
+      ],
+      "interview_questions": [
+        "下村ファームのお米「夢しずく」の購入方法について詳しく知りたいです。地元直売所以外に通販や定期購入は可能か、ふるさと納税以外で県外から入手する手段があるか確認したいです。",
+        "JGAP認証取得の具体的なメリットやエピソードを教えてください。認証取得によって取引先が増えたか、農場管理がどう改善されたか等、現場で感じた効果があれば伺いたいです。",
+        "米以外にも大豆・菜種等を栽培していますが、今後それらを使った新商品開発（味噌・納豆、米加工品等）の予定はありますか？地域資源を活かした6次産業化の展望についてお聞きしたいです。"
+      ],
+      "survey_responded": false,
+      "source_file": "02_中部（佐賀市・小城・多久）/有限会社下村ファーム.md",
+      "legacy_ids": [
+        "member-020",
+        "other-04",
+        "other-01"
+      ]
+    },
+    {
+      "id": "kitagawa-nosan",
+      "name": "有限会社北川農産",
+      "name_short": "北川農産",
+      "entity_type": "有限会社",
+      "area": {
+        "code": "center",
+        "label": "中部",
+        "folder": "02_中部（佐賀市・小城・多久）"
+      },
+      "location": {
+        "postal_code": null,
+        "address": "佐賀県小城市芦刈町道免80番地2",
+        "city": "小城市",
+        "lat": 33.229857,
+        "lng": 130.217572
+      },
+      "contact": {
+        "representative": null,
+        "phone": null
+      },
+      "business": {
+        "summary": "",
+        "established": null,
+        "employees": null
+      },
+      "products": [
+        {
+          "category": "米",
+          "description": "年産約45トン。大半をふるさと納税返礼品として出荷"
+        }
+      ],
+      "sales_channels": [
+        "EC",
+        "ふるさと納税",
+        "直売所"
+      ],
+      "certifications": [
+        "JGAP"
+      ],
+      "awards": [
+        {
+          "name": "交付金",
+          "year": 2024,
+          "detail": "2023～2024年に水田活用直接支払交付金・畑作物直接支払交付金等の農林水産省交付金を複数回受給（例：2024年3月、2023年12月の直接支払交付金等）"
+        }
+      ],
+      "web_presence": {
+        "website": null,
+        "sns": [],
+        "ec": [],
+        "media_mentions": [
+          "地元ニュース（佐賀テレビ）での報道あり。国・地方の補助金情報で確認可能"
+        ]
+      },
+      "shelf_potential": {
+        "categories": [
+          "米"
+        ],
+        "key_products": [
+          "米"
+        ],
+        "selling_points": [
+          "JGAP",
+          "交付金"
+        ]
+      },
+      "unconfirmed_items": [
+        "事業内容（公式サイト・公的資料による詳細） — **情報なし**",
+        "代表者名 — **記載なし**",
+        "公式ウェブサイト — **なし**",
+        "SNS（Facebook等） — **なし**",
+        "商品名・サービス名（品種名等） — **情報なし**",
+        "販売チャネル（直売所・EC・卸等）の詳細 — **情報なし**",
+        "学校・企業・団体との連携事例 — **情報なし**",
+        "認定・表彰 — **情報なし**"
+      ],
+      "interview_questions": [
+        "貴社の具体的な事業内容や扱っている作物・品種（米以外の作物など）について詳しく教えてください。",
+        "販売方法はどのようになっていますか？（直売、EC、卸売、ふるさと納税以外の販路など）",
+        "農業・加工・販売で受けている補助金や認証（JGAP、有機認証など）の取得状況があれば教えてください。",
+        "学校や自治体・企業との連携・協働事例があれば教えてください。",
+        "最近の経営課題や今後の目標、取り組みたい新規事業などについて教えてください。"
+      ],
+      "survey_responded": false,
+      "source_file": "02_中部（佐賀市・小城・多久）/有限会社北川農産.md",
+      "legacy_ids": [
+        "member-021",
+        "other-05",
+        "other-02"
+      ]
+    },
+    {
+      "id": "tanakamaru-garden",
+      "name": "有限会社田中丸ガーデン",
+      "name_short": "田中丸ガーデン",
+      "entity_type": "有限会社",
+      "area": {
+        "code": "center",
+        "label": "中部",
+        "folder": "02_中部（佐賀市・小城・多久）"
+      },
+      "location": {
+        "postal_code": "845-0011",
+        "address": "佐賀県小城市小城町船田1229",
+        "city": "小城市",
+        "lat": 33.269539,
+        "lng": 130.198205
+      },
+      "contact": {
+        "representative": null,
+        "phone": null
+      },
+      "business": {
+        "summary": "花苗・野菜苗の育苗・生産卸",
+        "established": null,
+        "employees": null
+      },
+      "products": [
+        {
+          "category": "苗",
+          "name": "花苗",
+          "description": "年間約200種類の苗を生産。育苗・生産卸"
+        },
+        {
+          "category": "苗",
+          "name": "野菜苗",
+          "description": "育苗・生産卸"
+        }
+      ],
+      "sales_channels": [
+        "JA・市場",
+        "直売所"
+      ],
+      "certifications": [],
+      "awards": [
+        {
+          "name": "農林水産大臣賞",
+          "year": 1996,
+          "detail": "1996年受賞"
+        }
+      ],
+      "web_presence": {
+        "website": null,
+        "sns": [],
+        "ec": [],
+        "media_mentions": [
+          "あり（Jimdo）— 企業概要・お知らせを掲載"
+        ]
+      },
+      "shelf_potential": {
+        "categories": [
+          "野菜",
+          "花卉"
+        ],
+        "key_products": [
+          "花苗",
+          "野菜苗"
+        ],
+        "selling_points": [
+          "農林水産大臣賞"
+        ]
+      },
+      "unconfirmed_items": [
+        "直売所・オンライン直販の実績や規模 — **具体的な情報は確認できず**",
+        "補助金・認定・資格の取得状況 — **公開情報に見当たらない**",
+        "学校・研究機関との連携事例 — **確認できず**（技能実習生受入は確認済だが、教育連携は不明）",
+        "新規事業開発・海外展開計画等 — **見当たらない**"
+      ],
+      "interview_questions": [
+        "花苗・野菜苗の栽培品目（品種）や年間生産量、主な取引先（販路）の内訳はどうなっていますか？",
+        "外国人技能実習生の受け入れによる効果や課題について詳しく伺いたいです。",
+        "直売イベント（軽トラ直売所等）の実施状況と今後の直販強化策について教えてください。",
+        "IT技術・機械設備の導入状況（例：最新の育苗機器やデータ管理など）とその効果についてお聞かせください。",
+        "将来的な事業展開や新規技術導入の計画、後継者育成・人材確保の方針について教えてください。"
+      ],
+      "survey_responded": false,
+      "source_file": "02_中部（佐賀市・小城・多久）/有限会社田中丸ガーデン.md",
+      "legacy_ids": [
+        "member-022",
+        "other-06",
+        "other-03"
+      ]
+    },
+    {
+      "id": "tanaka-nojo",
+      "name": "有限会社田中農場",
+      "name_short": "田中農場",
+      "entity_type": "有限会社",
+      "area": {
+        "code": "center",
+        "label": "中部",
+        "folder": "02_中部（佐賀市・小城・多久）"
+      },
+      "location": {
+        "postal_code": null,
+        "address": "佐賀県小城市牛津町乙柳157番地2",
+        "city": "小城市",
+        "lat": 33.265355,
+        "lng": 130.209229
+      },
+      "contact": {
+        "representative": "田中義生",
+        "phone": "0952-66-0780"
+      },
+      "business": {
+        "summary": "| 分野 | 概要 |",
+        "established": null,
+        "employees": null
+      },
+      "products": [
+        {
+          "category": "米",
+          "description": "佐賀県認定特別栽培米（減農薬・減化学肥料）"
+        },
+        {
+          "category": "米",
+          "description": "佐賀県認定特別栽培米"
+        },
+        {
+          "category": "米",
+          "description": "佐賀県認定特別栽培米"
+        }
+      ],
+      "sales_channels": [
+        "ふるさと納税",
+        "直売所"
+      ],
+      "certifications": [
+        "特別栽培認証"
+      ],
+      "awards": [
+        {
+          "name": "特別栽培米",
+          "year": null,
+          "detail": "佐賀県認定の特別栽培米を生産"
+        },
+        {
+          "name": "交付金",
+          "year": null,
+          "detail": "農林水産省の水田活用直接支払交付金・畑作物直接支払交付金等を多数受給"
+        }
+      ],
+      "web_presence": {
+        "website": null,
+        "sns": [],
+        "ec": [
+          "ふるさと納税"
+        ],
+        "media_mentions": []
+      },
+      "shelf_potential": {
+        "categories": [
+          "米"
+        ],
+        "key_products": [
+          "米",
+          "米",
+          "米"
+        ],
+        "selling_points": [
+          "交付金",
+          "特別栽培米",
+          "特別栽培認証"
+        ]
+      },
+      "unconfirmed_items": [
+        "公式ホームページ・SNS — **確認できず**（独自の公式ウェブサイトやSNSの存在は未確認）",
+        "従業員数・経営規模 — **公開されていない**",
+        "協業・提携（学校給食への提供、企業・団体との協力事例） — **見当たらない**",
+        "製品詳細（農産物以外の商品、卸販売の実態） — **不明**"
+      ],
+      "interview_questions": [
+        "麦の栽培も行っているようですが、麦はどのような用途（販売先や加工など）に供していますか？",
+        "自社農産物の販路（直売、卸売、ECなど）の内訳や今後の販路拡大計画について教えてください。",
+        "農業の省力化・効率化のための設備投資や技術導入（機械化、ICT活用など）の計画はありますか？",
+        "農地の規模や今後の継承計画（子息や後継者への承継）について伺いたいです。",
+        "製品づくりで特に重視しているポイントや課題について、詳しく教えてください。"
+      ],
+      "survey_responded": false,
+      "source_file": "02_中部（佐賀市・小城・多久）/有限会社田中農場.md",
+      "legacy_ids": [
+        "member-023",
+        "other-07",
+        "other-04"
+      ]
+    },
+    {
+      "id": "shimomuranouen",
+      "name": "株式会社しもむら農園",
+      "name_short": "しもむら農園",
+      "entity_type": "株式会社",
+      "area": {
+        "code": "center",
+        "label": "中部",
+        "folder": "02_中部（佐賀市・小城・多久）"
+      },
+      "location": {
+        "postal_code": null,
+        "address": "佐賀県小城市芦刈町三王崎1822",
+        "city": "小城市",
+        "lat": 33.226224,
+        "lng": 130.197447
+      },
+      "contact": {
+        "representative": "下村宣弘",
+        "phone": null
+      },
+      "business": {
+        "summary": "米の栽培・販売、いちごの栽培・販売、ブロッコリーの栽培、農作業請負、インターネット販売",
+        "established": null,
+        "employees": null
+      },
+      "products": [
+        {
+          "category": "米",
+          "description": "佐賀県特別栽培農産物認証取得。特別栽培米として販売"
+        },
+        {
+          "category": "野菜",
+          "description": "栽培・販売。道の駅大和、コープ新栄店、JA産直「街角畑」等で販売"
+        },
+        {
+          "category": "野菜",
+          "description": "栽培"
+        }
+      ],
+      "sales_channels": [
+        "EC",
+        "JA・市場",
+        "スーパー",
+        "直売所"
+      ],
+      "certifications": [
+        "特別栽培認証"
+      ],
+      "awards": [
+        {
+          "name": "第11回お米番付 優秀賞",
+          "year": 2024,
+          "detail": "2024年1月 代表・下村宣弘氏が佐賀県小城市産さがびよりで優秀賞（全国2位）を受賞"
+        },
+        {
+          "name": "特別栽培農産物認証",
+          "year": null,
+          "detail": "佐賀県の認証を取得。農薬・化学肥料の使用を削減した栽培方法に取り組み"
+        },
+        {
+          "name": "交付金",
+          "year": 2024,
+          "detail": "2020～2024年に水田活用直接支払交付金等の農林水産省交付金を複数回受給（例：2024年3月1,071,550円、2023年12月272,000円等）"
+        }
+      ],
+      "web_presence": {
+        "website": "https://shimomuranouen.com",
+        "sns": [
+          {
+            "platform": "Facebook",
+            "url": null
+          },
+          {
+            "platform": "Instagram",
+            "url": null
+          }
+        ],
+        "ec": [],
+        "media_mentions": [
+          "JA関係者・食品業界等で紹介"
+        ]
+      },
+      "shelf_potential": {
+        "categories": [
+          "米",
+          "野菜",
+          "果樹"
+        ],
+        "key_products": [
+          "米",
+          "野菜",
+          "野菜"
+        ],
+        "selling_points": [
+          "交付金",
+          "特別栽培認証",
+          "特別栽培農産物認証",
+          "第11回お米番付 優秀賞"
+        ]
+      },
+      "unconfirmed_items": [
+        "学校・企業・団体との連携事例 — **情報なし**（公式情報で確認できず）"
+      ],
+      "interview_questions": [
+        "販売チャネル（直売、EC、卸売）の詳細やその比率について教えてください。",
+        "開発・販売している加工品（例：いちごジャムなど）や、新商品の計画はありますか？",
+        "地域連携（JAや直売所との協力、地元イベントへの参加など）や共同プロジェクトについて教えてください。",
+        "SDGsや有機農業などへの取り組み、今後の認証取得・環境保全の方針について教えてください。",
+        "現在の経営課題や今後の事業展開（新規作物導入、販路拡大など）についてお聞かせください。"
+      ],
+      "survey_responded": false,
+      "source_file": "02_中部（佐賀市・小城・多久）/株式会社しもむら農園.md",
+      "legacy_ids": [
+        "member-024",
+        "other-08"
+      ]
+    },
+    {
+      "id": "ikemako2007",
+      "name": "株式会社イケマコ",
+      "name_short": "イケマコ",
+      "entity_type": "株式会社",
+      "area": {
+        "code": "center",
+        "label": "中部",
+        "folder": "02_中部（佐賀市・小城・多久）"
+      },
+      "location": {
+        "postal_code": "840-2212",
+        "address": "佐賀県佐賀市川副町犬井道2345-5",
+        "city": "佐賀市",
+        "lat": 33.1797,
+        "lng": 130.312492
+      },
+      "contact": {
+        "representative": "池田大志",
+        "phone": null
+      },
+      "business": {
+        "summary": "米、麦、大豆、野菜の生産および生産物の加工・販売",
+        "established": null,
+        "employees": null
+      },
+      "products": [
+        {
+          "category": "飲料",
+          "name": "**イケマコの麦茶**",
+          "description": "二条大麦の麦茶"
+        },
+        {
+          "category": "加工品",
+          "name": "**黒豆グラッセ**",
+          "description": "自社産大豆を使用"
+        },
+        {
+          "category": "加工品",
+          "name": "**もち米あま酒**",
+          "description": "自社産もち米を使用"
+        },
+        {
+          "category": "酒類",
+          "name": "日本酒",
+          "description": "自社栽培米（さがびより）から醸造"
+        }
+      ],
+      "sales_channels": [
+        "EC",
+        "ふるさと納税",
+        "レストラン",
+        "直売所"
+      ],
+      "certifications": [],
+      "awards": [
+        {
+          "name": "スマート農業",
+          "year": null,
+          "detail": "スマート農業実証プロジェクトを推進し、農林水産省に生産方式革新計画が認定"
+        },
+        {
+          "name": "行政表彰",
+          "year": 2020,
+          "detail": "2020年「ディスカバー農山漁村の宝」（九州農政局）、農業農村整備優良地区コンクール農村振興局長賞を受賞"
+        }
+      ],
+      "web_presence": {
+        "website": "https://ikemako2007.com",
+        "sns": [
+          {
+            "platform": "Instagram",
+            "url": "https://www.instagram.com/ikemako831/"
+          },
+          {
+            "platform": "Facebook",
+            "url": null
+          },
+          {
+            "platform": "LINE",
+            "url": null
+          }
+        ],
+        "ec": [],
+        "media_mentions": [
+          "佐賀新聞（2019年1月・2020年12月ほか）、全国農業新聞に取り上げ。佐賀県広報誌「さががすき。」2019年表紙にも掲載"
+        ]
+      },
+      "shelf_potential": {
+        "categories": [
+          "米",
+          "加工品"
+        ],
+        "key_products": [
+          "**イケマコの麦茶**",
+          "**黒豆グラッセ**",
+          "**もち米あま酒**",
+          "日本酒"
+        ],
+        "selling_points": [
+          "スマート農業",
+          "行政表彰"
+        ]
+      },
+      "unconfirmed_items": [
+        "公式X（Twitter）アカウント — **未確認**（公式サイト・関連情報に記載なし）",
+        "公式YouTubeチャンネル — **存在の可能性あり**（公式サイトに動画ページあり）が詳細未確認"
+      ],
+      "interview_questions": [
+        "ドローンやAIなどスマート農業技術の導入で、現場の作業効率や収量は具体的にどのように向上しましたか？",
+        "麦茶や甘酒などの6次化商品を開発する中で、特に苦労した点やこだわっているポイントは何でしょうか？",
+        "穀物商社「池田誠商店」と農業法人イケマコとの役割分担やシナジーについて詳しくお聞かせください。",
+        "若手人材の育成や今後の事業承継について、どのような取り組みや展望をお持ちですか？",
+        "今後チャレンジしたい新たな事業領域や商品開発のアイディアがあれば教えてください。"
+      ],
+      "survey_responded": true,
+      "source_file": "02_中部（佐賀市・小城・多久）/株式会社イケマコ.md",
+      "legacy_ids": [
+        "member-025",
+        "other-09"
+      ]
+    },
+    {
+      "id": "nagaishinousan-co",
+      "name": "株式会社永石農産",
+      "name_short": "永石農産",
+      "entity_type": "株式会社",
+      "area": {
+        "code": "center",
+        "label": "中部",
+        "folder": "02_中部（佐賀市・小城・多久）"
+      },
+      "location": {
+        "postal_code": null,
+        "address": "佐賀県多久市北多久町多久原3530",
+        "city": "多久市",
+        "lat": 33.298869,
+        "lng": 130.121197
+      },
+      "contact": {
+        "representative": "永石憲彦",
+        "phone": null
+      },
+      "business": {
+        "summary": "| 品目 | 概要 |",
+        "established": null,
+        "employees": null
+      },
+      "products": [
+        {
+          "category": "米",
+          "name": "「ホタル米」",
+          "description": "自社ブランド。安全な農産物の提供を強み"
+        },
+        {
+          "category": "麦",
+          "name": "もち麦",
+          "description": "自社ブランド。西九州大学短期大学部とのレシピ共同開発"
+        },
+        {
+          "category": "その他",
+          "name": "大豆・玉葱苗・雑穀",
+          "description": "生産・販売"
+        }
+      ],
+      "sales_channels": [
+        "EC",
+        "JA・市場",
+        "直売所"
+      ],
+      "certifications": [],
+      "awards": [
+        {
+          "name": "助成金",
+          "year": null,
+          "detail": "水田活用交付金・畑作物直接支払交付金等の農林水産省助成金を複数年受給（政府系データより）"
+        }
+      ],
+      "web_presence": {
+        "website": "https://nagaishinousan.co.jp",
+        "sns": [],
+        "ec": [],
+        "media_mentions": [
+          "ヤンマー社の事例紹介で密苗導入事例として代表が取り上げ。佐賀県中小企業家同友会ニュースに報告概要が掲載"
+        ]
+      },
+      "shelf_potential": {
+        "categories": [
+          "米"
+        ],
+        "key_products": [
+          "「ホタル米」",
+          "もち麦",
+          "大豆・玉葱苗・雑穀"
+        ],
+        "selling_points": [
+          "助成金"
+        ]
+      },
+      "unconfirmed_items": [
+        "SNS発信（Facebook・Instagram等の公式アカウント） — **確認できず**（公式サイト上にSNSリンク見当たらず）",
+        "資本金・従業員数 — **公開情報に記載なし**",
+        "表彰・認定歴 — **確認できず**（gBizINFO等で「表彰：0件」「認定：0件」）",
+        "具体的な販路（直売所・卸売先の具体名） — **未確認**",
+        "新商品名等（自社ブランド以外の商品リスト） — **情報なし**"
+      ],
+      "interview_questions": [
+        "オンラインストア以外の具体的な直販場所や卸先はどこですか？",
+        "表彰・認定歴（例：農林漁業の奨励賞など）の有無や応募実績はありますか？",
+        "SNS（Facebook、Instagram等）の公式運用はしていますか？もしあれば発信内容について教えてください。",
+        "従業員構成や資本金など企業規模に関する詳細を教えてください。",
+        "新規事業や商品開発（例：雑穀加工品等）の計画はありますか？"
+      ],
+      "survey_responded": false,
+      "source_file": "02_中部（佐賀市・小城・多久）/株式会社永石農産.md",
+      "legacy_ids": [
+        "member-026",
+        "other-10"
+      ]
+    },
+    {
+      "id": "fruits-garden",
+      "name": "株式会社石橋果樹園",
+      "name_short": "石橋果樹園",
+      "entity_type": "株式会社",
+      "area": {
+        "code": "center",
+        "label": "中部",
+        "folder": "02_中部（佐賀市・小城・多久）"
+      },
+      "location": {
+        "postal_code": "840-0213",
+        "address": "佐賀県佐賀市大和町大字久留間5001",
+        "city": "佐賀市",
+        "lat": 33.31516,
+        "lng": 130.23623
+      },
+      "contact": {
+        "representative": "石橋健一",
+        "phone": null
+      },
+      "business": {
+        "summary": "",
+        "established": "初代・庄太郎氏から100年以上。法人化の正確な年月日は未記載",
+        "employees": null
+      },
+      "products": [
+        {
+          "category": "柑橘",
+          "description": "主力。大和地区の伝統「蔵入り」製法。11〜12月収穫を蔵で2〜4ヶ月熟成。1月中旬以降出荷。酸味を抜きまろやかに"
+        },
+        {
+          "category": "柑橘",
+          "description": "品種リレーで10月下旬〜12月中旬に出荷"
+        },
+        {
+          "category": "ブドウ",
+          "description": "ハウス内で1房ずつ管理する精密農業。冷蔵便限定配送。1.4kg(2房)で寄附額23,000円〜"
+        },
+        {
+          "category": "果樹",
+          "description": "6月〜12月の長期間にわたるリレー出荷"
+        },
+        {
+          "category": "加工品",
+          "description": "低温乾燥・添加物一切不使用。規格外品の有効活用、通年販売可能"
+        }
+      ],
+      "sales_channels": [
+        "EC",
+        "ふるさと納税"
+      ],
+      "certifications": [],
+      "awards": [],
+      "web_presence": {
+        "website": "https://fruits-garden.jp",
+        "sns": [
+          {
+            "platform": "Instagram",
+            "url": null
+          },
+          {
+            "platform": "Facebook",
+            "url": null
+          }
+        ],
+        "ec": [],
+        "media_mentions": []
+      },
+      "shelf_potential": {
+        "categories": [
+          "果樹",
+          "加工品"
+        ],
+        "key_products": [
+          "柑橘",
+          "柑橘",
+          "ブドウ",
+          "果樹",
+          "加工品"
+        ],
+        "selling_points": []
+      },
+      "unconfirmed_items": [
+        "詳細な経営数値（売上高、営業利益率、生産量、作付面積、従業員数） — **情報不足**",
+        "観光農園の具体計画（開園予定地、コンテンツ、開業目標時期） — **情報不足**",
+        "海外展開の進捗（ターゲット国、商談の有無、GFP参画、Global GAP等） — **情報不足**",
+        "SNS運用の実態（Instagramの正確な所在と運用状況） — **不明確**",
+        "がん教育支援の個人的背景・動機 — **公開情報では深層まで読み取れず**"
+      ],
+      "interview_questions": [
+        "「観光農園化」と「海外展開」について、現在の準備状況と実現に向けた最大のハードルは何だと考えていますか？",
+        "創業100年の歴史の中で、五代目として「変えたこと」と「絶対に変えてはならないと決めていること」を具体的に教えてください。",
+        "「蔵入りみかん」の貯蔵技術において、近年（温暖化等の影響で）管理が難しくなっている点はありますか？対策はされていますか？",
+        "ふるさと納税でのリピート率を高めるために、同梱物やアフターフォローで工夫している点はありますか？",
+        "シャインマスカットの「1房ごとの管理」を徹底するための労働力確保はどのように行われていますか？",
+        "農業経営と「がん教育支援」を結びつけようと思われた個人的なきっかけや思いについてお聞かせいただけますか？",
+        "NPO法人との連携によって、従業員の意識変化や顧客からの反響に具体的な変化はありましたか？",
+        "佐賀県農業法人協会や行政に対して、今後期待する支援策（補助、マッチング等）はどのようなものがありますか？"
+      ],
+      "survey_responded": true,
+      "source_file": "02_中部（佐賀市・小城・多久）/株式会社石橋果樹園.md",
+      "legacy_ids": [
+        "member-027",
+        "other-11"
+      ]
+    },
+    {
+      "id": "agribase-niiyama",
+      "name": "有限会社アグリベースにいやま",
+      "name_short": "アグリベースにいやま",
+      "entity_type": "有限会社",
+      "area": {
+        "code": "east",
+        "label": "東部",
+        "folder": "03_東部（神埼・みやき・鳥栖）"
+      },
+      "location": {
+        "postal_code": null,
+        "address": "佐賀県神埼市神埼町鶴1176",
+        "city": "神埼市",
+        "lat": 33.330246,
+        "lng": 130.373791
+      },
+      "contact": {
+        "representative": null,
+        "phone": null
+      },
+      "business": {
+        "summary": "水稲・麦・大豆の大規模稲作農業",
+        "established": null,
+        "employees": null
+      },
+      "products": [
+        {
+          "category": "米",
+          "description": "水稲の生産。大規模稲作"
+        },
+        {
+          "category": "麦",
+          "description": "栽培"
+        },
+        {
+          "category": "大豆",
+          "description": "栽培"
+        }
+      ],
+      "sales_channels": [
+        "直売所"
+      ],
+      "certifications": [],
+      "awards": [
+        {
+          "name": "交付金",
+          "year": null,
+          "detail": "農林水産省の水田活用・畑作物直接支払交付金等、複数の農業交付金を受給"
+        }
+      ],
+      "web_presence": {
+        "website": null,
+        "sns": [],
+        "ec": [],
+        "media_mentions": [
+          "RKB毎日放送のウェブ記事に取締役のコメント掲載。農業専門紙「農機新聞」でスマート農業実証プロジェクトの記事中に社名が紹介"
+        ]
+      },
+      "shelf_potential": {
+        "categories": [
+          "米"
+        ],
+        "key_products": [
+          "米",
+          "麦",
+          "大豆"
+        ],
+        "selling_points": [
+          "交付金"
+        ]
+      },
+      "unconfirmed_items": [
+        "代表者名 — **記載なし**",
+        "公式Webサイト・SNSの有無 — **確認できず**。会社概要・事業内容の公式説明は入手できず",
+        "販売形態（直売所・EC販売の有無）、商品ブランド名 — **公開されていない**"
+      ],
+      "interview_questions": [
+        "事業内容の詳細：御社で取り組んでいる農作物や製品、販売先（直売所・卸先など）はどのようなものですか？",
+        "スマート農業実証：実証プロジェクトで導入した技術や得られた成果・課題について、具体的に教えていただきたいです。",
+        "組織・人員：従業員数や組織体制、経営面積（作付面積）などについて最新状況を確認させてください。",
+        "補助金・受賞：これまで取得した補助金や公的評価、認定等があれば、その内容を教えていただきたいです。"
+      ],
+      "survey_responded": false,
+      "source_file": "03_東部（神埼・みやき・鳥栖）/有限会社アグリベースにいやま.md",
+      "legacy_ids": [
+        "member-028",
+        "east-01"
+      ]
+    },
+    {
+      "id": "m-s-green",
+      "name": "株式会社M's green",
+      "name_short": "M's green",
+      "entity_type": "株式会社",
+      "area": {
+        "code": "east",
+        "label": "東部",
+        "folder": "03_東部（神埼・みやき・鳥栖）"
+      },
+      "location": {
+        "postal_code": "840-1103",
+        "address": "佐賀県三養基郡みやき町大字坂口2288",
+        "city": "三養基郡",
+        "lat": 33.269319,
+        "lng": 130.446719
+      },
+      "contact": {
+        "representative": "松永淳",
+        "phone": null
+      },
+      "business": {
+        "summary": "お米・アスパラガスを中心とした野菜の栽培・販売、家畜用稲わら・麦わらの収集・販売、農作業受託サービス",
+        "established": null,
+        "employees": null
+      },
+      "products": [
+        {
+          "category": "野菜",
+          "description": "みやき町特産。主力品目"
+        },
+        {
+          "category": "米",
+          "description": "栽培・販売"
+        },
+        {
+          "category": "野菜",
+          "description": "栽培・販売"
+        },
+        {
+          "category": "その他",
+          "description": "家畜用として収集・販売"
+        }
+      ],
+      "sales_channels": [
+        "EC"
+      ],
+      "certifications": [],
+      "awards": [],
+      "web_presence": {
+        "website": null,
+        "sns": [
+          {
+            "platform": "Instagram",
+            "url": "https://www.instagram.com/emuzugreen/"
+          }
+        ],
+        "ec": [],
+        "media_mentions": []
+      },
+      "shelf_potential": {
+        "categories": [
+          "野菜",
+          "米",
+          "加工品"
+        ],
+        "key_products": [
+          "野菜",
+          "米",
+          "野菜",
+          "その他"
+        ],
+        "selling_points": []
+      },
+      "unconfirmed_items": [
+        "直販店舗・契約販売先（JA等）の詳細 — **情報なし**",
+        "学校・研究機関・他企業との連携事例 — **情報なし**",
+        "補助金・助成事業の利用状況 — **情報なし**",
+        "6次産業化（加工・ブランド化）への取組状況 — **情報なし**"
+      ],
+      "interview_questions": [
+        "アスパラガスや米など主要作物の販路について、主な販売先（卸・直販・外食産業など）と今後の販路開拓計画を教えてください。",
+        "農作業受託サービスの具体的な内容・規模と、契約先（他農家など）があればその状況について教えてください。",
+        "地元特産品の六次産業化に向けた加工品開発やブランド化への取り組み状況（例：加工食品化、地方物産展参画など）はありますか？",
+        "土づくりや品種選定などにおける同社独自の工夫・技術（高品質・多収のポイント）があれば教えてください。"
+      ],
+      "survey_responded": true,
+      "source_file": "03_東部（神埼・みやき・鳥栖）/株式会社M’s green.md",
+      "legacy_ids": [
+        "east-02"
+      ]
+    },
+    {
+      "id": "ecobitofarm",
+      "name": "株式会社えこびと農園",
+      "name_short": "えこびと農園",
+      "entity_type": "株式会社",
+      "area": {
+        "code": "east",
+        "label": "東部",
+        "folder": "03_東部（神埼・みやき・鳥栖）"
+      },
+      "location": {
+        "postal_code": null,
+        "address": "佐賀県神埼市千代田町迎島1282-3",
+        "city": "神埼市",
+        "lat": 33.263802,
+        "lng": 130.403152
+      },
+      "contact": {
+        "representative": "中村彰義氏。代表・契約担当：中村晃嘉",
+        "phone": "0952-44-2993"
+      },
+      "business": {
+        "summary": "生産者（専業）および加工・販売。生産はえこびと農園、加工・販売は株式会社中村が担当",
+        "established": "2016年12月（平成28年）",
+        "employees": null
+      },
+      "products": [
+        {
+          "category": "えごま",
+          "description": "主力。2018年時点2.7ha。農薬・化学肥料不使用。種まきから搾油まで自社一貫管理"
+        },
+        {
+          "category": "油",
+          "description": "自社生産えごまを原料に自社搾油"
+        },
+        {
+          "category": "米",
+          "description": "有機JAS規格準拠。夏の除草は手作業"
+        },
+        {
+          "category": "穀物",
+          "description": "有機栽培に取り組み"
+        },
+        {
+          "category": "ハーブ",
+          "description": "生産・加工・販売の対象"
+        },
+        {
+          "category": "加工品",
+          "description": "2025年発売。佐賀県産生はちみつ・ジャバラ果汁使用"
+        }
+      ],
+      "sales_channels": [
+        "EC",
+        "JA・市場",
+        "直売所"
+      ],
+      "certifications": [
+        "GFP",
+        "有機JAS"
+      ],
+      "awards": [],
+      "web_presence": {
+        "website": "https://www.ecobitofarm.com",
+        "sns": [
+          {
+            "platform": "Instagram",
+            "url": null
+          },
+          {
+            "platform": "Facebook",
+            "url": null
+          },
+          {
+            "platform": "YouTube",
+            "url": null
+          }
+        ],
+        "ec": [],
+        "media_mentions": [
+          "あり（https://www.ecobitofarm.com/）— 農園の理念、えごま油情報、お知らせ、問い合わせフォーム等を掲載",
+          "農林水産省GFP登録事業者、九州農政局「ディスカバー農山漁村の宝」関連資料で紹介、Food Expo Kyushu 2019出展、CAMPFIREでクラウドファンディング実施"
+        ]
+      },
+      "shelf_potential": {
+        "categories": [
+          "加工品",
+          "野菜",
+          "米"
+        ],
+        "key_products": [
+          "えごま",
+          "油",
+          "米",
+          "穀物",
+          "ハーブ",
+          "加工品"
+        ],
+        "selling_points": [
+          "GFP",
+          "有機JAS"
+        ]
+      },
+      "unconfirmed_items": [
+        "役員体制の変遷・現行の正式役員構成 — 情報源により記載が異なる",
+        "受賞歴・補助金・認定取得 — 明示的な記載なし",
+        "学校・企業との連携事例の詳細 — 記載なし"
+      ],
+      "interview_questions": [
+        "えこびと農園と株式会社中村の役割分担・連携体制について、具体的に教えてください。",
+        "えごま栽培・搾油の一貫管理体制で、特に重視している品質管理のポイントは何ですか？",
+        "契約栽培による地域生産者とのネットワーク構築の経緯と、今後の拡大計画についてお聞かせください。",
+        "OEM・契約栽培のお問い合わせはどのくらいありますか？主な取引先や活用事例があれば教えてください。",
+        "輸出・グローバル展開（GFP登録、Food Expo出展等）の現状と今後の展望について教えてください。"
+      ],
+      "survey_responded": true,
+      "source_file": "03_東部（神埼・みやき・鳥栖）/株式会社えこびと農園.md",
+      "legacy_ids": [
+        "member-030",
+        "east-03"
+      ]
+    },
+    {
+      "id": "saganvege",
+      "name": "株式会社サガンベジ",
+      "name_short": "サガンベジ",
+      "entity_type": "株式会社",
+      "area": {
+        "code": "east",
+        "label": "東部",
+        "folder": "03_東部（神埼・みやき・鳥栖）"
+      },
+      "location": {
+        "postal_code": "849-0114",
+        "address": "佐賀県三養基郡みやき町中津隈5461",
+        "city": "三養基郡",
+        "lat": 33.3191,
+        "lng": 130.439891
+      },
+      "contact": {
+        "representative": "園田幸男",
+        "phone": null
+      },
+      "business": {
+        "summary": "植物性堆肥・肥料を用いた完全無農薬の葉物野菜ブランド「サガンベジ」の生産・販売",
+        "established": null,
+        "employees": null
+      },
+      "products": [
+        {
+          "category": "葉物野菜",
+          "name": "サガンベジ（有機葉物野菜セット）",
+          "description": "植物性堆肥・肥料を用いた完全無農薬。ほうれん草・小松菜・水菜等の施設栽培"
+        },
+        {
+          "category": "米",
+          "name": "植物性で育てたビーガン米",
+          "description": "白米・玄米"
+        }
+      ],
+      "sales_channels": [
+        "EC",
+        "JA・市場",
+        "スーパー",
+        "直売所"
+      ],
+      "certifications": [
+        "有機JAS"
+      ],
+      "awards": [
+        {
+          "name": "有機JAS認証",
+          "year": null,
+          "detail": "取得済"
+        },
+        {
+          "name": "第46回佐賀県農業賞 優秀賞",
+          "year": null,
+          "detail": "先進的農業経営者の部で受賞"
+        }
+      ],
+      "web_presence": {
+        "website": "https://saganvege.com",
+        "sns": [
+          {
+            "platform": "Instagram",
+            "url": null
+          },
+          {
+            "platform": "Facebook",
+            "url": null
+          }
+        ],
+        "ec": [],
+        "media_mentions": [
+          "佐賀テレビ「かちかちPress」（2023年6月放送）で農場・有機栽培の取り組みを紹介"
+        ]
+      },
+      "shelf_potential": {
+        "categories": [
+          "野菜",
+          "米"
+        ],
+        "key_products": [
+          "サガンベジ（有機葉物野菜セット）",
+          "植物性で育てたビーガン米"
+        ],
+        "selling_points": [
+          "有機JAS",
+          "有機JAS認証",
+          "第46回佐賀県農業賞 優秀賞"
+        ]
+      },
+      "unconfirmed_items": [
+        "資本金・年間売上高・従業員数（最新）等の企業規模の詳細 — **情報なし**（2019年時点の従業員10名のみ判明）",
+        "農園の総面積・年間生産量・出荷量の詳細 — **情報なし**",
+        "直営販売所の有無、農園での直販イベント等の開催状況 — **情報なし**",
+        "学校・企業との具体的な連携事例、受入体制（研修生以外） — **情報なし**",
+        "公的補助金・助成金の利用状況 — **公式情報上は「なし」と記載**"
+      ],
+      "interview_questions": [
+        "農園直売やEC以外の新たな販路拡大策や、販路ごとの販売比率について教えてください。",
+        "契約栽培農家や出荷先（店舗・市場等）との協力体制や今後の拡大計画はありますか？",
+        "シンガポール・ベトナムで商標登録を取得した海外展開の具体的な計画や実績について教えてください。",
+        "今後追加予定の栽培品目、新商品開発、設備投資などの計画は何ですか？",
+        "有機農業経営における最大の課題は何で、どのように対処していますか？"
+      ],
+      "survey_responded": true,
+      "source_file": "03_東部（神埼・みやき・鳥栖）/株式会社サガンベジ.md",
+      "legacy_ids": [
+        "member-031",
+        "east-04"
+      ]
+    },
+    {
+      "id": "towardls-co",
+      "name": "株式会社トワード",
+      "name_short": "トワード",
+      "entity_type": "株式会社",
+      "area": {
+        "code": "east",
+        "label": "東部",
+        "folder": "03_東部（神埼・みやき・鳥栖）"
+      },
+      "location": {
+        "postal_code": "842-0121",
+        "address": "佐賀県神埼市神埼町志波屋1480",
+        "city": "神埼市",
+        "lat": 33.342402,
+        "lng": 130.375636
+      },
+      "contact": {
+        "representative": null,
+        "phone": null
+      },
+      "business": {
+        "summary": "| 分野 | 概要 |",
+        "established": null,
+        "employees": null
+      },
+      "products": [
+        {
+          "category": "堆肥",
+          "name": "永遠土（えいえんど）",
+          "description": "食品リサイクル事業で製造。外食産業等の食品残渣を原料に完全発酵させた有機堆肥"
+        }
+      ],
+      "sales_channels": [],
+      "certifications": [],
+      "awards": [
+        {
+          "name": "食品リサイクル・ループ認定",
+          "year": 2012,
+          "detail": "2012年 食品リサイクル法に基づく認定を九州北部で初めて取得"
+        },
+        {
+          "name": "ISO9001認証",
+          "year": null,
+          "detail": "取得（沿革記載）"
+        }
+      ],
+      "web_presence": {
+        "website": "https://www.towardls.co.jp",
+        "sns": [],
+        "ec": [],
+        "media_mentions": [
+          "あり（https://www.towardls.co.jp/）— 企業理念・事業案内等を掲載",
+          "2025年2月「ふくおか経済Web」で新本社兼物流センター（九州グリーンハブセンター）建設の記事。投資額32億円、2025年2月1日完成予定と紹介"
+        ]
+      },
+      "shelf_potential": {
+        "categories": [],
+        "key_products": [
+          "永遠土（えいえんど）"
+        ],
+        "selling_points": [
+          "ISO9001認証",
+          "食品リサイクル・ループ認定"
+        ]
+      },
+      "unconfirmed_items": [
+        "SNS発信状況（Facebookを含む公式アカウント） — **情報なし**（確認困難）",
+        "補助金・助成制度の利用状況 — **情報なし**",
+        "学校・研究機関との連携事例 — **情報なし**",
+        "直売所運営や自社ブランド農産品の販売チャネル — **情報なし**"
+      ],
+      "interview_questions": [
+        "新本社・九州グリーンハブセンター建設の背景と期待効果について詳しく教えてください。（物流拠点再編の意図など）",
+        "食品リサイクル事業で製造する有機堆肥（「永遠土」）は主にどのような用途・販路で販売していますか？今後の展開予定はありますか？",
+        "物流・情報システム・リサイクル事業の各部門で、社内の人材育成や技術開発の取り組みはどのようになっていますか？",
+        "佐賀県内の農業関連ビジネスとして、自治体や他企業との共同プロジェクトなどへの参画予定はありますか？"
+      ],
+      "survey_responded": false,
+      "source_file": "03_東部（神埼・みやき・鳥栖）/株式会社トワード.md",
+      "legacy_ids": [
+        "member-032",
+        "east-05"
+      ]
+    },
+    {
+      "id": "ok",
+      "name": "株式会社基里OKファーム",
+      "name_short": "基里OKファーム",
+      "entity_type": "株式会社",
+      "area": {
+        "code": "east",
+        "label": "東部",
+        "folder": "03_東部（神埼・みやき・鳥栖）"
+      },
+      "location": {
+        "postal_code": null,
+        "address": "佐賀県鳥栖市飯田町529",
+        "city": "鳥栖市",
+        "lat": 33.377174,
+        "lng": 130.536488
+      },
+      "contact": {
+        "representative": "上種正博",
+        "phone": null
+      },
+      "business": {
+        "summary": "キャベツ、玉ねぎ、ジャガイモ、ネギ等の野菜類、水稲・大豆・麦類の栽培。加工品（Imokoブランド）の製造・販売",
+        "established": null,
+        "employees": null
+      },
+      "products": [
+        {
+          "category": "野菜",
+          "description": "栽培・販売"
+        },
+        {
+          "category": "穀物",
+          "description": "栽培"
+        },
+        {
+          "category": "加工品",
+          "description": "焼き芋パフェ、焼き芋、干し芋、冷やしアメ芋等の加工販売"
+        },
+        {
+          "category": "その他",
+          "description": "コンビニエンスストア・ドラッグストア向け卸販売"
+        }
+      ],
+      "sales_channels": [
+        "JA・市場",
+        "直売所"
+      ],
+      "certifications": [],
+      "awards": [
+        {
+          "name": "佐賀農業賞 最優秀賞",
+          "year": 2024,
+          "detail": "2024年1月 経営者部門で受賞"
+        }
+      ],
+      "web_presence": {
+        "website": "https://www.kizatook.co.jp",
+        "sns": [],
+        "ec": [],
+        "media_mentions": [
+          "地域ビジネス支援機関の紹介記事に掲載"
+        ]
+      },
+      "shelf_potential": {
+        "categories": [
+          "野菜",
+          "加工品",
+          "米"
+        ],
+        "key_products": [
+          "野菜",
+          "穀物",
+          "加工品",
+          "その他"
+        ],
+        "selling_points": [
+          "佐賀農業賞 最優秀賞"
+        ]
+      },
+      "unconfirmed_items": [
+        "EC（オンライン通販）での販売実施状況 — **確認できず**",
+        "直売所（永吉町の日恵寺施設）の営業時間・運営体制 — **詳細は未確認**",
+        "具体的な加工品の商品名（Imoko以外）・出荷量 — **公表情報が見当たらない**",
+        "補助金・認定取得状況 — **確認できず**",
+        "学校・企業との連携事例 — **確認できず**",
+        "売上高・従業員数 — **細部は不明**"
+      ],
+      "interview_questions": [
+        "法人設立の経緯や「OKファーム」の名称の由来について教えてください。",
+        "Imoko事業（焼き芋スイーツ）の開始経緯と販路、将来展開予定はどうなっていますか？",
+        "直売所（鳥栖市永吉町）での営業日時や運営体制はどのようになっていますか？",
+        "現在の従業員数や外注・協力生産者の構成について教えてください。",
+        "今後の販路拡大（国内外）や6次産業化などの計画についてお聞かせください。"
+      ],
+      "survey_responded": false,
+      "source_file": "03_東部（神埼・みやき・鳥栖）/株式会社基里OKファーム.md",
+      "legacy_ids": [
+        "east-06"
+      ]
+    },
+    {
+      "id": "ishiudo-nosan",
+      "name": "株式会社石動農産",
+      "name_short": "石動農産",
+      "entity_type": "株式会社",
+      "area": {
+        "code": "east",
+        "label": "東部",
+        "folder": "03_東部（神埼・みやき・鳥栖）"
+      },
+      "location": {
+        "postal_code": null,
+        "address": "佐賀県神埼郡吉野ヶ里町石動541-1",
+        "city": "神埼郡",
+        "lat": 33.358299,
+        "lng": 130.404133
+      },
+      "contact": {
+        "representative": null,
+        "phone": null
+      },
+      "business": {
+        "summary": "農作物の生産・販売。佐賀県内の圃場でお米、大麦、キャベツ、飼料米等を栽培・出荷",
+        "established": null,
+        "employees": null
+      },
+      "products": [
+        {
+          "category": "米",
+          "name": "石動米",
+          "description": "自社ブランド。主力商品。オンラインショップで5kg/10kg単位で通信販売"
+        },
+        {
+          "category": "野菜",
+          "name": "キャベツ",
+          "description": "栽培・出荷。主に加工業者向けに卸"
+        },
+        {
+          "category": "麦",
+          "name": "大麦",
+          "description": "栽培・販売。ビール原料等、業務用向け"
+        },
+        {
+          "category": "飼料",
+          "name": "飼料米",
+          "description": "栽培・出荷"
+        }
+      ],
+      "sales_channels": [
+        "EC",
+        "JA・市場"
+      ],
+      "certifications": [],
+      "awards": [
+        {
+          "name": "※旧社名「有限会社石動農産」時代には受賞歴あり（調査メモ参照）",
+          "year": null,
+          "detail": "※旧社名「有限会社石動農産」時代には受賞歴あり（調査メモ参照）"
+        }
+      ],
+      "web_presence": {
+        "website": null,
+        "sns": [],
+        "ec": [],
+        "media_mentions": []
+      },
+      "shelf_potential": {
+        "categories": [
+          "米",
+          "野菜",
+          "加工品"
+        ],
+        "key_products": [
+          "石動米",
+          "キャベツ",
+          "大麦",
+          "飼料米"
+        ],
+        "selling_points": [
+          "※旧社名「有限会社石動農産」時代には受賞歴あり（調査メモ参照）"
+        ]
+      },
+      "unconfirmed_items": [
+        "代表者名 — **記載なし**",
+        "メディア報道（テレビ・新聞等） — **確認できず**",
+        "農林水産省等の助成・認定取得 — **情報なし**",
+        "SNS（Facebook・Instagram等）公式アカウント — **不明**",
+        "地方自治体事業・企業との連携 — **未確認**",
+        "ふるさと納税返礼品採用 — **未確認**"
+      ],
+      "interview_questions": [
+        "オンライン販売以外の販路（例：JA取扱い、契約農家・企業への卸など）はどのようなものがありますか？",
+        "栽培面積や収量の推移、将来の作付け計画について教えてください。特にキャベツ・大麦の重点品種や栽培面積はどのようになっていますか？",
+        "食品加工業者との連携状況（大麦のビール原料提供、キャベツ加工向け販売など）について具体的に教えてください。",
+        "持続可能な農業（有機肥料利用・耕作放棄地活用等）の取り組みや課題についてお聞かせください。",
+        "今後の成長戦略（新商品開発、販路拡大、人材育成など）について教えてください。"
+      ],
+      "survey_responded": false,
+      "source_file": "03_東部（神埼・みやき・鳥栖）/株式会社石動農産.md",
+      "legacy_ids": [
+        "member-034",
+        "east-07",
+        "east-02"
+      ]
+    },
+    {
+      "id": "ojika-farm",
+      "name": "農事組合法人小鹿ファーム",
+      "name_short": "小鹿ファーム",
+      "entity_type": "農事組合法人",
+      "area": {
+        "code": "east",
+        "label": "東部",
+        "folder": "03_東部（神埼・みやき・鳥栖）"
+      },
+      "location": {
+        "postal_code": null,
+        "address": "佐賀県神埼市千代田町用作310番地",
+        "city": "神埼市",
+        "lat": 33.251783,
+        "lng": 130.378922
+      },
+      "contact": {
+        "representative": null,
+        "phone": null
+      },
+      "business": {
+        "summary": "米・麦・大豆・キャベツ等の栽培（約40ha）、無添加手づくり味噌・高菜漬けの生産・販売",
+        "established": null,
+        "employees": null
+      },
+      "products": [
+        {
+          "category": "加工品",
+          "name": "こじかの白雪みそ",
+          "description": "無添加手づくり味噌。自社ブランド"
+        },
+        {
+          "category": "加工品",
+          "name": "こじかの高菜漬け",
+          "description": "高菜漬け。自社ブランド"
+        },
+        {
+          "category": "野菜",
+          "name": "キャベツ（寒玉キャベツ等）",
+          "description": "栽培・出荷。県内スーパー等にカット野菜として卸"
+        },
+        {
+          "category": "穀物",
+          "name": "米・麦・大豆",
+          "description": "栽培"
+        }
+      ],
+      "sales_channels": [
+        "JA・市場",
+        "スーパー",
+        "直売所"
+      ],
+      "certifications": [],
+      "awards": [
+        {
+          "name": "佐賀農業賞 最優秀賞",
+          "year": 2015,
+          "detail": "2015年 佐賀県農業経営コンクール（組織・集団部門）で受賞"
+        },
+        {
+          "name": "交付金",
+          "year": null,
+          "detail": "農林水産省の水田・畑作直接支払交付金を複数回受給"
+        }
+      ],
+      "web_presence": {
+        "website": null,
+        "sns": [],
+        "ec": [],
+        "media_mentions": [
+          "佐賀テレビのニュースで「寒玉キャベツ」の収穫ピークを報道"
+        ]
+      },
+      "shelf_potential": {
+        "categories": [
+          "野菜",
+          "加工品",
+          "米"
+        ],
+        "key_products": [
+          "こじかの白雪みそ",
+          "こじかの高菜漬け",
+          "キャベツ（寒玉キャベツ等）",
+          "米・麦・大豆"
+        ],
+        "selling_points": [
+          "交付金",
+          "佐賀農業賞 最優秀賞"
+        ]
+      },
+      "unconfirmed_items": [
+        "代表者・役員名 — **記載なし**",
+        "公式Webサイト — **確認できず**",
+        "公式SNS（Facebook等） — **確認できず**",
+        "EC販売（オンラインショップ等） — **情報なし**",
+        "卸先（学校給食等への納品実績） — **情報なし**",
+        "連携先（学校・企業との取引等） — **情報なし**（学校給食向け納品は噂あり）",
+        "設立年・沿革 — **情報なし**（佐賀新聞記事で2014年設立とあるが未確認）"
+      ],
+      "interview_questions": [
+        "現在の販路（直売・卸売）の割合はどの程度ですか？EC（ネット販売）の利用計画はありますか？",
+        "味噌・高菜漬けの製造規模や販売量、価格設定について詳しく教えてください。",
+        "学校給食や地域イベント向けへの納品実績・計画はありますか？",
+        "組織運営（組合員数や後継者確保）の課題や取り組みについて教えてください。",
+        "今後の設備投資や新製品開発（例：他の加工品やブランド化）の予定はありますか？"
+      ],
+      "survey_responded": false,
+      "source_file": "03_東部（神埼・みやき・鳥栖）/農事組合法人小鹿ファーム.md",
+      "legacy_ids": [
+        "member-035",
+        "east-08",
+        "east-03"
+      ]
+    },
+    {
+      "id": "aritadori",
+      "name": "ありた株式会社",
+      "name_short": "ありた",
+      "entity_type": "株式会社",
+      "area": {
+        "code": "south",
+        "label": "南部",
+        "folder": "04_南部（太良・嬉野・白石・有田）"
+      },
+      "location": {
+        "postal_code": "849-4153",
+        "address": "佐賀県西松浦郡有田町立部乙10-1",
+        "city": "西松浦郡",
+        "lat": 33.198798,
+        "lng": 129.865249
+      },
+      "contact": {
+        "representative": "池田憲正",
+        "phone": null
+      },
+      "business": {
+        "summary": "食鳥肉の処理・加工品および惣菜の製造販売",
+        "established": null,
+        "employees": null
+      },
+      "products": [
+        {
+          "category": "精肉",
+          "name": "銘柄鶏「ありたどり」",
+          "description": "佐賀・長崎県の契約農場で平飼い飼育。丸鶏、むね肉、もも肉、熟成肉等"
+        },
+        {
+          "category": "加工品",
+          "name": "味付け唐揚げ、無添加ハムセット、鶏めしの素等",
+          "description": "ありたどりを使用した加工品"
+        },
+        {
+          "category": "飲食",
+          "name": "からあげドンドン",
+          "description": "から揚げ専門店。「ありたどり唐揚げ」を提供。有田本店が発祥の地"
+        }
+      ],
+      "sales_channels": [
+        "EC",
+        "直売所"
+      ],
+      "certifications": [],
+      "awards": [
+        {
+          "name": "International Taste Institute 優秀味覚賞（1つ星）",
+          "year": 2024,
+          "detail": "2024年 ブリュッセルで受賞"
+        },
+        {
+          "name": "第16回地鶏・銘柄鶏好感度コンテスト 最優秀賞",
+          "year": 2024,
+          "detail": "2024年受賞"
+        },
+        {
+          "name": "第14回からあげグランプリ 西日本味バラエティ部門 最高金賞",
+          "year": 2022,
+          "detail": "2022年 2年連続受賞"
+        },
+        {
+          "name": "もにす認定",
+          "year": null,
+          "detail": "佐賀労働局から障害者雇用促進の優良事業所として認定"
+        }
+      ],
+      "web_presence": {
+        "website": "https://www.aritadori.com",
+        "sns": [],
+        "ec": [],
+        "media_mentions": [
+          "佐賀テレビのグルメ番組で「からあげドンドン有田本店」が銘柄鶏「ありたどり」発祥の地として紹介。流通業界ニュースでスーパー展示会でのアピールを報道"
+        ]
+      },
+      "shelf_potential": {
+        "categories": [
+          "畜産",
+          "加工品"
+        ],
+        "key_products": [
+          "銘柄鶏「ありたどり」",
+          "味付け唐揚げ、無添加ハムセット、鶏めしの素等",
+          "からあげドンドン"
+        ],
+        "selling_points": [
+          "International Taste Institute 優秀味覚賞（1つ星）",
+          "もにす認定",
+          "第14回からあげグランプリ 西日本味バラエティ部門 最高金賞",
+          "第16回地鶏・銘柄鶏好感度コンテスト 最優秀賞"
+        ]
+      },
+      "unconfirmed_items": [
+        "公式SNS（Facebook・Instagram等）のアカウント・発信状況 — **確認できず**",
+        "卸売先・提携先販売店の具体的情報 — **未確認**",
+        "取扱商品（加工品等）の追加ラインアップ — **未確認**（上記以外に新商品があるか不明）"
+      ],
+      "interview_questions": [
+        "銘柄鶏「ありたどり」の生産・販売について、今後の計画（新製品開発や販路拡大など）はありますか？",
+        "直営から揚げ店「からあげドンドン」の運営と鶏肉生産事業はどのように連携していますか？",
+        "障害者雇用認定（もにす認定）取得の背景と、社内の人材育成・働き方改革の取組みについて教えてください。",
+        "関連会社「ありたバイオテック株式会社」の事業内容と、全体戦略における役割について教えてください。",
+        "受賞歴（国際味覚賞やグランプリなど）が事業に与えた影響や、それを活かす取り組みについて教えてください。"
+      ],
+      "survey_responded": true,
+      "source_file": "04_南部（太良・嬉野・白石・有田）/ありた株式会社.md",
+      "legacy_ids": [
+        "member-036",
+        "south-01"
+      ]
+    },
+    {
+      "id": "yoshihara-nosan",
+      "name": "吉原農産",
+      "name_short": "吉原農産",
+      "entity_type": null,
+      "area": {
+        "code": "south",
+        "label": "南部",
+        "folder": "04_南部（太良・嬉野・白石・有田）"
+      },
+      "location": {
+        "postal_code": null,
+        "address": "佐賀県杵島郡白石町",
+        "city": "杵島郡",
+        "lat": 33.180991,
+        "lng": 130.143389
+      },
+      "contact": {
+        "representative": "吉原亨史",
+        "phone": null
+      },
+      "business": {
+        "summary": "水稲、麦類、大豆、露地野菜",
+        "established": null,
+        "employees": null
+      },
+      "products": [
+        {
+          "category": "米",
+          "name": "水稲",
+          "description": "栽培（品種未確認）"
+        },
+        {
+          "category": "穀物",
+          "name": "麦類",
+          "description": "栽培"
+        },
+        {
+          "category": "穀物",
+          "name": "大豆",
+          "description": "栽培"
+        },
+        {
+          "category": "野菜",
+          "name": "露地野菜",
+          "description": "栽培（品目未確認）"
+        }
+      ],
+      "sales_channels": [],
+      "certifications": [],
+      "awards": [],
+      "web_presence": {
+        "website": null,
+        "sns": [],
+        "ec": [],
+        "media_mentions": [
+          "未調査"
+        ]
+      },
+      "shelf_potential": {
+        "categories": [
+          "米",
+          "野菜"
+        ],
+        "key_products": [
+          "水稲",
+          "麦類",
+          "大豆",
+          "露地野菜"
+        ],
+        "selling_points": []
+      },
+      "unconfirmed_items": [
+        "正式な法人格（株式会社・有限会社等） — **未確認**",
+        "経営面積 — **未確認**",
+        "栽培品種（米・野菜の具体的な品種名） — **未確認**",
+        "販売先・販路 — **未確認**",
+        "公式サイト・SNS — **未調査**",
+        "受賞歴・認証 — **未確認**"
+      ],
+      "interview_questions": [
+        "栽培している米の品種（夢しずく・さがびより等）を教えてください。露地野菜の具体的な品目も確認したいです。",
+        "経営面積はどのくらいでしょうか？白石町内での圃場の分布についても伺いたいです。",
+        "ロゴ作成に取り組まれたとのことですが、今後のブランド化や販路開拓の方針はありますか？",
+        "同じ白石町の岩石農産・定松ファーム・アグリイワナガとの連携や情報交換はされていますか？",
+        "担い手不足への課題意識がありますが、具体的にどのような支援があれば助かりますか？"
+      ],
+      "survey_responded": false,
+      "source_file": "04_南部（太良・嬉野・白石・有田）/吉原農産.md",
+      "legacy_ids": [
+        "member-037",
+        "south-02",
+        "south-01"
+      ]
+    },
+    {
+      "id": "kanehiro-farm",
+      "name": "有限会社かねひろ",
+      "name_short": "かねひろ",
+      "entity_type": "有限会社",
+      "area": {
+        "code": "south",
+        "label": "南部",
+        "folder": "04_南部（太良・嬉野・白石・有田）"
+      },
+      "location": {
+        "postal_code": "849-1616",
+        "address": "佐賀県藤津郡太良町大字大浦己166番地",
+        "city": "藤津郡",
+        "lat": 32.974787,
+        "lng": 130.191799
+      },
+      "contact": {
+        "representative": "起点情報に川﨑豊洋氏。一次資料では未確認",
+        "phone": null
+      },
+      "business": {
+        "summary": "みかん・ブドウ（シャインマスカット）の栽培、養蜂（はちみつ生産）、水産加工品（海苔）の取り扱い",
+        "established": null,
+        "employees": null
+      },
+      "products": [
+        {
+          "category": "柑橘",
+          "name": "黒酢みかん",
+          "description": "主力。みかんの木と土全体に黒酢アミノ酸を散布する特殊栽培。農薬使用を抑制。小玉サイズ（2S〜3S）中心。10月〜11月上旬：極早生・早生種、11月中旬以降：中生・晩生種"
+        },
+        {
+          "category": "ブドウ",
+          "name": "かねひろの黒酢ブラックシャインマスカット～富士の輝き～",
+          "description": "黒酢農法。品種「富士の輝き」。ハウス栽培。2房で700g以上"
+        },
+        {
+          "category": "養蜂",
+          "name": "かねひろの国産はちみつ",
+          "description": "黒酢みかん蜜（太良町産黒酢みかんの花蜜）、百花蜜。600g/14,000円、3本セット/20,000円等"
+        },
+        {
+          "category": "水産",
+          "name": "佐賀県有明海産 一番摘み海苔「太良嶽」",
+          "description": "有明海産最高級一番摘み海苔。自社生産か仕入販売かは不明。地域特産品を包括的に扱う"
+        }
+      ],
+      "sales_channels": [
+        "ふるさと納税"
+      ],
+      "certifications": [],
+      "awards": [],
+      "web_presence": {
+        "website": null,
+        "sns": [],
+        "ec": [
+          "ふるさとチョイス",
+          "ふるさと納税"
+        ],
+        "media_mentions": [
+          "**ふるさと納税掲載サイト:**",
+          "- ふるさとチョイス、ANAのふるさと納税、セゾンのふるさと納税、JRE MALLふるさと納税、イオンのふるさと納税、ふるさとパレット等、複数プラットフォームで掲載"
+        ]
+      },
+      "shelf_potential": {
+        "categories": [
+          "果樹",
+          "加工品"
+        ],
+        "key_products": [
+          "黒酢みかん",
+          "かねひろの黒酢ブラックシャインマスカット～富士の輝き～",
+          "かねひろの国産はちみつ",
+          "佐賀県有明海産 一番摘み海苔「太良嶽」"
+        ],
+        "selling_points": []
+      },
+      "unconfirmed_items": [
+        "代表者名 — **一次資料で未確認**（起点情報に川﨑豊洋氏あり）",
+        "連絡先（電話・メール等） — **Web情報源で明記箇所なし**。ふるさと納税サイト運営者経由の間接連絡体制と推測",
+        "設立年・沿革 — **記載なし**",
+        "海苔の関与形態（自社生産か仕入販売か） — **判別できない**",
+        "直売所・EC等のふるさと納税以外の販路 — **記載なし**"
+      ],
+      "interview_questions": [
+        "黒酢農法の導入経緯と、農薬削減・品質向上への効果について詳しく教えてください。",
+        "ふるさと納税以外の販路（直売所・EC・卸等）はありますか？今後の販路拡大計画についてお聞かせください。",
+        "みかん・ブドウ・養蜂・海苔と多品目を扱う経営体制について、各部門の役割や連携方法を教えてください。",
+        "「みかん王国・太良町」としての地域ブランド活用や、自治体・他事業者との連携についてお聞かせください。",
+        "今後の商品開発や新規事業（加工品、体験農園等）の計画はありますか？"
+      ],
+      "survey_responded": false,
+      "source_file": "04_南部（太良・嬉野・白石・有田）/有限会社かねひろ.md",
+      "legacy_ids": [
+        "member-038",
+        "south-03",
+        "south-02"
+      ]
+    },
+    {
+      "id": "nakashima-farm",
+      "name": "有限会社ナカシマファーム",
+      "name_short": "ナカシマファーム",
+      "entity_type": "有限会社",
+      "area": {
+        "code": "south",
+        "label": "南部",
+        "folder": "04_南部（太良・嬉野・白石・有田）"
+      },
+      "location": {
+        "postal_code": "849-1421",
+        "address": "佐賀県嬉野市塩田町大字真崎1488",
+        "city": "嬉野市",
+        "lat": 33.129485,
+        "lng": 130.072663
+      },
+      "contact": {
+        "representative": null,
+        "phone": null
+      },
+      "business": {
+        "summary": "ホルスタイン約100頭の飼育、チーズ製造販売、堆肥製造販売、米・麦・飼料稲の栽培、カフェ事業",
+        "established": null,
+        "employees": null
+      },
+      "products": [
+        {
+          "category": "チーズ",
+          "name": "できたてモッツァレラチーズ",
+          "description": "主力商品"
+        },
+        {
+          "category": "チーズ",
+          "name": "さけるチーズ",
+          "description": "—"
+        },
+        {
+          "category": "チーズ",
+          "name": "ブラウンチーズ",
+          "description": "日本初製品化"
+        },
+        {
+          "category": "その他",
+          "name": "MILKBREW COFFEE",
+          "description": "カフェ店舗を運営"
+        }
+      ],
+      "sales_channels": [
+        "EC",
+        "JA・市場",
+        "ふるさと納税",
+        "レストラン",
+        "直売所"
+      ],
+      "certifications": [],
+      "awards": [
+        {
+          "name": "Japan Cheese Award 金賞・部門最優秀賞",
+          "year": 2018,
+          "detail": "2018年受賞"
+        },
+        {
+          "name": "World Cheese Awards 銅賞",
+          "year": 2019,
+          "detail": "2019年受賞"
+        },
+        {
+          "name": "グッドデザイン賞",
+          "year": 2022,
+          "detail": "2022年 農業分野で受賞"
+        },
+        {
+          "name": "JR九州「西九州観光まちづくりAWARD」特別賞",
+          "year": null,
+          "detail": "受賞"
+        },
+        {
+          "name": "交付金",
+          "year": null,
+          "detail": "農林水産省の水田・畑作物直接支払交付金を複数回受給"
+        }
+      ],
+      "web_presence": {
+        "website": "https://nakashima-farm.com",
+        "sns": [
+          {
+            "platform": "Instagram",
+            "url": "https://www.instagram.com/nakashima.farm/"
+          },
+          {
+            "platform": "Facebook",
+            "url": null
+          }
+        ],
+        "ec": [],
+        "media_mentions": [
+          "あり（nakashima-farm.com）— 牧場・チーズ工房・カフェの情報を掲載",
+          "佐賀テレビのウェブニュース（「MILKBREW COFFEE（ナカシマファーム）」紹介）、畜産情報サイト「どっこいしょニッポン」の特集記事等で取り上げ"
+        ]
+      },
+      "shelf_potential": {
+        "categories": [
+          "酪農",
+          "米"
+        ],
+        "key_products": [
+          "できたてモッツァレラチーズ",
+          "さけるチーズ",
+          "ブラウンチーズ",
+          "MILKBREW COFFEE"
+        ],
+        "selling_points": [
+          "JR九州「西九州観光まちづくりAWARD」特別賞",
+          "Japan Cheese Award 金賞・部門最優秀賞",
+          "World Cheese Awards 銅賞",
+          "グッドデザイン賞",
+          "交付金"
+        ]
+      },
+      "unconfirmed_items": [
+        "公式SNS（Facebook等）での発信状況・フォロワー数等 — **詳細は確認できず**",
+        "取扱い商品・サービスの一覧、卸売の有無 — **公開情報からは不明**",
+        "学校・企業連携事例 — **具体的情報は見つからず**"
+      ],
+      "interview_questions": [
+        "SNS活用について：Facebookやその他SNSでの発信計画・実績はありますか？公式サイト以外での情報発信方針はどうなっていますか？",
+        "商品開発や連携：新商品（チーズや乳製品以外）の開発予定や、他社（企業・研究機関・学校等）との協業・連携の具体例はありますか？",
+        "補助金・助成について：これまで申請・受給した補助金や国のプロジェクト（スマート農業等）の事例があれば、取組内容や成果について教えてください。"
+      ],
+      "survey_responded": false,
+      "source_file": "04_南部（太良・嬉野・白石・有田）/有限会社ナカシマファーム.md",
+      "legacy_ids": [
+        "member-039",
+        "south-04"
+      ]
+    },
+    {
+      "id": "sadamatsufarm",
+      "name": "有限会社定松ファーム",
+      "name_short": "定松ファーム",
+      "entity_type": "有限会社",
+      "area": {
+        "code": "south",
+        "label": "南部",
+        "folder": "04_南部（太良・嬉野・白石・有田）"
+      },
+      "location": {
+        "postal_code": "849-1203",
+        "address": "佐賀県杵島郡白石町大字戸ヶ里2774",
+        "city": "杵島郡",
+        "lat": 33.15136,
+        "lng": 130.127446
+      },
+      "contact": {
+        "representative": "定松右樹",
+        "phone": null
+      },
+      "business": {
+        "summary": "米・麦を主体とした露地野菜（玉ねぎ、キャベツ等）生産の複合営農",
+        "established": null,
+        "employees": null
+      },
+      "products": [
+        {
+          "category": "米",
+          "description": "特栽培米として栽培・販売"
+        },
+        {
+          "category": "麦",
+          "description": "栽培・販売"
+        },
+        {
+          "category": "野菜",
+          "description": "露地野菜として生産。JGAP認証取得対象"
+        }
+      ],
+      "sales_channels": [
+        "EC",
+        "直売所"
+      ],
+      "certifications": [
+        "JGAP"
+      ],
+      "awards": [
+        {
+          "name": "JGAP認証",
+          "year": null,
+          "detail": "青果物2022版取得。対象：キャベツ・玉ねぎ。認証有効期限2026/12/13"
+        }
+      ],
+      "web_presence": {
+        "website": "https://www.sadamatsufarm.jp",
+        "sns": [
+          {
+            "platform": "Instagram",
+            "url": "https://www.instagram.com/sadamatsu.farm/"
+          }
+        ],
+        "ec": [],
+        "media_mentions": [
+          "佐賀県産業支援サイト「SAGAPIN」で紹介記事。佐賀県雇用創造プロジェクトサイトに紹介文を掲載"
+        ]
+      },
+      "shelf_potential": {
+        "categories": [
+          "野菜",
+          "米"
+        ],
+        "key_products": [
+          "米",
+          "麦",
+          "野菜"
+        ],
+        "selling_points": [
+          "JGAP",
+          "JGAP認証"
+        ]
+      },
+      "unconfirmed_items": [
+        "資本金・設立年月日・従業員数等の会社規模 — **情報なし**",
+        "直売所・市場等の販売拠点、卸先 — **情報なし**",
+        "Facebook・Twitter等のSNS運用状況 — **情報なし**",
+        "特別栽培米認証取得状況 — **情報なし**",
+        "学校・他企業との連携実績（研修受入含む） — **情報なし**"
+      ],
+      "interview_questions": [
+        "主な販路（直売・卸売先）と顧客層について教えてください。",
+        "JGAP認証や収入保険加入など、導入の動機や効果について教えてください。",
+        "従業員数・組織体制（正社員・パート比、研修体制）について教えてください。",
+        "事業規模拡大や新規作物・商品開発の計画はありますか？",
+        "企業理念「健康第一」に基づく品質管理・衛生管理の具体的手法について教えてください。"
+      ],
+      "survey_responded": false,
+      "source_file": "04_南部（太良・嬉野・白石・有田）/有限会社定松ファーム.md",
+      "legacy_ids": [
+        "member-040",
+        "south-05"
+      ]
+    },
+    {
+      "id": "iwaishi-nosan",
+      "name": "有限会社岩石農産",
+      "name_short": "岩石農産",
+      "entity_type": "有限会社",
+      "area": {
+        "code": "south",
+        "label": "南部",
+        "folder": "04_南部（太良・嬉野・白石・有田）"
+      },
+      "location": {
+        "postal_code": null,
+        "address": "佐賀県杵島郡白石町大字辺田1210番地",
+        "city": "杵島郡",
+        "lat": 33.163878,
+        "lng": 130.113989
+      },
+      "contact": {
+        "representative": "岩石学",
+        "phone": null
+      },
+      "business": {
+        "summary": "水稲（夢しずく・ひなたまる・さがびより）、麦、大豆、タマネギ、キャベツ、菜種等多品目の農産物生産",
+        "established": null,
+        "employees": null
+      },
+      "products": [
+        {
+          "category": "米",
+          "name": "夢しずく",
+          "description": "13.0ha（水稲全体）"
+        },
+        {
+          "category": "米",
+          "name": "ひなたまる",
+          "description": "—"
+        },
+        {
+          "category": "米",
+          "name": "さがびより",
+          "description": "—"
+        },
+        {
+          "category": "穀物",
+          "name": "麦",
+          "description": "39.0ha"
+        },
+        {
+          "category": "穀物",
+          "name": "大豆",
+          "description": "11.8ha"
+        },
+        {
+          "category": "野菜",
+          "name": "タマネギ",
+          "description": "栽培"
+        },
+        {
+          "category": "野菜",
+          "name": "キャベツ",
+          "description": "栽培"
+        },
+        {
+          "category": "その他",
+          "name": "菜種",
+          "description": "栽培"
+        }
+      ],
+      "sales_channels": [
+        "直売所"
+      ],
+      "certifications": [],
+      "awards": [
+        {
+          "name": "農林水産大臣賞",
+          "year": 2024,
+          "detail": "2024年度（令和6年度）「全国農業担い手サミットinさが」生産技術革新部門で受賞"
+        },
+        {
+          "name": "交付金",
+          "year": 2024,
+          "detail": "農林水産省の各種直接支払交付金（水田活用・畑作物直接支払交付金等）を複数回受給（2023～2024年度実績）。大規模多面的な農業生産を支えるために活用"
+        }
+      ],
+      "web_presence": {
+        "website": null,
+        "sns": [],
+        "ec": [],
+        "media_mentions": [
+          "2024年度「全国農業担い手サミットinさが」で農林水産大臣賞（生産技術革新部門）を受賞（佐賀県農業会議報告）。ヤンマー事例紹介でGNSS自動操舵システム導入による効率化事例を紹介"
+        ]
+      },
+      "shelf_potential": {
+        "categories": [
+          "米",
+          "野菜"
+        ],
+        "key_products": [
+          "夢しずく",
+          "ひなたまる",
+          "さがびより",
+          "麦",
+          "大豆",
+          "タマネギ",
+          "キャベツ",
+          "菜種"
+        ],
+        "selling_points": [
+          "交付金",
+          "農林水産大臣賞"
+        ]
+      },
+      "unconfirmed_items": [
+        "公式サイト・企業案内（所在地以外の事業概要詳細） — **情報なし**",
+        "SNS公式発信状況 — **確認できず**",
+        "直売所・販売ルートの具体、加工品製造・6次産業化の有無 — **情報なし**",
+        "取引先（卸売業者・地元市場等） — **情報なし**"
+      ],
+      "interview_questions": [
+        "経営面積拡大や作付け品目の追加計画はありますか？（新作物導入や輪作体系の変更等）",
+        "GNSS自動操舵システムなど最新農業技術の導入状況と今後の活用計画について教えてください。",
+        "補助金・交付金活用で取り組んだ設備投資や課題対応（担い手育成・労働環境改善など）の具体的内容について教えてください。",
+        "直売所や加工販売（6次産業化）への参画状況と今後の方針について教えてください。",
+        "後継者育成や人材確保の課題と、それに対する取り組みについて教えてください。"
+      ],
+      "survey_responded": true,
+      "source_file": "04_南部（太良・嬉野・白石・有田）/有限会社岩石農産.md",
+      "legacy_ids": [
+        "member-041",
+        "south-06",
+        "south-03"
+      ]
+    },
+    {
+      "id": "nagafuchi-co",
+      "name": "有限会社永渕ファームリンク",
+      "name_short": "永渕ファームリンク",
+      "entity_type": "有限会社",
+      "area": {
+        "code": "south",
+        "label": "南部",
+        "folder": "04_南部（太良・嬉野・白石・有田）"
+      },
+      "location": {
+        "postal_code": "849-1616",
+        "address": "佐賀県藤津郡太良町大字大浦己740-18",
+        "city": "藤津郡",
+        "lat": 32.972581,
+        "lng": 130.176945
+      },
+      "contact": {
+        "representative": "永渕政春",
+        "phone": null
+      },
+      "business": {
+        "summary": "自社ブランド豚「金星佐賀豚」の飼育・加工・販売。加工品（餃子等）製造、直営飲食店での提供",
+        "established": null,
+        "employees": null
+      },
+      "products": [
+        {
+          "category": "豚肉",
+          "name": "金星佐賀豚",
+          "description": "オリジナルブランド豚。複数の食肉品評会で受賞歴"
+        },
+        {
+          "category": "加工品",
+          "name": "餃子等",
+          "description": "金星佐賀豚を使用した加工品"
+        },
+        {
+          "category": "飲食",
+          "name": "ファームリンク金星屋",
+          "description": "直営店。自社豚肉・加工品を提供"
+        }
+      ],
+      "sales_channels": [
+        "EC",
+        "直売所"
+      ],
+      "certifications": [],
+      "awards": [
+        {
+          "name": "西日本地区枝肉共進会 金賞",
+          "year": 2023,
+          "detail": "2023年受賞。複数の食肉品評会で受賞歴"
+        }
+      ],
+      "web_presence": {
+        "website": "https://www.nagafuchi.co.jp",
+        "sns": [
+          {
+            "platform": "Instagram",
+            "url": "https://www.instagram.com/kinboshisagabuta/"
+          }
+        ],
+        "ec": [],
+        "media_mentions": [
+          "あり（https://www.nagafuchi.co.jp）— 会社概要・社長メッセージ・理念等を掲載",
+          "佐賀県雇用創造プロジェクト「地プロ佐賀」に企業紹介ページ。公式サイト・SNSで西日本枝肉共進会金賞受賞等を報告"
+        ]
+      },
+      "shelf_potential": {
+        "categories": [
+          "畜産",
+          "加工品"
+        ],
+        "key_products": [
+          "金星佐賀豚",
+          "餃子等",
+          "ファームリンク金星屋"
+        ],
+        "selling_points": [
+          "西日本地区枝肉共進会 金賞"
+        ]
+      },
+      "unconfirmed_items": [
+        "直営飲食店「ファームリンク金星屋」の運営状況・所在地 — **サイトには触れられていない**",
+        "Facebook・X（旧Twitter）等のSNSアカウント詳細 — **情報なし**",
+        "従業員数の内訳・組織体制 — **記載に差異あり**（公式では20名、求人サイトでは30名）",
+        "認定資格（特別栽培認証・GAP認証等）の取得状況 — **公開情報なし**",
+        "行政補助金・産学連携等の参加実績 — **資料なし**"
+      ],
+      "interview_questions": [
+        "「金星佐賀豚」の販路と顧客層（通販以外の販路、直営店の状況など）について教えてください。",
+        "品質管理・衛生管理（「健康第一」）の具体的取り組みについて教えてください。",
+        "従業員数や人材育成体制（新卒研修や福利厚生）について教えてください。",
+        "受賞歴を踏まえた今後のブランド戦略・海外展開計画について教えてください。",
+        "環境保全や地域貢献（緑豊かな多良岳周辺利用）に関する取り組みはありますか？"
+      ],
+      "survey_responded": true,
+      "source_file": "04_南部（太良・嬉野・白石・有田）/有限会社永渕ファームリンク.md",
+      "legacy_ids": [
+        "member-042",
+        "south-07"
+      ]
+    },
+    {
+      "id": "agri-iwanaga",
+      "name": "株式会社アグリイワナガ",
+      "name_short": "アグリイワナガ",
+      "entity_type": "株式会社",
+      "area": {
+        "code": "south",
+        "label": "南部",
+        "folder": "04_南部（太良・嬉野・白石・有田）"
+      },
+      "location": {
+        "postal_code": null,
+        "address": "佐賀県杵島郡白石町大字福吉1142-1",
+        "city": "杵島郡",
+        "lat": 33.18873,
+        "lng": 130.172147
+      },
+      "contact": {
+        "representative": "岩永新一郎",
+        "phone": "090-5083-2212"
+      },
+      "business": {
+        "summary": "水稲（飼料用米）、大麦、レンコンの栽培",
+        "established": "1992年（平成4年）",
+        "employees": "3名"
+      },
+      "products": [
+        {
+          "category": "穀物",
+          "name": "水稲（飼料用米）",
+          "description": "栽培。飼料用米多収日本一コンテストで受賞"
+        },
+        {
+          "category": "穀物",
+          "name": "大麦",
+          "description": "栽培"
+        },
+        {
+          "category": "野菜",
+          "name": "レンコン",
+          "description": "栽培"
+        }
+      ],
+      "sales_channels": [
+        "EC",
+        "JA・市場"
+      ],
+      "certifications": [],
+      "awards": [
+        {
+          "name": "飼料用米多収日本一コンテスト 日本農業新聞賞",
+          "year": 2018,
+          "detail": "2018年度 国内高収量（単位収量）部門第6位で受賞"
+        },
+        {
+          "name": "飼料用米多収日本一コンテスト 政策統括官賞",
+          "year": 2019,
+          "detail": "2019年度（令和元年）増収部門で佐賀県内1位。副大臣賞相当を獲得"
+        }
+      ],
+      "web_presence": {
+        "website": null,
+        "sns": [],
+        "ec": [],
+        "media_mentions": [
+          "政府発表資料で飼料用米収量向上コンテスト受賞を確認"
+        ]
+      },
+      "shelf_potential": {
+        "categories": [
+          "米",
+          "野菜"
+        ],
+        "key_products": [
+          "水稲（飼料用米）",
+          "大麦",
+          "レンコン"
+        ],
+        "selling_points": [
+          "飼料用米多収日本一コンテスト 政策統括官賞",
+          "飼料用米多収日本一コンテスト 日本農業新聞賞"
+        ]
+      },
+      "unconfirmed_items": [
+        "公式サイト・SNSの公開発信 — **確認できず**（ウェブサイト非公開）",
+        "レンコン・大麦の具体的商品名・ブランド名 — **公表されておらず不明**",
+        "農産物の販売形態（直売所、オンライン販売等） — **資料に記載なし**",
+        "農政支援策（補助金、認定制度）の利用状況 — **公開資料に見当たらない**",
+        "学校教育・地域イベントへの参画等、外部連携に関する情報 — **公開資料に見当たらない**"
+      ],
+      "interview_questions": [
+        "レンコン・大麦栽培の主な販路（JA・市場・直販など）について教えてください。",
+        "従来の米作以外に大麦栽培やレンコン栽培を導入された理由・背景を伺いたいです。",
+        "「飼料用米多収日本一コンテスト」での受賞を事業にどう活かしていますか？今後の技術改良や取り組み予定はありますか？",
+        "地域やJA、他農家との共同研究・共同販売の取り組みは行っていますか？",
+        "就農希望者への指導や研修受け入れ、学校教育との連携（体験学習など）の予定はありますか？"
+      ],
+      "survey_responded": true,
+      "source_file": "04_南部（太良・嬉野・白石・有田）/株式会社アグリイワナガ.md",
+      "legacy_ids": [
+        "member-043",
+        "south-08",
+        "south-04"
+      ]
+    },
+    {
+      "id": "asukaen",
+      "name": "株式会社明日香園",
+      "name_short": "明日香園",
+      "entity_type": "株式会社",
+      "area": {
+        "code": "south",
+        "label": "南部",
+        "folder": "04_南部（太良・嬉野・白石・有田）"
+      },
+      "location": {
+        "postal_code": null,
+        "address": "佐賀県藤津郡太良町大字伊福甲1927-2",
+        "city": "藤津郡",
+        "lat": 33.040606,
+        "lng": 130.155834
+      },
+      "contact": {
+        "representative": "向井明日香",
+        "phone": null
+      },
+      "business": {
+        "summary": "",
+        "established": "2006年",
+        "employees": null
+      },
+      "products": [
+        {
+          "category": "花卉",
+          "name": "ユリ束「ゆりざんまい！（10本束）」",
+          "description": "自社ブランド。オリエンタルユリ"
+        },
+        {
+          "category": "花卉",
+          "name": "ケイトウ（鶏頭）",
+          "description": "県内外の花市場・花屋経由で取引"
+        },
+        {
+          "category": "その他",
+          "name": "アグリコーラ",
+          "description": "自家開発の植物活性剤"
+        }
+      ],
+      "sales_channels": [
+        "JA・市場"
+      ],
+      "certifications": [],
+      "awards": [
+        {
+          "name": "長崎県知事賞",
+          "year": 1997,
+          "detail": "1997年 ユリ部門で受賞"
+        },
+        {
+          "name": "農林水産大臣賞",
+          "year": 2001,
+          "detail": "2001年受賞"
+        },
+        {
+          "name": "IFEX優秀賞",
+          "year": 2016,
+          "detail": "2016年受賞"
+        },
+        {
+          "name": "緑白綬有功章",
+          "year": 2019,
+          "detail": "2019年受章"
+        },
+        {
+          "name": "交付金",
+          "year": 2024,
+          "detail": "農林水産省「水田活用直接支払交付金」を毎年受給（2020～2024年各約7万円）"
+        }
+      ],
+      "web_presence": {
+        "website": "https://asukaen.com",
+        "sns": [
+          {
+            "platform": "Facebook",
+            "url": "https://www.facebook.com/asukaensaga"
+          },
+          {
+            "platform": "Instagram",
+            "url": "https://www.instagram.com/asukaen.saga/"
+          }
+        ],
+        "ec": [],
+        "media_mentions": [
+          "テレビ・新聞等のマスメディアへの露出は少ない。佐賀県の農業広報誌に紹介記事あり"
+        ]
+      },
+      "shelf_potential": {
+        "categories": [
+          "花卉"
+        ],
+        "key_products": [
+          "ユリ束「ゆりざんまい！（10本束）」",
+          "ケイトウ（鶏頭）",
+          "アグリコーラ"
+        ],
+        "selling_points": [
+          "IFEX優秀賞",
+          "交付金",
+          "緑白綬有功章",
+          "農林水産大臣賞",
+          "長崎県知事賞"
+        ]
+      },
+      "unconfirmed_items": [
+        "公式サイト以外の専用直販ECサイト — **確認できず**",
+        "Facebook・Instagram以外のSNS — **不明**",
+        "ケイトウの一般向けブランド名・価格情報 — **公開資料に見当たらない**",
+        "行政・JA等との共同プロジェクト — **未確認**",
+        "補助金取得状況（農業以外の補助） — **未確認**",
+        "学校・企業との連携事例 — **未確認**"
+      ],
+      "interview_questions": [
+        "ケイトウとユリの品種改良や販売について、今後の展開（新商品や販路拡大）のご予定はありますか？",
+        "自社開発の活性剤「アグリコーラ」について、商品化の経緯や効果・販売計画を詳しく伺いたいです。",
+        "地方農業者として県やJAとの連携、地域貢献活動（就農支援、学校教育プログラムなど）は行っていますか？",
+        "海外市場向けの輸出や、他県・全国への販促戦略はありますか？",
+        "農政の補助金や認定制度（GAP認証等）を活用していますか？今後の取得予定はありますか？"
+      ],
+      "survey_responded": true,
+      "source_file": "04_南部（太良・嬉野・白石・有田）/株式会社明日香園.md",
+      "legacy_ids": [
+        "member-044",
+        "south-09"
+      ]
+    },
+    {
+      "id": "shirahama-nosan",
+      "name": "白浜農産",
+      "name_short": "白浜農産",
+      "entity_type": null,
+      "area": {
+        "code": "south",
+        "label": "南部",
+        "folder": "04_南部（太良・嬉野・白石・有田）"
+      },
+      "location": {
+        "postal_code": null,
+        "address": "佐賀県杵島郡白石町",
+        "city": "杵島郡",
+        "lat": 33.180991,
+        "lng": 130.143389
+      },
+      "contact": {
+        "representative": "白浜学",
+        "phone": null
+      },
+      "business": {
+        "summary": "水稲、施設花卉（切花・鉢花）",
+        "established": null,
+        "employees": null
+      },
+      "products": [
+        {
+          "category": "米",
+          "name": "水稲",
+          "description": "栽培（品種未確認）"
+        },
+        {
+          "category": "花卉",
+          "name": "切花・鉢花",
+          "description": "施設栽培（品目未確認）"
+        }
+      ],
+      "sales_channels": [],
+      "certifications": [],
+      "awards": [],
+      "web_presence": {
+        "website": null,
+        "sns": [],
+        "ec": [],
+        "media_mentions": [
+          "未調査"
+        ]
+      },
+      "shelf_potential": {
+        "categories": [
+          "花卉",
+          "米"
+        ],
+        "key_products": [
+          "水稲",
+          "切花・鉢花"
+        ],
+        "selling_points": []
+      },
+      "unconfirmed_items": [
+        "正式な法人格（株式会社・有限会社等） — **未確認**",
+        "経営面積 — **未確認**",
+        "栽培品種（米の品種名、花卉の具体的な品目） — **未確認**",
+        "販売先・販路 — **未確認**",
+        "公式サイト・SNS — **未調査**",
+        "受賞歴・認証 — **未確認**"
+      ],
+      "interview_questions": [
+        "栽培している花卉の具体的な品目を教えてください。切花と鉢花の比率や、主な出荷先（市場・直売所等）も確認したいです。",
+        "米の品種（夢しずく・さがびより等）と、花卉との作業スケジュールの兼ね合いについて教えてください。",
+        "高温対策で学びがあったとのことですが、具体的にどのような取り組みをされましたか？",
+        "ICT/AIツールを資源として挙げていますが、現在どのようなツールを導入・検討されていますか？",
+        "「持続可能な農業」を2030年ビジョンに掲げていますが、具体的にどのような姿を思い描いていますか？"
+      ],
+      "survey_responded": false,
+      "source_file": "04_南部（太良・嬉野・白石・有田）/白浜農産.md",
+      "legacy_ids": [
+        "member-045",
+        "south-10",
+        "south-05"
+      ]
+    }
+  ]
+}

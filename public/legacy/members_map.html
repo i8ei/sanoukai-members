@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>佐賀県農業法人協会 — 会員マップ</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif; }
+  #map { width: 100%; height: 100vh; }
+
+  .panel {
+    position: absolute; top: 10px; left: 10px; z-index: 1000;
+    background: rgba(255,255,255,.96); border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,.18); width: 260px;
+    max-height: calc(100vh - 20px); overflow: hidden;
+    font-size: 12px; color: #333; display: flex; flex-direction: column;
+  }
+  .panel-header {
+    background: linear-gradient(135deg, #1a5e1a, #2d8a2d); color: #fff;
+    padding: 14px 16px; border-radius: 12px 12px 0 0;
+  }
+  .panel-header h2 { font-size: 14px; font-weight: 700; margin: 0 0 2px; }
+  .panel-header .sub { font-size: 10px; opacity: .8; }
+  .panel-body { padding: 10px 14px; overflow-y: auto; flex: 1; }
+  .panel-section { margin-bottom: 10px; border-bottom: 1px solid #e5e7eb; padding-bottom: 8px; }
+  .panel-section:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+  .panel-section h3 {
+    font-size: 10px; font-weight: 700; color: #6b7280;
+    text-transform: uppercase; letter-spacing: .05em; margin-bottom: 6px;
+  }
+  .toggle-row { display: flex; align-items: center; gap: 6px; padding: 2px 0; cursor: pointer; }
+  .toggle-row input[type=checkbox] { accent-color: #1a5e1a; width: 14px; height: 14px; cursor: pointer; }
+  .toggle-row label { cursor: pointer; font-size: 12px; user-select: none; }
+  .legend { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 4px; }
+  .legend-item { display: flex; align-items: center; gap: 4px; font-size: 11px; }
+  .legend-dot { width: 14px; height: 14px; border-radius: 3px; border: 2px solid rgba(255,255,255,.9); box-shadow: 0 0 3px rgba(0,0,0,.25); }
+
+  .counter {
+    position: absolute; top: 10px; right: 10px; z-index: 1000;
+    background: rgba(255,255,255,.96); border-radius: 10px;
+    box-shadow: 0 2px 12px rgba(0,0,0,.15); padding: 12px 18px; text-align: center;
+  }
+  .counter .num { font-size: 26px; font-weight: 800; color: #1a5e1a; line-height: 1; }
+  .counter .lbl { color: #6b7280; font-size: 10px; }
+
+  .leaflet-popup-content { margin: 10px 14px; min-width: 220px; font-size: 12px; line-height: 1.5; }
+  .popup-badge { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 10px; font-weight: 700; margin-right: 4px; }
+  .popup-badge.member { background: #dcfce7; color: #166534; }
+  .popup-title { font-weight: 700; color: #1a3a1a; font-size: 14px; margin: 4px 0; }
+  .popup-addr { color: #555; font-size: 11px; margin-bottom: 4px; }
+  .popup-tags { display: flex; flex-wrap: wrap; gap: 3px; margin-top: 4px; }
+  .popup-tag { background: #f3f4f6; color: #374151; padding: 1px 6px; border-radius: 3px; font-size: 10px; }
+  .popup-tag.cert { background: #dcfce7; color: #166534; }
+  .popup-tag.survey-yes { background: #dbeafe; color: #1e40af; }
+  .popup-tag.survey-no { background: #fef3c7; color: #92400e; }
+
+  .panel-toggle {
+    display: none; position: absolute; top: 10px; left: 10px; z-index: 1001;
+    width: 44px; height: 44px; border-radius: 10px; border: none;
+    background: #1a5e1a; color: #fff; font-size: 22px; cursor: pointer;
+    box-shadow: 0 2px 12px rgba(0,0,0,.25); align-items: center; justify-content: center;
+  }
+  @media (max-width: 768px) {
+    .panel { display: none; top: 60px; left: 10px; right: 10px; width: auto; max-height: calc(100vh - 80px); }
+    .panel.open { display: flex; }
+    .panel-toggle { display: flex; }
+    .counter { top: 10px; right: 60px; padding: 8px 12px; }
+    .counter .num { font-size: 20px; }
+    .leaflet-popup-content { min-width: 180px; }
+  }
+</style>
+</head>
+<body>
+<div id="map"></div>
+<button class="panel-toggle" id="panel-toggle" onclick="document.getElementById('filter-panel').classList.toggle('open');this.textContent=document.getElementById('filter-panel').classList.contains('open')?'\u2715':'\u2630'" aria-label="フィルター切替">&#9776;</button>
+
+<div class="panel" id="filter-panel">
+  <div class="panel-header">
+    <h2>佐賀県農業法人協会 会員マップ</h2>
+    <div class="sub" id="panel-sub">45 法人</div>
+  </div>
+  <div class="panel-body">
+    <div class="panel-section">
+      <h3>会員エリア</h3>
+      <div class="toggle-row"><input type="checkbox" id="chk-west" checked><label for="chk-west">西部（唐津・伊万里）</label></div>
+      <div class="toggle-row"><input type="checkbox" id="chk-center" checked><label for="chk-center">中部（佐賀市・小城）</label></div>
+      <div class="toggle-row"><input type="checkbox" id="chk-east" checked><label for="chk-east">東部（神埼・鳥栖）</label></div>
+      <div class="toggle-row"><input type="checkbox" id="chk-south" checked><label for="chk-south">南部（太良・白石）</label></div>
+    </div>
+    <div class="panel-section">
+      <h3>カテゴリ</h3>
+      <div id="cat-filters"></div>
+    </div>
+    <div class="panel-section">
+      <h3>凡例</h3>
+      <div class="legend">
+        <div class="legend-item"><div class="legend-dot" style="background:#e67e22"></div>西部</div>
+        <div class="legend-item"><div class="legend-dot" style="background:#3498db"></div>中部</div>
+        <div class="legend-item"><div class="legend-dot" style="background:#9b59b6"></div>東部</div>
+        <div class="legend-item"><div class="legend-dot" style="background:#e74c3c"></div>南部</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="counter">
+  <div class="num" id="cnt-total">0</div>
+  <div class="lbl">表示中</div>
+</div>
+
+<script>
+const MEMBERS = [{"id": "みのり農場", "name": "有限会社みのり農場", "name_short": "みのり農場", "area": "西部", "city": "唐津市", "address": "佐賀県唐津市浜玉町浜崎2269", "lat": 33.440505, "lng": 130.022347, "main_categories": ["畜産", "野菜", "加工品"], "certifications": [], "has_direct_sales": true, "has_ec": true, "has_processed_goods": true, "product_count": 5, "award_count": 1, "survey_responded": true}, {"id": "よしい", "name": "有限会社よしい", "name_short": "よしい", "area": "西部", "city": "唐津市", "address": "佐賀県唐津市肥前町切木783", "lat": 33.42778, "lng": 129.898462, "main_categories": ["畜産", "米"], "certifications": ["有機JAS"], "has_direct_sales": true, "has_ec": true, "has_processed_goods": false, "product_count": 3, "award_count": 1, "survey_responded": false}, {"id": "マルイチ農産", "name": "有限会社マルイチ農産", "name_short": "マルイチ農産", "area": "西部", "city": "唐津市", "address": "佐賀県唐津市柏崎1281番地1", "lat": 33.411668, "lng": 130.008251, "main_categories": ["米"], "certifications": ["特別栽培認証"], "has_direct_sales": false, "has_ec": false, "has_processed_goods": false, "product_count": 0, "award_count": 0, "survey_responded": false}, {"id": "ヤマナカ", "name": "有限会社ヤマナカ", "name_short": "ヤマナカ", "area": "西部", "city": "唐津市", "address": "佐賀県唐津市肥前町赤坂605", "lat": 33.415736, "lng": 129.894379, "main_categories": ["畜産"], "certifications": [], "has_direct_sales": false, "has_ec": false, "has_processed_goods": false, "product_count": 1, "award_count": 1, "survey_responded": false}, {"id": "ヨネクラ園芸", "name": "有限会社ヨネクラ園芸", "name_short": "ヨネクラ園芸", "area": "西部", "city": "唐津市", "address": "佐賀県唐津市半田3118-1", "lat": 33.410697, "lng": 130.028948, "main_categories": ["野菜"], "certifications": [], "has_direct_sales": true, "has_ec": true, "has_processed_goods": false, "product_count": 2, "award_count": 1, "survey_responded": true}, {"id": "伊万里グリーンファーム", "name": "有限会社伊万里グリーンファーム", "name_short": "伊万里グリーンファーム", "area": "西部", "city": "伊万里市", "address": "佐賀県伊万里市二里町八谷搦926番地", "lat": 33.268802, "lng": 129.861169, "main_categories": ["野菜", "加工品"], "certifications": [], "has_direct_sales": true, "has_ec": true, "has_processed_goods": true, "product_count": 5, "award_count": 3, "survey_responded": true}, {"id": "柴田畜産", "name": "有限会社柴田畜産", "name_short": "柴田畜産", "area": "西部", "city": "唐津市", "address": "佐賀県唐津市肥前町切木甲943-205", "lat": 33.439891, "lng": 129.887729, "main_categories": ["畜産"], "certifications": [], "has_direct_sales": false, "has_ec": false, "has_processed_goods": false, "product_count": 1, "award_count": 0, "survey_responded": false}, {"id": "bmファーム", "name": "株式会社BMファーム", "name_short": "BMファーム", "area": "西部", "city": "唐津市", "address": "佐賀県唐津市神田1666番地", "lat": 33.431281, "lng": 129.961021, "main_categories": ["米", "花卉"], "certifications": ["特別栽培認証"], "has_direct_sales": false, "has_ec": false, "has_processed_goods": false, "product_count": 3, "award_count": 1, "survey_responded": false}, {"id": "y-kカンパニー", "name": "株式会社Y.Kカンパニー", "name_short": "Y.Kカンパニー", "area": "西部", "city": "唐津市", "address": "佐賀県唐津市浜玉町南山3181", "lat": 33.438093, "lng": 130.065014, "main_categories": ["野菜"], "certifications": ["JGAP"], "has_direct_sales": false, "has_ec": false, "has_processed_goods": false, "product_count": 1, "award_count": 1, "survey_responded": false}, {"id": "アースマインド伊万里", "name": "株式会社アースマインド伊万里", "name_short": "アースマインド伊万里", "area": "西部", "city": "伊万里市", "address": "佐賀県伊万里市東山代町長浜2498-35", "lat": 33.27979, "lng": 129.840638, "main_categories": ["野菜"], "certifications": ["JGAP"], "has_direct_sales": false, "has_ec": false, "has_processed_goods": false, "product_count": 1, "award_count": 1, "survey_responded": false}, {"id": "クラベル-ジャパン", "name": "株式会社クラベル・ジャパン", "name_short": "クラベル・ジャパン", "area": "西部", "city": "唐津市", "address": "佐賀県唐津市和多田本村8-51", "lat": 33.434126, "lng": 129.978475, "main_categories": ["花卉", "加工品"], "certifications": [], "has_direct_sales": false, "has_ec": false, "has_processed_goods": true, "product_count": 5, "award_count": 2, "survey_responded": false}, {"id": "シトラスプラス", "name": "株式会社シトラスプラス", "name_short": "シトラスプラス", "area": "西部", "city": "唐津市", "address": "佐賀県唐津市", "lat": 33.450097, "lng": 129.968268, "main_categories": ["果樹", "加工品"], "certifications": [], "has_direct_sales": true, "has_ec": true, "has_processed_goods": true, "product_count": 1, "award_count": 1, "survey_responded": false}, {"id": "フェルマ木須", "name": "株式会社フェルマ木須", "name_short": "フェルマ木須", "area": "西部", "city": "伊万里市", "address": "佐賀県伊万里市木須町4938", "lat": 33.288945, "lng": 129.863873, "main_categories": ["加工品", "米"], "certifications": [], "has_direct_sales": true, "has_ec": true, "has_processed_goods": true, "product_count": 3, "award_count": 3, "survey_responded": true}, {"id": "中山牧場", "name": "株式会社中山牧場", "name_short": "中山牧場", "area": "西部", "city": "東松浦郡", "address": "佐賀県東松浦郡玄海町普恩寺912-1", "lat": 33.499159, "lng": 129.843244, "main_categories": ["畜産", "加工品"], "certifications": [], "has_direct_sales": true, "has_ec": true, "has_processed_goods": true, "product_count": 5, "award_count": 0, "survey_responded": false}, {"id": "百姓屋", "name": "株式会社百姓屋", "name_short": "百姓屋", "area": "西部", "city": "伊万里市", "address": "佐賀県伊万里市波多津町津留2482-1", "lat": 33.365447, "lng": 129.910089, "main_categories": ["畜産", "加工品", "花卉"], "certifications": [], "has_direct_sales": true, "has_ec": true, "has_processed_goods": true, "product_count": 3, "award_count": 3, "survey_responded": true}, {"id": "麻生園芸", "name": "株式会社麻生園芸", "name_short": "麻生園芸", "area": "西部", "city": "唐津市", "address": "佐賀県唐津市半田2585-1", "lat": 33.414702, "lng": 130.025961, "main_categories": ["野菜", "加工品"], "certifications": ["JGAP", "特別栽培認証"], "has_direct_sales": false, "has_ec": true, "has_processed_goods": true, "product_count": 4, "award_count": 2, "survey_responded": true}, {"id": "アサヒ-アグリ佐賀", "name": "有限会社アサヒ・アグリ佐賀", "name_short": "アサヒ・アグリ佐賀", "area": "中部", "city": "佐賀市", "address": "佐賀県佐賀市三瀬村杠1578番地", "lat": 33.421345, "lng": 130.260462, "main_categories": ["米", "加工品"], "certifications": [], "has_direct_sales": true, "has_ec": true, "has_processed_goods": true, "product_count": 6, "award_count": 0, "survey_responded": false}, {"id": "ミルン牧場", "name": "有限会社ミルン牧場", "name_short": "ミルン牧場", "area": "中部", "city": "市鍋島町", "address": "佐賀市鍋島町蛎久883", "lat": 33.288851, "lng": 130.271166, "main_categories": ["酪農", "加工品"], "certifications": [], "has_direct_sales": true, "has_ec": true, "has_processed_goods": true, "product_count": 4, "award_count": 1, "survey_responded": false}, {"id": "七島農産", "name": "有限会社七島農産", "name_short": "七島農産", "area": "中部", "city": "小城市", "address": "佐賀県小城市三日月町久米1243番地", "lat": 33.287579, "lng": 130.204789, "main_categories": ["米", "加工品"], "certifications": ["特別栽培認証"], "has_direct_sales": true, "has_ec": false, "has_processed_goods": true, "product_count": 5, "award_count": 1, "survey_responded": true}, {"id": "下村ファーム", "name": "有限会社下村ファーム", "name_short": "下村ファーム", "area": "中部", "city": "市久保泉町", "address": "佐賀市久保泉町下和泉2331", "lat": 33.303937, "lng": 130.326222, "main_categories": ["米", "加工品", "野菜"], "certifications": ["JGAP"], "has_direct_sales": true, "has_ec": true, "has_processed_goods": true, "product_count": 4, "award_count": 2, "survey_responded": false}, {"id": "北川農産", "name": "有限会社北川農産", "name_short": "北川農産", "area": "中部", "city": "小城市", "address": "佐賀県小城市芦刈町道免80番地2", "lat": 33.229857, "lng": 130.217572, "main_categories": ["米"], "certifications": ["JGAP"], "has_direct_sales": true, "has_ec": true, "has_processed_goods": false, "product_count": 1, "award_count": 1, "survey_responded": false}, {"id": "田中丸ガーデン", "name": "有限会社田中丸ガーデン", "name_short": "田中丸ガーデン", "area": "中部", "city": "小城市", "address": "佐賀県小城市小城町船田1229", "lat": 33.269539, "lng": 130.198205, "main_categories": ["野菜", "花卉"], "certifications": [], "has_direct_sales": true, "has_ec": false, "has_processed_goods": false, "product_count": 2, "award_count": 1, "survey_responded": false}, {"id": "田中農場", "name": "有限会社田中農場", "name_short": "田中農場", "area": "中部", "city": "小城市", "address": "佐賀県小城市牛津町乙柳157番地2", "lat": 33.265355, "lng": 130.209229, "main_categories": ["米"], "certifications": ["特別栽培認証"], "has_direct_sales": true, "has_ec": false, "has_processed_goods": false, "product_count": 3, "award_count": 2, "survey_responded": false}, {"id": "しもむら農園", "name": "株式会社しもむら農園", "name_short": "しもむら農園", "area": "中部", "city": "小城市", "address": "佐賀県小城市芦刈町三王崎1822", "lat": 33.226224, "lng": 130.197447, "main_categories": ["米", "野菜", "果樹"], "certifications": ["特別栽培認証"], "has_direct_sales": true, "has_ec": true, "has_processed_goods": false, "product_count": 3, "award_count": 3, "survey_responded": false}, {"id": "イケマコ", "name": "株式会社イケマコ", "name_short": "イケマコ", "area": "中部", "city": "佐賀市", "address": "佐賀県佐賀市川副町犬井道2345-5", "lat": 33.1797, "lng": 130.312492, "main_categories": ["米", "加工品"], "certifications": [], "has_direct_sales": true, "has_ec": true, "has_processed_goods": true, "product_count": 4, "award_count": 2, "survey_responded": true}, {"id": "永石農産", "name": "株式会社永石農産", "name_short": "永石農産", "area": "中部", "city": "多久市", "address": "佐賀県多久市北多久町多久原3530", "lat": 33.298869, "lng": 130.121197, "main_categories": ["米"], "certifications": [], "has_direct_sales": true, "has_ec": true, "has_processed_goods": false, "product_count": 3, "award_count": 1, "survey_responded": false}, {"id": "石橋果樹園", "name": "株式会社石橋果樹園", "name_short": "石橋果樹園", "area": "中部", "city": "佐賀市", "address": "佐賀県佐賀市大和町大字久留間5001", "lat": 33.31516, "lng": 130.23623, "main_categories": ["果樹", "加工品"], "certifications": [], "has_direct_sales": false, "has_ec": true, "has_processed_goods": true, "product_count": 5, "award_count": 0, "survey_responded": true}, {"id": "アグリベースにいやま", "name": "有限会社アグリベースにいやま", "name_short": "アグリベースにいやま", "area": "東部", "city": "神埼市", "address": "佐賀県神埼市神埼町鶴1176", "lat": 33.330246, "lng": 130.373791, "main_categories": ["米"], "certifications": [], "has_direct_sales": true, "has_ec": false, "has_processed_goods": false, "product_count": 3, "award_count": 1, "survey_responded": false}, {"id": "m-s-green", "name": "株式会社M's green", "name_short": "M's green", "area": "東部", "city": "三養基郡", "address": "佐賀県三養基郡みやき町大字坂口2288", "lat": 33.269319, "lng": 130.446719, "main_categories": ["野菜", "米", "加工品"], "certifications": [], "has_direct_sales": false, "has_ec": true, "has_processed_goods": true, "product_count": 4, "award_count": 0, "survey_responded": true}, {"id": "えこびと農園", "name": "株式会社えこびと農園", "name_short": "えこびと農園", "area": "東部", "city": "神埼市", "address": "佐賀県神埼市千代田町迎島1282-3", "lat": 33.263802, "lng": 130.403152, "main_categories": ["加工品", "野菜", "米"], "certifications": ["GFP", "有機JAS"], "has_direct_sales": true, "has_ec": true, "has_processed_goods": true, "product_count": 6, "award_count": 0, "survey_responded": true}, {"id": "サガンベジ", "name": "株式会社サガンベジ", "name_short": "サガンベジ", "area": "東部", "city": "三養基郡", "address": "佐賀県三養基郡みやき町中津隈5461", "lat": 33.3191, "lng": 130.439891, "main_categories": ["野菜", "米"], "certifications": ["有機JAS"], "has_direct_sales": true, "has_ec": true, "has_processed_goods": false, "product_count": 2, "award_count": 2, "survey_responded": true}, {"id": "トワード", "name": "株式会社トワード", "name_short": "トワード", "area": "東部", "city": "神埼市", "address": "佐賀県神埼市神埼町志波屋1480", "lat": 33.342402, "lng": 130.375636, "main_categories": [], "certifications": [], "has_direct_sales": false, "has_ec": false, "has_processed_goods": false, "product_count": 1, "award_count": 2, "survey_responded": false}, {"id": "基里okファーム", "name": "株式会社基里OKファーム", "name_short": "基里OKファーム", "area": "東部", "city": "鳥栖市", "address": "佐賀県鳥栖市飯田町529", "lat": 33.377174, "lng": 130.536488, "main_categories": ["野菜", "加工品", "米"], "certifications": [], "has_direct_sales": true, "has_ec": false, "has_processed_goods": true, "product_count": 4, "award_count": 1, "survey_responded": false}, {"id": "石動農産", "name": "株式会社石動農産", "name_short": "石動農産", "area": "東部", "city": "神埼郡", "address": "佐賀県神埼郡吉野ヶ里町石動541-1", "lat": 33.358299, "lng": 130.404133, "main_categories": ["米", "野菜", "加工品"], "certifications": [], "has_direct_sales": false, "has_ec": true, "has_processed_goods": true, "product_count": 4, "award_count": 1, "survey_responded": false}, {"id": "小鹿ファーム", "name": "農事組合法人小鹿ファーム", "name_short": "小鹿ファーム", "area": "東部", "city": "神埼市", "address": "佐賀県神埼市千代田町用作310番地", "lat": 33.251783, "lng": 130.378922, "main_categories": ["野菜", "加工品", "米"], "certifications": [], "has_direct_sales": true, "has_ec": false, "has_processed_goods": true, "product_count": 4, "award_count": 2, "survey_responded": false}, {"id": "ありた", "name": "ありた株式会社", "name_short": "ありた", "area": "南部", "city": "西松浦郡", "address": "佐賀県西松浦郡有田町立部乙10-1", "lat": 33.198798, "lng": 129.865249, "main_categories": ["畜産", "加工品"], "certifications": [], "has_direct_sales": true, "has_ec": true, "has_processed_goods": true, "product_count": 3, "award_count": 4, "survey_responded": true}, {"id": "吉原農産", "name": "吉原農産", "name_short": "吉原農産", "area": "南部", "city": "杵島郡", "address": "佐賀県杵島郡白石町", "lat": 33.180991, "lng": 130.143389, "main_categories": ["米", "野菜"], "certifications": [], "has_direct_sales": false, "has_ec": false, "has_processed_goods": false, "product_count": 4, "award_count": 0, "survey_responded": false}, {"id": "かねひろ", "name": "有限会社かねひろ", "name_short": "かねひろ", "area": "南部", "city": "藤津郡", "address": "佐賀県藤津郡太良町大字大浦己166番地", "lat": 32.974787, "lng": 130.191799, "main_categories": ["果樹", "加工品"], "certifications": [], "has_direct_sales": false, "has_ec": false, "has_processed_goods": true, "product_count": 4, "award_count": 0, "survey_responded": false}, {"id": "ナカシマファーム", "name": "有限会社ナカシマファーム", "name_short": "ナカシマファーム", "area": "南部", "city": "嬉野市", "address": "佐賀県嬉野市塩田町大字真崎1488", "lat": 33.129485, "lng": 130.072663, "main_categories": ["酪農", "米"], "certifications": [], "has_direct_sales": true, "has_ec": true, "has_processed_goods": false, "product_count": 4, "award_count": 5, "survey_responded": false}, {"id": "定松ファーム", "name": "有限会社定松ファーム", "name_short": "定松ファーム", "area": "南部", "city": "杵島郡", "address": "佐賀県杵島郡白石町大字戸ヶ里2774", "lat": 33.15136, "lng": 130.127446, "main_categories": ["野菜", "米"], "certifications": ["JGAP"], "has_direct_sales": true, "has_ec": true, "has_processed_goods": false, "product_count": 3, "award_count": 1, "survey_responded": false}, {"id": "岩石農産", "name": "有限会社岩石農産", "name_short": "岩石農産", "area": "南部", "city": "杵島郡", "address": "佐賀県杵島郡白石町大字辺田1210番地", "lat": 33.163878, "lng": 130.113989, "main_categories": ["米", "野菜"], "certifications": [], "has_direct_sales": true, "has_ec": false, "has_processed_goods": false, "product_count": 8, "award_count": 2, "survey_responded": true}, {"id": "永渕ファームリンク", "name": "有限会社永渕ファームリンク", "name_short": "永渕ファームリンク", "area": "南部", "city": "藤津郡", "address": "佐賀県藤津郡太良町大字大浦己740-18", "lat": 32.972581, "lng": 130.176945, "main_categories": ["畜産", "加工品"], "certifications": [], "has_direct_sales": true, "has_ec": true, "has_processed_goods": true, "product_count": 3, "award_count": 1, "survey_responded": true}, {"id": "アグリイワナガ", "name": "株式会社アグリイワナガ", "name_short": "アグリイワナガ", "area": "南部", "city": "杵島郡", "address": "佐賀県杵島郡白石町大字福吉1142-1", "lat": 33.18873, "lng": 130.172147, "main_categories": ["米", "野菜"], "certifications": [], "has_direct_sales": false, "has_ec": true, "has_processed_goods": false, "product_count": 3, "award_count": 2, "survey_responded": true}, {"id": "明日香園", "name": "株式会社明日香園", "name_short": "明日香園", "area": "南部", "city": "藤津郡", "address": "佐賀県藤津郡太良町大字伊福甲1927-2", "lat": 33.040606, "lng": 130.155834, "main_categories": ["花卉"], "certifications": [], "has_direct_sales": false, "has_ec": false, "has_processed_goods": false, "product_count": 3, "award_count": 5, "survey_responded": true}, {"id": "白浜農産", "name": "白浜農産", "name_short": "白浜農産", "area": "南部", "city": "杵島郡", "address": "佐賀県杵島郡白石町", "lat": 33.180991, "lng": 130.143389, "main_categories": ["花卉", "米"], "certifications": [], "has_direct_sales": false, "has_ec": false, "has_processed_goods": false, "product_count": 2, "award_count": 0, "survey_responded": false}];
+
+const areaColors = { "西部": "#e67e22", "中部": "#3498db", "東部": "#9b59b6", "南部": "#e74c3c" };
+const areaCheckMap = { "西部": "chk-west", "中部": "chk-center", "東部": "chk-east", "南部": "chk-south" };
+
+// Collect all categories
+var allCats = {};
+MEMBERS.forEach(function(m) {
+  (m.main_categories || []).forEach(function(c) { allCats[c] = true; });
+});
+var CATEGORIES = Object.keys(allCats).sort();
+
+// Generate category checkboxes
+var catContainer = document.getElementById("cat-filters");
+CATEGORIES.forEach(function(c) {
+  var row = document.createElement("div");
+  row.className = "toggle-row";
+  row.innerHTML = '<input type="checkbox" id="chk-c-' + c + '" checked><label for="chk-c-' + c + '">' + c + '</label>';
+  catContainer.appendChild(row);
+});
+
+var map = L.map("map").setView([33.28, 130.15], 9);
+L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+  attribution: "© OpenStreetMap contributors", maxZoom: 18
+}).addTo(map);
+
+function makeIcon(color, size) {
+  return L.divIcon({
+    html: '<span style="background:' + color + ';width:' + size + 'px;height:' + size + 'px;display:flex;align-items:center;justify-content:center;border:2.5px solid #fff;box-shadow:0 1px 5px rgba(0,0,0,.35);border-radius:3px;"></span>',
+    className: "",
+    iconSize: [size, size],
+    iconAnchor: [size / 2, size / 2]
+  });
+}
+
+function memberPopup(m) {
+  var cats = (m.main_categories || []).map(function(c) { return '<span class="popup-tag">' + c + '</span>'; }).join("");
+  var certs = (m.certifications || []).map(function(c) { return '<span class="popup-tag cert">' + c + '</span>'; }).join("");
+  var sales = [];
+  if (m.has_direct_sales) sales.push("直売");
+  if (m.has_ec) sales.push("EC");
+  if (m.has_processed_goods) sales.push("加工品");
+  var salesStr = sales.length ? '<div style="font-size:10px;color:#888;margin-top:4px">販路: ' + sales.join("・") + '</div>' : '';
+  return '<span class="popup-badge member">会員法人</span><span class="popup-tag" style="background:#e3f2fd;color:#1565c0">' + m.area + '</span>'
+    + '<div class="popup-title">' + (m.name_short || m.name) + '</div>'
+    + '<div class="popup-addr">' + (m.address || m.city || "") + '</div>'
+    + '<div class="popup-tags">' + cats + certs + '</div>'
+    + salesStr
+    + '<div style="font-size:10px;color:#888;margin-top:2px">商品 ' + m.product_count + '件 / 受賞 ' + m.award_count + '件</div>';
+}
+
+var allMarkers = [];
+MEMBERS.forEach(function(m) {
+  var color = areaColors[m.area] || "#16a34a";
+  var marker = L.marker([m.lat, m.lng], { icon: makeIcon(color, 24) })
+    .bindPopup(memberPopup(m), { maxWidth: 320 });
+  marker._data = m;
+  allMarkers.push(marker);
+});
+
+function applyFilters() {
+  var checkedAreas = ["西部", "中部", "東部", "南部"].filter(function(a) {
+    return document.getElementById(areaCheckMap[a]).checked;
+  });
+  var checkedCats = CATEGORIES.filter(function(c) {
+    return document.getElementById("chk-c-" + c).checked;
+  });
+
+  var count = 0;
+  allMarkers.forEach(function(mk) {
+    var d = mk._data;
+    var areaOk = checkedAreas.indexOf(d.area) !== -1;
+    var catOk = (d.main_categories || []).some(function(c) { return checkedCats.indexOf(c) !== -1; });
+    if ((d.main_categories || []).length === 0) catOk = checkedCats.length === CATEGORIES.length;
+    if (areaOk && catOk) {
+      mk.addTo(map);
+      count++;
+    } else {
+      mk.remove();
+    }
+  });
+  document.getElementById("cnt-total").textContent = count;
+}
+
+// Bind events
+document.querySelectorAll('.panel input[type="checkbox"]').forEach(function(chk) {
+  chk.addEventListener("change", applyFilters);
+});
+
+applyFilters();
+</script>
+</body>
+</html>

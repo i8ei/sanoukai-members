@@ -1,0 +1,23 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+const BASE = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
+---
+
+<BaseLayout title="会員地図 | 佐賀県農業法人協会" description="会員法人を地図で確認">
+  <section class="space-y-4">
+    <div class="flex items-center justify-between gap-3">
+      <h1 class="text-2xl font-black tracking-tight text-ink">会員地図</h1>
+      <a href={`${BASE}members/`} class="rounded-lg border border-line bg-bg-soft px-4 py-2 text-sm font-semibold text-ink no-underline hover:bg-card-soft">会員一覧へ戻る</a>
+    </div>
+    <p class="text-sm text-ink-soft">既存の会員地図を表示しています。拡大・縮小しながらご確認ください。</p>
+
+    <div class="overflow-hidden rounded-xl border border-line bg-card shadow-card">
+      <iframe
+        src={`${BASE}legacy/members_map.html`}
+        title="会員地図"
+        class="h-[72vh] w-full"
+        loading="lazy"
+      ></iframe>
+    </div>
+  </section>
+</BaseLayout>
