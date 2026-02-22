@@ -69,6 +69,42 @@ const generatedAtText = generatedAt
   </section>
 
   <div class="space-y-8 md:space-y-12">
+    <!-- ═══ 新着情報 Section ═══ -->
+    <article
+      data-animate
+      class="relative overflow-hidden rounded-2xl border border-line bg-card p-6 shadow-card md:p-8"
+    >
+      <div class="flex items-center justify-between mb-6">
+        <h2 class="text-lg font-black tracking-tight text-ink flex items-center gap-2">
+          <span class="w-2 h-2 bg-brand rounded-full animate-pulse"></span>
+          新着情報
+        </h2>
+        <a href={`${BASE}news/`} class="text-sm font-medium text-brand hover:underline">
+          一覧へ →
+        </a>
+      </div>
+      <div class="space-y-4">
+        <article class="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 p-4 rounded-xl bg-bg-soft hover:bg-bg-soft/80 transition-colors">
+          <time class="text-xs font-mono text-ink-soft shrink-0">2026.02.22</time>
+          <a href={`${BASE}news/`} class="text-sm font-medium text-ink hover:text-brand transition-colors">
+            サイトを公開しました
+          </a>
+        </article>
+        <article class="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 p-4 rounded-xl bg-bg-soft hover:bg-bg-soft/80 transition-colors">
+          <time class="text-xs font-mono text-ink-soft shrink-0">2026.02.15</time>
+          <a href={`${BASE}join/`} class="text-sm font-medium text-ink hover:text-brand transition-colors">
+            入会のご案内を開始しました
+          </a>
+        </article>
+        <article class="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 p-4 rounded-xl bg-bg-soft hover:bg-bg-soft/80 transition-colors">
+          <time class="text-xs font-mono text-ink-soft shrink-0">2026.02.01</time>
+          <a href={`${BASE}about/`} class="text-sm font-medium text-ink hover:text-brand transition-colors">
+            佐賀県農業法人協会とは
+          </a>
+        </article>
+      </div>
+    </article>
+
     <!-- ═══ Stats Bar ═══ -->
 
     <!-- ═══ 協会について（統合） ═══ -->
