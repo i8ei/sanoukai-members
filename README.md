@@ -34,3 +34,5 @@ npm run build
 
 ※ 上記は運用用ファイルです（公開ページには表示しません）。
 
+
+<!-- Pages deployment test 2026年  2月 22日 日曜日 15:44:13 JST -->
