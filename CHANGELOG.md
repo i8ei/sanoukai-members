@@ -8,3 +8,4 @@
 - 2026-02-21 04:41 UTC | ee205b1 | i8ei | Merge branch 'nisei/chore-whitespace-note-20260221-132527'
 - 2026-02-22 04:34 UTC | 51168fc | i8ei | test: ssh push check
 - 2026-02-22 06:45 UTC | 99c305b | i8ei | test: GitHub Pages deployment check
+- 2026-02-22 08:22 UTC | ed8b7d3 | i8ei | [job-20260222-154500] 協会基本情報を更新：設立・会員数・年会費・加入資格
