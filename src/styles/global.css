@@ -46,15 +46,7 @@ a {
   @apply shadow-card-hover -translate-y-1;
 }
 
-/* ── Section Decorators ── */
-.section-divider {
-  @apply relative;
-}
 
-.section-divider::before {
-  content: "";
-  @apply absolute -top-px left-1/2 -translate-x-1/2 w-24 h-0.5 bg-gradient-to-r from-transparent via-leaf to-transparent rounded-full;
-}
 
 /* ── Stagger Animations ── */
 .stagger-1 {

@@ -1,23 +1,562 @@
 ---
-import BaseLayout from '../../layouts/BaseLayout.astro';
-const BASE = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getMembers } from "../../lib/members";
+
+const BASE = import.meta.env.BASE_URL.endsWith("/")
+  ? import.meta.env.BASE_URL
+  : `${import.meta.env.BASE_URL}/`;
+const rawMembers = await getMembers();
+
+const mapMembers = rawMembers
+  .filter((m) => m.location?.lat && m.location?.lng)
+  .map((m) => {
+    const categoriesSet = new Set(
+      (m.products || [])
+        .map((p) => p.category)
+        .filter((c): c is string => Boolean(c)),
+    );
+    return {
+      id: m.id,
+      name: m.name || "",
+      name_short: m.name_short || m.name || "",
+      area: m.area?.label || "不明",
+      city: m.location?.city || "",
+      address: m.location?.address || "",
+      lat: m.location?.lat,
+      lng: m.location?.lng,
+      main_categories: Array.from(categoriesSet),
+      certifications: m.certifications || [],
+      has_direct_sales: (m.sales_channels || []).some((s) =>
+        s.includes("直売"),
+      ),
+      has_ec: (m.sales_channels || []).some(
+        (s) =>
+          s.toLowerCase().includes("ec") ||
+          s.includes("オンライン") ||
+          s.includes("通販") ||
+          s.includes("ネット"),
+      ),
+      has_processed_goods:
+        (m.sales_channels || []).some((s) => s.includes("加工品")) ||
+        Array.from(categoriesSet).includes("加工品"),
+      product_count: (m.products || []).length,
+      award_count: (m.awards || []).length,
+      survey_responded: m.survey_responded || false,
+    };
+  });
 ---
 
-<BaseLayout title="会員地図 | 佐賀県農業法人協会" description="会員法人を地図で確認">
+<BaseLayout
+  title="会員地図 | 佐賀県農業法人協会"
+  description="会員法人を地図で確認"
+>
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  />
+  <script is:inline src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+  ></script>
+
+  <style>
+    .map-container {
+      position: relative;
+      width: 100%;
+      height: 72vh;
+      z-index: 10;
+      border-radius: 0.75rem;
+      overflow: hidden;
+      border: 1px solid #e5e7eb;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    }
+    #map {
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+    }
+
+    .panel {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      z-index: 1000;
+      background: rgba(255, 255, 255, 0.96);
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.18);
+      width: 260px;
+      max-height: calc(100% - 20px);
+      overflow: hidden;
+      font-size: 12px;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+    }
+    .panel-header {
+      background: linear-gradient(135deg, #1a5e1a, #2d8a2d);
+      color: #fff;
+      padding: 14px 16px;
+      border-radius: 12px 12px 0 0;
+    }
+    .panel-header h2 {
+      font-size: 14px;
+      font-weight: 700;
+      margin: 0 0 2px;
+    }
+    .panel-header .sub {
+      font-size: 10px;
+      opacity: 0.8;
+    }
+    .panel-body {
+      padding: 10px 14px;
+      overflow-y: auto;
+      flex: 1;
+    }
+    .panel-section {
+      margin-bottom: 10px;
+      border-bottom: 1px solid #e5e7eb;
+      padding-bottom: 8px;
+    }
+    .panel-section:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+    .panel-section h3 {
+      font-size: 10px;
+      font-weight: 700;
+      color: #6b7280;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 6px;
+    }
+    .toggle-row {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      padding: 2px 0;
+      cursor: pointer;
+    }
+    .toggle-row input[type="checkbox"] {
+      accent-color: #1a5e1a;
+      width: 14px;
+      height: 14px;
+      cursor: pointer;
+    }
+    .toggle-row label {
+      cursor: pointer;
+      font-size: 12px;
+      user-select: none;
+    }
+    .legend {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 4px;
+    }
+    .legend-item {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      font-size: 11px;
+    }
+    .legend-dot {
+      width: 14px;
+      height: 14px;
+      border-radius: 3px;
+      border: 2px solid rgba(255, 255, 255, 0.9);
+      box-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
+    }
+
+    .counter {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      z-index: 1000;
+      background: rgba(255, 255, 255, 0.96);
+      border-radius: 10px;
+      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+      padding: 12px 18px;
+      text-align: center;
+    }
+    .counter .num {
+      font-size: 26px;
+      font-weight: 800;
+      color: #1a5e1a;
+      line-height: 1;
+    }
+    .counter .lbl {
+      color: #6b7280;
+      font-size: 10px;
+    }
+
+    :global(.leaflet-popup-content) {
+      margin: 10px 14px;
+      min-width: 220px;
+      font-size: 12px;
+      line-height: 1.5;
+      font-family: "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif;
+    }
+    :global(.popup-badge) {
+      display: inline-block;
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-size: 10px;
+      font-weight: 700;
+      margin-right: 4px;
+    }
+    :global(.popup-badge.member) {
+      background: #dcfce7;
+      color: #166534;
+    }
+    :global(.popup-title) {
+      font-weight: 700;
+      color: #1a3a1a;
+      font-size: 14px;
+      margin: 4px 0;
+    }
+    :global(.popup-addr) {
+      color: #555;
+      font-size: 11px;
+      margin-bottom: 4px;
+    }
+    :global(.popup-tags) {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 3px;
+      margin-top: 4px;
+    }
+    :global(.popup-tag) {
+      background: #f3f4f6;
+      color: #374151;
+      padding: 1px 6px;
+      border-radius: 3px;
+      font-size: 10px;
+    }
+    :global(.popup-tag.cert) {
+      background: #dcfce7;
+      color: #166534;
+    }
+    :global(.popup-tag.survey-yes) {
+      background: #dbeafe;
+      color: #1e40af;
+    }
+    :global(.popup-tag.survey-no) {
+      background: #fef3c7;
+      color: #92400e;
+    }
+
+    .panel-toggle {
+      display: none;
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      z-index: 1001;
+      width: 44px;
+      height: 44px;
+      border-radius: 10px;
+      border: none;
+      background: #1a5e1a;
+      color: #fff;
+      font-size: 22px;
+      cursor: pointer;
+      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.25);
+      align-items: center;
+      justify-content: center;
+    }
+    @media (max-width: 768px) {
+      .panel {
+        display: none;
+        top: 60px;
+        left: 10px;
+        right: 10px;
+        width: auto;
+        max-height: calc(100% - 80px);
+      }
+      .panel.open {
+        display: flex;
+      }
+      .panel-toggle {
+        display: flex;
+      }
+      .counter {
+        top: 10px;
+        right: 60px;
+        padding: 8px 12px;
+      }
+      .counter .num {
+        font-size: 20px;
+      }
+      :global(.leaflet-popup-content) {
+        min-width: 180px;
+      }
+    }
+  </style>
+
   <section class="space-y-4">
     <div class="flex items-center justify-between gap-3">
       <h1 class="text-2xl font-black tracking-tight text-ink">会員地図</h1>
-      <a href={`${BASE}members/`} class="rounded-lg border border-line bg-bg-soft px-4 py-2 text-sm font-semibold text-ink no-underline hover:bg-card-soft">会員一覧へ戻る</a>
+      <a
+        href={`${BASE}members/`}
+        class="rounded-lg border border-line bg-bg-soft px-4 py-2 text-sm font-semibold text-ink no-underline hover:bg-card-soft"
+        >会員一覧へ戻る</a
+      >
     </div>
-    <p class="text-sm text-ink-soft">既存の会員地図を表示しています。拡大・縮小しながらご確認ください。</p>
+    <p class="text-sm text-ink-soft">
+      会員の分布状況や各種情報を地図上でご確認いただけます。
+    </p>
 
-    <div class="overflow-hidden rounded-xl border border-line bg-card shadow-card">
-      <iframe
-        src={`${BASE}legacy/members_map.html`}
-        title="会員地図"
-        class="h-[72vh] w-full"
-        loading="lazy"
-      ></iframe>
+    <div class="map-container relative">
+      <div id="map"></div>
+
+      <button class="panel-toggle" id="panel-toggle" aria-label="フィルター切替"
+        >&#9776;</button
+      >
+
+      <div class="panel" id="filter-panel">
+        <div class="panel-header">
+          <h2>佐賀県農業法人協会 会員マップ</h2>
+          <div class="sub" id="panel-sub">
+            <span id="total-members">{mapMembers.length}</span> 法人
+          </div>
+        </div>
+        <div class="panel-body">
+          <div class="panel-section">
+            <h3>会員エリア</h3>
+            <div class="toggle-row">
+              <input
+                type="checkbox"
+                class="filter-check"
+                id="chk-west"
+                checked
+              /><label for="chk-west">西部（唐津・伊万里）</label>
+            </div>
+            <div class="toggle-row">
+              <input
+                type="checkbox"
+                class="filter-check"
+                id="chk-center"
+                checked
+              /><label for="chk-center">中部（佐賀市・小城）</label>
+            </div>
+            <div class="toggle-row">
+              <input
+                type="checkbox"
+                class="filter-check"
+                id="chk-east"
+                checked
+              /><label for="chk-east">東部（神埼・鳥栖）</label>
+            </div>
+            <div class="toggle-row">
+              <input
+                type="checkbox"
+                class="filter-check"
+                id="chk-south"
+                checked
+              /><label for="chk-south">南部（太良・白石）</label>
+            </div>
+          </div>
+          <div class="panel-section">
+            <h3>カテゴリ</h3>
+            <div id="cat-filters"></div>
+          </div>
+          <div class="panel-section">
+            <h3>凡例</h3>
+            <div class="legend">
+              <div class="legend-item">
+                <div class="legend-dot" style="background:#e67e22"></div>西部
+              </div>
+              <div class="legend-item">
+                <div class="legend-dot" style="background:#3498db"></div>中部
+              </div>
+              <div class="legend-item">
+                <div class="legend-dot" style="background:#9b59b6"></div>東部
+              </div>
+              <div class="legend-item">
+                <div class="legend-dot" style="background:#e74c3c"></div>南部
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="counter">
+        <div class="num" id="cnt-total">0</div>
+        <div class="lbl">表示中</div>
+      </div>
     </div>
   </section>
+
+  <script define:vars={{ membersData: mapMembers }}>
+    document.addEventListener("DOMContentLoaded", function () {
+      const toggleBtn = document.getElementById("panel-toggle");
+      const panel = document.getElementById("filter-panel");
+
+      if (toggleBtn && panel) {
+        toggleBtn.addEventListener("click", function () {
+          panel.classList.toggle("open");
+          this.innerHTML = panel.classList.contains("open")
+            ? "&#10005;"
+            : "&#9776;";
+        });
+      }
+
+      const MEMBERS = membersData;
+      const areaColors = {
+        西部: "#e67e22",
+        中部: "#3498db",
+        東部: "#9b59b6",
+        南部: "#e74c3c",
+      };
+      const areaCheckMap = {
+        西部: "chk-west",
+        中部: "chk-center",
+        東部: "chk-east",
+        南部: "chk-south",
+      };
+
+      // Collect all categories
+      let allCats = {};
+      MEMBERS.forEach(function (m) {
+        (m.main_categories || []).forEach(function (c) {
+          allCats[c] = true;
+        });
+      });
+      const CATEGORIES = Object.keys(allCats).sort();
+
+      // Generate category checkboxes
+      const catContainer = document.getElementById("cat-filters");
+      if (catContainer) {
+        CATEGORIES.forEach(function (c) {
+          const row = document.createElement("div");
+          row.className = "toggle-row";
+          row.innerHTML =
+            '<input type="checkbox" class="filter-check" id="chk-c-' +
+            c +
+            '" checked><label for="chk-c-' +
+            c +
+            '">' +
+            c +
+            "</label>";
+          catContainer.appendChild(row);
+        });
+      }
+
+      const mapElem = document.getElementById("map");
+      if (!mapElem || !window.L) return;
+
+      const map = window.L.map("map").setView([33.28, 130.15], 9);
+      window.L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+        attribution: "© OpenStreetMap contributors",
+        maxZoom: 18,
+      }).addTo(map);
+
+      function makeIcon(color, size) {
+        return window.L.divIcon({
+          html:
+            '<span style="background:' +
+            color +
+            ";width:" +
+            size +
+            "px;height:" +
+            size +
+            'px;display:flex;align-items:center;justify-content:center;border:2.5px solid #fff;box-shadow:0 1px 5px rgba(0,0,0,.35);border-radius:3px;"></span>',
+          className: "",
+          iconSize: [size, size],
+          iconAnchor: [size / 2, size / 2],
+        });
+      }
+
+      function memberPopup(m) {
+        const cats = (m.main_categories || [])
+          .map(function (c) {
+            return '<span class="popup-tag">' + c + "</span>";
+          })
+          .join("");
+        const certs = (m.certifications || [])
+          .map(function (c) {
+            return '<span class="popup-tag cert">' + c + "</span>";
+          })
+          .join("");
+        let sales = [];
+        if (m.has_direct_sales) sales.push("直売");
+        if (m.has_ec) sales.push("EC");
+        if (m.has_processed_goods) sales.push("加工品");
+        const salesStr = sales.length
+          ? '<div style="font-size:10px;color:#888;margin-top:4px">販路: ' +
+            sales.join("・") +
+            "</div>"
+          : "";
+        return (
+          '<span class="popup-badge member">会員法人</span><span class="popup-tag" style="background:#e3f2fd;color:#1565c0">' +
+          m.area +
+          "</span>" +
+          '<div class="popup-title">' +
+          (m.name_short || m.name) +
+          "</div>" +
+          '<div class="popup-addr">' +
+          (m.address || m.city || "") +
+          "</div>" +
+          '<div class="popup-tags">' +
+          cats +
+          certs +
+          "</div>" +
+          salesStr +
+          '<div style="font-size:10px;color:#888;margin-top:2px">商品 ' +
+          m.product_count +
+          "件 / 受賞 " +
+          m.award_count +
+          "件</div>"
+        );
+      }
+
+      let allMarkers = [];
+      MEMBERS.forEach(function (m) {
+        const color = areaColors[m.area] || "#16a34a";
+        const marker = window.L.marker([m.lat, m.lng], {
+          icon: makeIcon(color, 24),
+        }).bindPopup(memberPopup(m), { maxWidth: 320 });
+        marker._data = m;
+        allMarkers.push(marker);
+      });
+
+      function applyFilters() {
+        const checkedAreas = ["西部", "中部", "東部", "南部"].filter(
+          function (a) {
+            const el = document.getElementById(areaCheckMap[a]);
+            return el && el.checked;
+          },
+        );
+        const checkedCats = CATEGORIES.filter(function (c) {
+          const el = document.getElementById("chk-c-" + c);
+          return el && el.checked;
+        });
+
+        let count = 0;
+        allMarkers.forEach(function (mk) {
+          const d = mk._data;
+          const areaOk = checkedAreas.indexOf(d.area) !== -1;
+          let catOk = (d.main_categories || []).some(function (c) {
+            return checkedCats.indexOf(c) !== -1;
+          });
+          if ((d.main_categories || []).length === 0)
+            catOk = checkedCats.length === CATEGORIES.length;
+
+          if (areaOk && catOk) {
+            if (!map.hasLayer(mk)) mk.addTo(map);
+            count++;
+          } else {
+            if (map.hasLayer(mk)) mk.remove();
+          }
+        });
+        const countSpan = document.getElementById("cnt-total");
+        if (countSpan) countSpan.textContent = count;
+      }
+
+      // Bind events
+      document.querySelectorAll(".filter-check").forEach(function (chk) {
+        chk.addEventListener("change", applyFilters);
+      });
+
+      applyFilters();
+    });
+  </script>
 </BaseLayout>
