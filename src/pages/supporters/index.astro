@@ -1,11 +1,8 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getSupportingMembers } from "../../lib/csvMembers";
 
-const supporters = [
-  { name: "aaa", category: "賛助会員", area: "佐賀県内" },
-  { name: "bbb", category: "賛助会員", area: "佐賀県内" },
-  { name: "ccc", category: "賛助会員", area: "佐賀県内" },
-];
+const supporters = await getSupportingMembers();
 ---
 
 <BaseLayout
@@ -29,8 +26,8 @@ const supporters = [
         supporters.map((s) => (
           <div class="rounded-xl border border-line bg-card p-5 shadow-card transition-all duration-300 hover:shadow-card-hover hover:-translate-y-0.5">
             <p class="text-lg font-bold text-ink">{s.name}</p>
-            <p class="mt-1 text-base text-ink-soft">{s.category}</p>
-            <p class="mt-2 text-sm text-ink-soft">{s.area}</p>
+            <p class="mt-1 text-base text-ink-soft">{s.type}</p>
+            <p class="mt-2 text-sm text-ink-soft">{s.address}</p>
           </div>
         ))
       }

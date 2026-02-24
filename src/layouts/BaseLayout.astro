@@ -54,7 +54,12 @@ const BASE = import.meta.env.BASE_URL.endsWith("/")
           <a
             href={`${BASE}members/`}
             class="rounded-xl px-4 py-2 text-[15px] font-bold text-ink-soft no-underline transition-all duration-200 hover:bg-leaf-pale hover:text-brand hover:no-underline hover:shadow-sm"
-            >会員一覧</a
+            >正会員</a
+          >
+          <a
+            href={`${BASE}youth/`}
+            class="rounded-xl px-4 py-2 text-[15px] font-bold text-ink-soft no-underline transition-all duration-200 hover:bg-leaf-pale hover:text-brand hover:no-underline hover:shadow-sm"
+            >青年会員</a
           >
           <a
             href={`${BASE}supporters/`}
@@ -114,7 +119,10 @@ const BASE = import.meta.env.BASE_URL.endsWith("/")
       >
       <a
         href={`${BASE}members/`}
-        class="text-lg font-bold text-ink no-underline">📋 会員一覧</a
+        class="text-lg font-bold text-ink no-underline">📋 正会員</a
+      >
+      <a href={`${BASE}youth/`} class="text-lg font-bold text-ink no-underline"
+        >🌱 青年会員</a
       >
       <a
         href={`${BASE}supporters/`}
@@ -151,7 +159,12 @@ const BASE = import.meta.env.BASE_URL.endsWith("/")
             <a
               href={`${BASE}members/`}
               class="text-white/70 no-underline transition-colors hover:text-white hover:no-underline"
-              >会員一覧</a
+              >正会員</a
+            >
+            <a
+              href={`${BASE}youth/`}
+              class="text-white/70 no-underline transition-colors hover:text-white hover:no-underline"
+              >青年会員</a
             >
             <a
               href={`${BASE}supporters/`}

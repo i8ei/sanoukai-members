@@ -1,9 +1,9 @@
 {
   "$schema": "members-v1",
-  "generated_at": "2026-02-06T12:41:26.373198+00:00",
+  "generated_at": "2026-02-23T15:59:01.059219+00:00",
   "generator": "scripts/generate_members_json.py",
   "source_dir": "会員情報/",
-  "total": 45,
+  "total": 44,
   "errors": [],
   "members": [
     {
@@ -11,6 +11,7 @@
       "name": "有限会社みのり農場",
       "name_short": "みのり農場",
       "entity_type": "有限会社",
+      "member_type": "正会員",
       "area": {
         "code": "west",
         "label": "西部",
@@ -25,7 +26,7 @@
       },
       "contact": {
         "representative": "麻生茂幸",
-        "phone": null
+        "phone": "0955-56-6802"
       },
       "business": {
         "summary": "",
@@ -118,17 +119,14 @@
         "創業から60年以上経ちますが、今後の事業承継や展望についてどのようにお考えですか？特に次世代（ご家族や従業員）への引き継ぎ準備状況をお聞かせください。"
       ],
       "survey_responded": true,
-      "source_file": "01_西部（唐津・伊万里・玄海）/有限会社みのり農場.md",
-      "legacy_ids": [
-        "member-001",
-        "west-01"
-      ]
+      "source_file": "01_西部（唐津・伊万里・玄海）/有限会社みのり農場.md"
     },
     {
       "id": "pig-yoshii",
       "name": "有限会社よしい",
       "name_short": "よしい",
       "entity_type": "有限会社",
+      "member_type": "正会員",
       "area": {
         "code": "west",
         "label": "西部",
@@ -142,8 +140,8 @@
         "lng": 129.898462
       },
       "contact": {
-        "representative": null,
-        "phone": null
+        "representative": "吉井 清隆",
+        "phone": "0955-53-2941"
       },
       "business": {
         "summary": "養豚業、もみ殻シリカ生成、堆肥製造販売",
@@ -219,17 +217,14 @@
         "経営や生産で現在最も課題と感じていることは何ですか？（補助金以外に受けた支援制度があれば教えてください）"
       ],
       "survey_responded": false,
-      "source_file": "01_西部（唐津・伊万里・玄海）/有限会社よしい.md",
-      "legacy_ids": [
-        "member-002",
-        "west-02"
-      ]
+      "source_file": "01_西部（唐津・伊万里・玄海）/有限会社よしい.md"
     },
     {
       "id": "maruichi-nosan",
       "name": "有限会社マルイチ農産",
       "name_short": "マルイチ農産",
       "entity_type": "有限会社",
+      "member_type": "正会員",
       "area": {
         "code": "west",
         "label": "西部",
@@ -244,7 +239,7 @@
       },
       "contact": {
         "representative": "市丸房光",
-        "phone": null
+        "phone": "0955-77-0565"
       },
       "business": {
         "summary": "| 品目 | 概要 |",
@@ -287,18 +282,14 @@
         "地域の農業法人として、行政や他団体と連携した取組（例えば人材確保や技術研修など）は行っていますか？"
       ],
       "survey_responded": false,
-      "source_file": "01_西部（唐津・伊万里・玄海）/有限会社マルイチ農産.md",
-      "legacy_ids": [
-        "member-003",
-        "west-03",
-        "west-01"
-      ]
+      "source_file": "01_西部（唐津・伊万里・玄海）/有限会社マルイチ農産.md"
     },
     {
       "id": "yamanaka-farm",
       "name": "有限会社ヤマナカ",
       "name_short": "ヤマナカ",
       "entity_type": "有限会社",
+      "member_type": "正会員",
       "area": {
         "code": "west",
         "label": "西部",
@@ -313,7 +304,7 @@
       },
       "contact": {
         "representative": "山中謙志",
-        "phone": null
+        "phone": "0955-74-9639"
       },
       "business": {
         "summary": "養豚業",
@@ -368,18 +359,14 @@
         "事業承継や後継者育成についての状況（山中謙志氏への継承時期や展望）はどのようになっていますか？"
       ],
       "survey_responded": false,
-      "source_file": "01_西部（唐津・伊万里・玄海）/有限会社ヤマナカ.md",
-      "legacy_ids": [
-        "member-004",
-        "west-04",
-        "west-02"
-      ]
+      "source_file": "01_西部（唐津・伊万里・玄海）/有限会社ヤマナカ.md"
     },
     {
       "id": "yonekura-engei",
       "name": "有限会社ヨネクラ園芸",
       "name_short": "ヨネクラ園芸",
       "entity_type": "有限会社",
+      "member_type": "正会員",
       "area": {
         "code": "west",
         "label": "西部",
@@ -394,7 +381,7 @@
       },
       "contact": {
         "representative": "米倉 博幸",
-        "phone": null
+        "phone": "0955-77-0923"
       },
       "business": {
         "summary": "",
@@ -465,18 +452,14 @@
         "法人化から約20年経過する中で感じる農業経営の変化は？（当初と比較した市場動向や経営手法の変遷、世代交代の展望）"
       ],
       "survey_responded": true,
-      "source_file": "01_西部（唐津・伊万里・玄海）/有限会社ヨネクラ園芸.md",
-      "legacy_ids": [
-        "member-005",
-        "west-05",
-        "west-03"
-      ]
+      "source_file": "01_西部（唐津・伊万里・玄海）/有限会社ヨネクラ園芸.md"
     },
     {
       "id": "imari-gf",
       "name": "有限会社伊万里グリーンファーム",
       "name_short": "伊万里グリーンファーム",
       "entity_type": "有限会社",
+      "member_type": "正会員",
       "area": {
         "code": "west",
         "label": "西部",
@@ -490,11 +473,11 @@
         "lng": 129.861169
       },
       "contact": {
-        "representative": null,
-        "phone": null
+        "representative": "前田修造",
+        "phone": "0955-23-5780"
       },
       "business": {
-        "summary": "| 分野 | 概要 |",
+        "summary": null,
         "established": "1991年法人設立（創業1963年）",
         "employees": null
       },
@@ -589,17 +572,14 @@
         "新製品開発や海外展開など、今後の事業計画に関する情報をお聞かせください。"
       ],
       "survey_responded": true,
-      "source_file": "01_西部（唐津・伊万里・玄海）/有限会社伊万里グリーンファーム.md",
-      "legacy_ids": [
-        "member-006",
-        "west-06"
-      ]
+      "source_file": "01_西部（唐津・伊万里・玄海）/有限会社伊万里グリーンファーム.md"
     },
     {
       "id": "shibata-livestock",
       "name": "有限会社柴田畜産",
       "name_short": "柴田畜産",
       "entity_type": "有限会社",
+      "member_type": "正会員",
       "area": {
         "code": "west",
         "label": "西部",
@@ -613,8 +593,8 @@
         "lng": 129.887729
       },
       "contact": {
-        "representative": "情報確認できず",
-        "phone": null
+        "representative": "柴田 敏徳",
+        "phone": "0955-53-2056"
       },
       "business": {
         "summary": "養豚業（豚の飼育・販売）",
@@ -660,18 +640,14 @@
         "今後の設備投資計画（最新飼育施設導入の予定）や後継者計画について。"
       ],
       "survey_responded": false,
-      "source_file": "01_西部（唐津・伊万里・玄海）/有限会社柴田畜産.md",
-      "legacy_ids": [
-        "member-007",
-        "west-07",
-        "west-04"
-      ]
+      "source_file": "01_西部（唐津・伊万里・玄海）/有限会社柴田畜産.md"
     },
     {
       "id": "bm",
       "name": "株式会社BMファーム",
       "name_short": "BMファーム",
       "entity_type": "株式会社",
+      "member_type": "正会員",
       "area": {
         "code": "west",
         "label": "西部",
@@ -686,7 +662,7 @@
       },
       "contact": {
         "representative": "青山定浩",
-        "phone": null
+        "phone": "0955-74-5858"
       },
       "business": {
         "summary": "",
@@ -767,16 +743,14 @@
         "今後の地域農業への貢献計画：高齢化が進む中山間地農業を維持するために、今後どのような取り組みや人材育成をお考えでしょうか？"
       ],
       "survey_responded": false,
-      "source_file": "01_西部（唐津・伊万里・玄海）/株式会社BMファーム.md",
-      "legacy_ids": [
-        "west-08"
-      ]
+      "source_file": "01_西部（唐津・伊万里・玄海）/株式会社BMファーム.md"
     },
     {
       "id": "y-k",
       "name": "株式会社Y.Kカンパニー",
       "name_short": "Y.Kカンパニー",
       "entity_type": "株式会社",
+      "member_type": "正会員",
       "area": {
         "code": "west",
         "label": "西部",
@@ -791,7 +765,7 @@
       },
       "contact": {
         "representative": "本田和也",
-        "phone": null
+        "phone": "0955-56-6966"
       },
       "business": {
         "summary": "水菜・ほうれん草・小松菜など葉物野菜を中心に栽培",
@@ -850,16 +824,14 @@
         "5年後・10年後の事業目標や規模拡大に向けた課題と資金調達計画。"
       ],
       "survey_responded": false,
-      "source_file": "01_西部（唐津・伊万里・玄海）/株式会社Y.Kカンパニー.md",
-      "legacy_ids": [
-        "west-09"
-      ]
+      "source_file": "01_西部（唐津・伊万里・玄海）/株式会社Y.Kカンパニー.md"
     },
     {
       "id": "earthmind-co",
       "name": "株式会社アースマインド伊万里",
       "name_short": "アースマインド伊万里",
       "entity_type": "株式会社",
+      "member_type": "正会員",
       "area": {
         "code": "west",
         "label": "西部",
@@ -874,7 +846,7 @@
       },
       "contact": {
         "representative": "中倉大介",
-        "phone": null
+        "phone": "0955-29-8008"
       },
       "business": {
         "summary": "オランダ式ハウスによるパプリカ専門農場の運営。低農薬でパプリカを生産・販売",
@@ -960,17 +932,14 @@
         "J-GAP認証取得の背景と今後の品質管理・生産管理への取り組みについて教えてください。"
       ],
       "survey_responded": false,
-      "source_file": "01_西部（唐津・伊万里・玄海）/株式会社アースマインド伊万里.md",
-      "legacy_ids": [
-        "member-010",
-        "west-10"
-      ]
+      "source_file": "01_西部（唐津・伊万里・玄海）/株式会社アースマインド伊万里.md"
     },
     {
       "id": "clavel-japan",
       "name": "株式会社クラベル・ジャパン",
       "name_short": "クラベル・ジャパン",
       "entity_type": "株式会社",
+      "member_type": "正会員",
       "area": {
         "code": "west",
         "label": "西部",
@@ -984,8 +953,8 @@
         "lng": 129.978475
       },
       "contact": {
-        "representative": null,
-        "phone": null
+        "representative": "平田 憲市郎",
+        "phone": "0955-67-4877"
       },
       "business": {
         "summary": "",
@@ -1079,18 +1048,14 @@
         "福祉施設との連携による人材活用（農福連携）を行っていますが、その経緯や具体的な取り組み内容、協働して感じるメリット・課題は何でしょうか？ このモデルを今後どのように発展させたいとお考えですか？"
       ],
       "survey_responded": false,
-      "source_file": "01_西部（唐津・伊万里・玄海）/株式会社クラベル・ジャパン.md",
-      "legacy_ids": [
-        "member-011",
-        "west-11",
-        "west-05"
-      ]
+      "source_file": "01_西部（唐津・伊万里・玄海）/株式会社クラベル・ジャパン.md"
     },
     {
       "id": "citrus-plus",
       "name": "株式会社シトラスプラス",
       "name_short": "シトラスプラス",
       "entity_type": "株式会社",
+      "member_type": "正会員",
       "area": {
         "code": "west",
         "label": "西部",
@@ -1105,7 +1070,7 @@
       },
       "contact": {
         "representative": "上野勉",
-        "phone": null
+        "phone": "0955-56-6772"
       },
       "business": {
         "summary": "ハウスみかんを中心とした柑橘栽培",
@@ -1166,18 +1131,14 @@
         "今後の課題や新規事業、技術導入など経営ビジョンはどのようなものですか？"
       ],
       "survey_responded": false,
-      "source_file": "01_西部（唐津・伊万里・玄海）/株式会社シトラスプラス.md",
-      "legacy_ids": [
-        "member-012",
-        "west-12",
-        "west-06"
-      ]
+      "source_file": "01_西部（唐津・伊万里・玄海）/株式会社シトラスプラス.md"
     },
     {
       "id": "fermakisu-co",
       "name": "株式会社フェルマ木須",
       "name_short": "フェルマ木須",
       "entity_type": "株式会社",
+      "member_type": "正会員",
       "area": {
         "code": "west",
         "label": "西部",
@@ -1192,7 +1153,7 @@
       },
       "contact": {
         "representative": "木須栄作",
-        "phone": null
+        "phone": "0955-23-7618"
       },
       "business": {
         "summary": "米・麦等の穀類、大豆等の豆類の生産・加工・販売",
@@ -1287,17 +1248,14 @@
         "現在管理している農地面積や、今後の作付面積拡大計画について聞かせてください。"
       ],
       "survey_responded": true,
-      "source_file": "01_西部（唐津・伊万里・玄海）/株式会社フェルマ木須.md",
-      "legacy_ids": [
-        "member-013",
-        "west-13"
-      ]
+      "source_file": "01_西部（唐津・伊万里・玄海）/株式会社フェルマ木須.md"
     },
     {
       "id": "ii29",
       "name": "株式会社中山牧場",
       "name_short": "中山牧場",
       "entity_type": "株式会社",
+      "member_type": "正会員",
       "area": {
         "code": "west",
         "label": "西部",
@@ -1311,8 +1269,8 @@
         "lng": 129.843244
       },
       "contact": {
-        "representative": "中山大悟",
-        "phone": null
+        "representative": "中山 裕",
+        "phone": "0955-52-6289"
       },
       "business": {
         "summary": "食肉卸売業、牛肉加工品販売業、飲食業（直営店・レストラン経営）",
@@ -1404,17 +1362,14 @@
         "後継者や従業員の育成・確保についての課題と対応策は何ですか？"
       ],
       "survey_responded": false,
-      "source_file": "01_西部（唐津・伊万里・玄海）/株式会社中山牧場.md",
-      "legacy_ids": [
-        "member-014",
-        "west-14"
-      ]
+      "source_file": "01_西部（唐津・伊万里・玄海）/株式会社中山牧場.md"
     },
     {
       "id": "yamandori",
       "name": "株式会社百姓屋",
       "name_short": "百姓屋",
       "entity_type": "株式会社",
+      "member_type": "正会員",
       "area": {
         "code": "west",
         "label": "西部",
@@ -1429,10 +1384,10 @@
       },
       "contact": {
         "representative": "市丸善登",
-        "phone": null
+        "phone": "0955-25-0363"
       },
       "business": {
-        "summary": "| 分野 | 概要 |",
+        "summary": null,
         "established": null,
         "employees": null
       },
@@ -1523,17 +1478,14 @@
         "今後の人材育成・後継者計画、地域・JA等との連携方針について教えてください。"
       ],
       "survey_responded": true,
-      "source_file": "01_西部（唐津・伊万里・玄海）/株式会社百姓屋.md",
-      "legacy_ids": [
-        "member-015",
-        "west-15"
-      ]
+      "source_file": "01_西部（唐津・伊万里・玄海）/株式会社百姓屋.md"
     },
     {
       "id": "asou-engei",
       "name": "株式会社麻生園芸",
       "name_short": "麻生園芸",
       "entity_type": "株式会社",
+      "member_type": "正会員",
       "area": {
         "code": "west",
         "label": "西部",
@@ -1548,7 +1500,7 @@
       },
       "contact": {
         "representative": "麻生 朗",
-        "phone": null
+        "phone": "0955-77-1265"
       },
       "business": {
         "summary": "",
@@ -1641,17 +1593,14 @@
         "今後目指す経営ビジョンは？（ハウス増設や販路拡大、新規事業計画など将来的な展望）"
       ],
       "survey_responded": true,
-      "source_file": "01_西部（唐津・伊万里・玄海）/株式会社麻生園芸.md",
-      "legacy_ids": [
-        "member-016",
-        "west-16"
-      ]
+      "source_file": "01_西部（唐津・伊万里・玄海）/株式会社麻生園芸.md"
     },
     {
       "id": "aa-saga",
       "name": "有限会社アサヒ・アグリ佐賀",
       "name_short": "アサヒ・アグリ佐賀",
       "entity_type": "有限会社",
+      "member_type": "正会員",
       "area": {
         "code": "center",
         "label": "中部",
@@ -1666,7 +1615,7 @@
       },
       "contact": {
         "representative": "藤野兼治",
-        "phone": null
+        "phone": "0952-56-2813"
       },
       "business": {
         "summary": "",
@@ -1763,120 +1712,14 @@
         "将来的に目指す事業展開や、新たに挑戦したい農産加工・サービスがあれば教えてください。"
       ],
       "survey_responded": false,
-      "source_file": "02_中部（佐賀市・小城・多久）/有限会社アサヒ・アグリ佐賀.md",
-      "legacy_ids": [
-        "member-017",
-        "other-01"
-      ]
-    },
-    {
-      "id": "milne-farm",
-      "name": "有限会社ミルン牧場",
-      "name_short": "ミルン牧場",
-      "entity_type": "有限会社",
-      "area": {
-        "code": "center",
-        "label": "中部",
-        "folder": "02_中部（佐賀市・小城・多久）"
-      },
-      "location": {
-        "postal_code": null,
-        "address": "佐賀市鍋島町蛎久883",
-        "city": "市鍋島町",
-        "lat": 33.288851,
-        "lng": 130.271166
-      },
-      "contact": {
-        "representative": "横尾文三",
-        "phone": "0952-32-1777"
-      },
-      "business": {
-        "summary": "酪農業および乳製品の製造・卸販売",
-        "established": null,
-        "employees": null
-      },
-      "products": [
-        {
-          "category": "牛乳"
-        },
-        {
-          "category": "ヨーグルト"
-        },
-        {
-          "category": "チーズ"
-        },
-        {
-          "category": "その他"
-        }
-      ],
-      "sales_channels": [
-        "EC",
-        "ふるさと納税",
-        "直売所"
-      ],
-      "certifications": [],
-      "awards": [
-        {
-          "name": "行政・表彰",
-          "year": 2024,
-          "detail": "創業者・横尾文三氏は佐賀県酪農協議会会長を長年務め、酪農振興・乳製品消費拡大の功績で**佐賀県政功労者知事表彰**（令和6年度「産業・雇用」分野）を2024年に受賞"
-        }
-      ],
-      "web_presence": {
-        "website": "https://www.milne-farm.jp",
-        "sns": [
-          {
-            "platform": "Instagram",
-            "url": "https://www.instagram.com/milnefarm/"
-          },
-          {
-            "platform": "Facebook",
-            "url": null
-          }
-        ],
-        "ec": [],
-        "media_mentions": [
-          "[http://www.milne-farm.jp](http://www.milne-farm.jp) — 会社概要・商品情報・新着情報・メディア掲載実績を発信",
-          "佐賀市観光協会サイトなどにも事業者情報が掲載",
-          "地元テレビ（STSサガテレビ「かちかちPress」等）、全国誌（雑誌『anan』『CREA』など）に度々取り上げられ、公式サイトの「メディア掲載」欄で確認可能"
-        ]
-      },
-      "shelf_potential": {
-        "categories": [
-          "酪農",
-          "加工品"
-        ],
-        "key_products": [
-          "牛乳",
-          "ヨーグルト",
-          "チーズ",
-          "その他"
-        ],
-        "selling_points": [
-          "行政・表彰"
-        ]
-      },
-      "unconfirmed_items": [
-        "行政からの補助金の取得状況に関する公開情報は**情報なし**【調査メモ】",
-        "Twitter/X・YouTubeなど主要SNSに公式アカウントを開設しているかは**未確認**（InstagramとFacebook以外のSNS情報は見つからず）【調査メモ】"
-      ],
-      "interview_questions": [
-        "ミルン牧場の低温殺菌ノンホモ牛乳は全国的にも珍しいとのことですが、具体的に通常の牛乳と何が違うのか、風味や栄養面での特徴を詳しく知りたいです。",
-        "地元企業とのコラボ商品開発が行われていますが、最近発売された注目のコラボ商品や、今後予定されている地域連携プロジェクトについて詳しく教えてください。",
-        "ミルン牧場では現在何頭の乳牛を飼育し、一日当たりどのくらいの生乳を生産しているのか、また生乳は全て自社製品化しているのか知りたいです。（経営規模に関する詳細）"
-      ],
-      "survey_responded": false,
-      "source_file": "02_中部（佐賀市・小城・多久）/有限会社ミルン牧場.md",
-      "legacy_ids": [
-        "member-018",
-        "other-02"
-      ]
+      "source_file": "02_中部（佐賀市・小城・多久）/有限会社アサヒ・アグリ佐賀.md"
     },
     {
       "id": "7740farm",
       "name": "有限会社七島農産",
       "name_short": "七島農産",
       "entity_type": "有限会社",
+      "member_type": "正会員",
       "area": {
         "code": "center",
         "label": "中部",
@@ -1982,17 +1825,14 @@
         "将来の経営方針や次世代継承（子息や家族への引継ぎ等）の計画はありますか？"
       ],
       "survey_responded": true,
-      "source_file": "02_中部（佐賀市・小城・多久）/有限会社七島農産.md",
-      "legacy_ids": [
-        "member-019",
-        "other-03"
-      ]
+      "source_file": "02_中部（佐賀市・小城・多久）/有限会社七島農産.md"
     },
     {
       "id": "shimomura-farm",
       "name": "有限会社下村ファーム",
       "name_short": "下村ファーム",
       "entity_type": "有限会社",
+      "member_type": "正会員",
       "area": {
         "code": "center",
         "label": "中部",
@@ -2099,18 +1939,14 @@
         "米以外にも大豆・菜種等を栽培していますが、今後それらを使った新商品開発（味噌・納豆、米加工品等）の予定はありますか？地域資源を活かした6次産業化の展望についてお聞きしたいです。"
       ],
       "survey_responded": false,
-      "source_file": "02_中部（佐賀市・小城・多久）/有限会社下村ファーム.md",
-      "legacy_ids": [
-        "member-020",
-        "other-04",
-        "other-01"
-      ]
+      "source_file": "02_中部（佐賀市・小城・多久）/有限会社下村ファーム.md"
     },
     {
       "id": "kitagawa-nosan",
       "name": "有限会社北川農産",
       "name_short": "北川農産",
       "entity_type": "有限会社",
+      "member_type": "正会員",
       "area": {
         "code": "center",
         "label": "中部",
@@ -2124,8 +1960,8 @@
         "lng": 130.217572
       },
       "contact": {
-        "representative": null,
-        "phone": null
+        "representative": "北川 公文",
+        "phone": "0952-66-1186"
       },
       "business": {
         "summary": "",
@@ -2191,18 +2027,14 @@
         "最近の経営課題や今後の目標、取り組みたい新規事業などについて教えてください。"
       ],
       "survey_responded": false,
-      "source_file": "02_中部（佐賀市・小城・多久）/有限会社北川農産.md",
-      "legacy_ids": [
-        "member-021",
-        "other-05",
-        "other-02"
-      ]
+      "source_file": "02_中部（佐賀市・小城・多久）/有限会社北川農産.md"
     },
     {
       "id": "tanakamaru-garden",
       "name": "有限会社田中丸ガーデン",
       "name_short": "田中丸ガーデン",
       "entity_type": "有限会社",
+      "member_type": "正会員",
       "area": {
         "code": "center",
         "label": "中部",
@@ -2216,8 +2048,8 @@
         "lng": 130.198205
       },
       "contact": {
-        "representative": null,
-        "phone": null
+        "representative": "田中丸 土男",
+        "phone": "0952-72-6638"
       },
       "business": {
         "summary": "花苗・野菜苗の育苗・生産卸",
@@ -2283,18 +2115,14 @@
         "将来的な事業展開や新規技術導入の計画、後継者育成・人材確保の方針について教えてください。"
       ],
       "survey_responded": false,
-      "source_file": "02_中部（佐賀市・小城・多久）/有限会社田中丸ガーデン.md",
-      "legacy_ids": [
-        "member-022",
-        "other-06",
-        "other-03"
-      ]
+      "source_file": "02_中部（佐賀市・小城・多久）/有限会社田中丸ガーデン.md"
     },
     {
       "id": "tanaka-nojo",
       "name": "有限会社田中農場",
       "name_short": "田中農場",
       "entity_type": "有限会社",
+      "member_type": "正会員",
       "area": {
         "code": "center",
         "label": "中部",
@@ -2386,18 +2214,14 @@
         "製品づくりで特に重視しているポイントや課題について、詳しく教えてください。"
       ],
       "survey_responded": false,
-      "source_file": "02_中部（佐賀市・小城・多久）/有限会社田中農場.md",
-      "legacy_ids": [
-        "member-023",
-        "other-07",
-        "other-04"
-      ]
+      "source_file": "02_中部（佐賀市・小城・多久）/有限会社田中農場.md"
     },
     {
       "id": "shimomuranouen",
       "name": "株式会社しもむら農園",
       "name_short": "しもむら農園",
       "entity_type": "株式会社",
+      "member_type": "正会員",
       "area": {
         "code": "center",
         "label": "中部",
@@ -2412,7 +2236,7 @@
       },
       "contact": {
         "representative": "下村宣弘",
-        "phone": null
+        "phone": "0952-65-4566"
       },
       "business": {
         "summary": "米の栽培・販売、いちごの栽培・販売、ブロッコリーの栽培、農作業請負、インターネット販売",
@@ -2505,17 +2329,14 @@
         "現在の経営課題や今後の事業展開（新規作物導入、販路拡大など）についてお聞かせください。"
       ],
       "survey_responded": false,
-      "source_file": "02_中部（佐賀市・小城・多久）/株式会社しもむら農園.md",
-      "legacy_ids": [
-        "member-024",
-        "other-08"
-      ]
+      "source_file": "02_中部（佐賀市・小城・多久）/株式会社しもむら農園.md"
     },
     {
       "id": "ikemako2007",
       "name": "株式会社イケマコ",
       "name_short": "イケマコ",
       "entity_type": "株式会社",
+      "member_type": "正会員",
       "area": {
         "code": "center",
         "label": "中部",
@@ -2530,7 +2351,7 @@
       },
       "contact": {
         "representative": "池田大志",
-        "phone": null
+        "phone": "0952-45-0460"
       },
       "business": {
         "summary": "米、麦、大豆、野菜の生産および生産物の加工・販売",
@@ -2627,17 +2448,14 @@
         "今後チャレンジしたい新たな事業領域や商品開発のアイディアがあれば教えてください。"
       ],
       "survey_responded": true,
-      "source_file": "02_中部（佐賀市・小城・多久）/株式会社イケマコ.md",
-      "legacy_ids": [
-        "member-025",
-        "other-09"
-      ]
+      "source_file": "02_中部（佐賀市・小城・多久）/株式会社イケマコ.md"
     },
     {
       "id": "nagaishinousan-co",
       "name": "株式会社永石農産",
       "name_short": "永石農産",
       "entity_type": "株式会社",
+      "member_type": "正会員",
       "area": {
         "code": "center",
         "label": "中部",
@@ -2652,7 +2470,7 @@
       },
       "contact": {
         "representative": "永石憲彦",
-        "phone": null
+        "phone": "0952-75-6306"
       },
       "business": {
         "summary": "| 品目 | 概要 |",
@@ -2725,17 +2543,14 @@
         "新規事業や商品開発（例：雑穀加工品等）の計画はありますか？"
       ],
       "survey_responded": false,
-      "source_file": "02_中部（佐賀市・小城・多久）/株式会社永石農産.md",
-      "legacy_ids": [
-        "member-026",
-        "other-10"
-      ]
+      "source_file": "02_中部（佐賀市・小城・多久）/株式会社永石農産.md"
     },
     {
       "id": "fruits-garden",
       "name": "株式会社石橋果樹園",
       "name_short": "石橋果樹園",
       "entity_type": "株式会社",
+      "member_type": "正会員",
       "area": {
         "code": "center",
         "label": "中部",
@@ -2750,7 +2565,7 @@
       },
       "contact": {
         "representative": "石橋健一",
-        "phone": null
+        "phone": "0952-62-1496"
       },
       "business": {
         "summary": "",
@@ -2832,17 +2647,14 @@
         "佐賀県農業法人協会や行政に対して、今後期待する支援策（補助、マッチング等）はどのようなものがありますか？"
       ],
       "survey_responded": true,
-      "source_file": "02_中部（佐賀市・小城・多久）/株式会社石橋果樹園.md",
-      "legacy_ids": [
-        "member-027",
-        "other-11"
-      ]
+      "source_file": "02_中部（佐賀市・小城・多久）/株式会社石橋果樹園.md"
     },
     {
       "id": "agribase-niiyama",
       "name": "有限会社アグリベースにいやま",
       "name_short": "アグリベースにいやま",
       "entity_type": "有限会社",
+      "member_type": "正会員",
       "area": {
         "code": "east",
         "label": "東部",
@@ -2856,8 +2668,8 @@
         "lng": 130.373791
       },
       "contact": {
-        "representative": null,
-        "phone": null
+        "representative": "島崎 元次",
+        "phone": "0952-53-1246"
       },
       "business": {
         "summary": "水稲・麦・大豆の大規模稲作農業",
@@ -2922,17 +2734,14 @@
         "補助金・受賞：これまで取得した補助金や公的評価、認定等があれば、その内容を教えていただきたいです。"
       ],
       "survey_responded": false,
-      "source_file": "03_東部（神埼・みやき・鳥栖）/有限会社アグリベースにいやま.md",
-      "legacy_ids": [
-        "member-028",
-        "east-01"
-      ]
+      "source_file": "03_東部（神埼・みやき・鳥栖）/有限会社アグリベースにいやま.md"
     },
     {
       "id": "m-s-green",
       "name": "株式会社M's green",
       "name_short": "M's green",
       "entity_type": "株式会社",
+      "member_type": "正会員",
       "area": {
         "code": "east",
         "label": "東部",
@@ -2947,7 +2756,7 @@
       },
       "contact": {
         "representative": "松永淳",
-        "phone": null
+        "phone": "0942-96-2116"
       },
       "business": {
         "summary": "お米・アスパラガスを中心とした野菜の栽培・販売、家畜用稲わら・麦わらの収集・販売、農作業受託サービス",
@@ -3015,16 +2824,14 @@
         "土づくりや品種選定などにおける同社独自の工夫・技術（高品質・多収のポイント）があれば教えてください。"
       ],
       "survey_responded": true,
-      "source_file": "03_東部（神埼・みやき・鳥栖）/株式会社M’s green.md",
-      "legacy_ids": [
-        "east-02"
-      ]
+      "source_file": "03_東部（神埼・みやき・鳥栖）/株式会社M’s green.md"
     },
     {
       "id": "ecobitofarm",
       "name": "株式会社えこびと農園",
       "name_short": "えこびと農園",
       "entity_type": "株式会社",
+      "member_type": "正会員",
       "area": {
         "code": "east",
         "label": "東部",
@@ -3038,7 +2845,7 @@
         "lng": 130.403152
       },
       "contact": {
-        "representative": "中村彰義氏。代表・契約担当：中村晃嘉",
+        "representative": "中村 晃嘉",
         "phone": "0952-44-2993"
       },
       "business": {
@@ -3136,17 +2943,14 @@
         "輸出・グローバル展開（GFP登録、Food Expo出展等）の現状と今後の展望について教えてください。"
       ],
       "survey_responded": true,
-      "source_file": "03_東部（神埼・みやき・鳥栖）/株式会社えこびと農園.md",
-      "legacy_ids": [
-        "member-030",
-        "east-03"
-      ]
+      "source_file": "03_東部（神埼・みやき・鳥栖）/株式会社えこびと農園.md"
     },
     {
       "id": "saganvege",
       "name": "株式会社サガンベジ",
       "name_short": "サガンベジ",
       "entity_type": "株式会社",
+      "member_type": "正会員",
       "area": {
         "code": "east",
         "label": "東部",
@@ -3161,7 +2965,7 @@
       },
       "contact": {
         "representative": "園田幸男",
-        "phone": null
+        "phone": "0942-89-1559"
       },
       "business": {
         "summary": "植物性堆肥・肥料を用いた完全無農薬の葉物野菜ブランド「サガンベジ」の生産・販売",
@@ -3248,17 +3052,14 @@
         "有機農業経営における最大の課題は何で、どのように対処していますか？"
       ],
       "survey_responded": true,
-      "source_file": "03_東部（神埼・みやき・鳥栖）/株式会社サガンベジ.md",
-      "legacy_ids": [
-        "member-031",
-        "east-04"
-      ]
+      "source_file": "03_東部（神埼・みやき・鳥栖）/株式会社サガンベジ.md"
     },
     {
       "id": "towardls-co",
       "name": "株式会社トワード",
       "name_short": "トワード",
       "entity_type": "株式会社",
+      "member_type": "正会員",
       "area": {
         "code": "east",
         "label": "東部",
@@ -3272,8 +3073,8 @@
         "lng": 130.375636
       },
       "contact": {
-        "representative": null,
-        "phone": null
+        "representative": "友田 健治",
+        "phone": "0952-53-5822"
       },
       "business": {
         "summary": "| 分野 | 概要 |",
@@ -3333,17 +3134,14 @@
         "佐賀県内の農業関連ビジネスとして、自治体や他企業との共同プロジェクトなどへの参画予定はありますか？"
       ],
       "survey_responded": false,
-      "source_file": "03_東部（神埼・みやき・鳥栖）/株式会社トワード.md",
-      "legacy_ids": [
-        "member-032",
-        "east-05"
-      ]
+      "source_file": "03_東部（神埼・みやき・鳥栖）/株式会社トワード.md"
     },
     {
       "id": "ok",
       "name": "株式会社基里OKファーム",
       "name_short": "基里OKファーム",
       "entity_type": "株式会社",
+      "member_type": "正会員",
       "area": {
         "code": "east",
         "label": "東部",
@@ -3358,7 +3156,7 @@
       },
       "contact": {
         "representative": "上種正博",
-        "phone": null
+        "phone": "0942-50-8190"
       },
       "business": {
         "summary": "キャベツ、玉ねぎ、ジャガイモ、ネギ等の野菜類、水稲・大豆・麦類の栽培。加工品（Imokoブランド）の製造・販売",
@@ -3435,16 +3233,14 @@
         "今後の販路拡大（国内外）や6次産業化などの計画についてお聞かせください。"
       ],
       "survey_responded": false,
-      "source_file": "03_東部（神埼・みやき・鳥栖）/株式会社基里OKファーム.md",
-      "legacy_ids": [
-        "east-06"
-      ]
+      "source_file": "03_東部（神埼・みやき・鳥栖）/株式会社基里OKファーム.md"
     },
     {
       "id": "ishiudo-nosan",
       "name": "株式会社石動農産",
       "name_short": "石動農産",
       "entity_type": "株式会社",
+      "member_type": "正会員",
       "area": {
         "code": "east",
         "label": "東部",
@@ -3458,8 +3254,8 @@
         "lng": 130.404133
       },
       "contact": {
-        "representative": null,
-        "phone": null
+        "representative": "馬渡 辰嗣",
+        "phone": "0952-53-5259"
       },
       "business": {
         "summary": "農作物の生産・販売。佐賀県内の圃場でお米、大麦、キャベツ、飼料米等を栽培・出荷",
@@ -3538,18 +3334,14 @@
         "今後の成長戦略（新商品開発、販路拡大、人材育成など）について教えてください。"
       ],
       "survey_responded": false,
-      "source_file": "03_東部（神埼・みやき・鳥栖）/株式会社石動農産.md",
-      "legacy_ids": [
-        "member-034",
-        "east-07",
-        "east-02"
-      ]
+      "source_file": "03_東部（神埼・みやき・鳥栖）/株式会社石動農産.md"
     },
     {
       "id": "ojika-farm",
       "name": "農事組合法人小鹿ファーム",
       "name_short": "小鹿ファーム",
       "entity_type": "農事組合法人",
+      "member_type": "正会員",
       "area": {
         "code": "east",
         "label": "東部",
@@ -3563,8 +3355,8 @@
         "lng": 130.378922
       },
       "contact": {
-        "representative": null,
-        "phone": null
+        "representative": "馬場豊輝",
+        "phone": "0952-44-4705"
       },
       "business": {
         "summary": "米・麦・大豆・キャベツ等の栽培（約40ha）、無添加手づくり味噌・高菜漬けの生産・販売",
@@ -3653,18 +3445,14 @@
         "今後の設備投資や新製品開発（例：他の加工品やブランド化）の予定はありますか？"
       ],
       "survey_responded": false,
-      "source_file": "03_東部（神埼・みやき・鳥栖）/農事組合法人小鹿ファーム.md",
-      "legacy_ids": [
-        "member-035",
-        "east-08",
-        "east-03"
-      ]
+      "source_file": "03_東部（神埼・みやき・鳥栖）/農事組合法人小鹿ファーム.md"
     },
     {
       "id": "aritadori",
       "name": "ありた株式会社",
       "name_short": "ありた",
       "entity_type": "株式会社",
+      "member_type": "正会員",
       "area": {
         "code": "south",
         "label": "南部",
@@ -3679,7 +3467,7 @@
       },
       "contact": {
         "representative": "池田憲正",
-        "phone": null
+        "phone": "0955-46-2220"
       },
       "business": {
         "summary": "食鳥肉の処理・加工品および惣菜の製造販売",
@@ -3768,17 +3556,14 @@
         "受賞歴（国際味覚賞やグランプリなど）が事業に与えた影響や、それを活かす取り組みについて教えてください。"
       ],
       "survey_responded": true,
-      "source_file": "04_南部（太良・嬉野・白石・有田）/ありた株式会社.md",
-      "legacy_ids": [
-        "member-036",
-        "south-01"
-      ]
+      "source_file": "04_南部（太良・嬉野・白石・有田）/ありた株式会社.md"
     },
     {
       "id": "yoshihara-nosan",
       "name": "吉原農産",
       "name_short": "吉原農産",
       "entity_type": null,
+      "member_type": "青年会員",
       "area": {
         "code": "south",
         "label": "南部",
@@ -3862,18 +3647,14 @@
         "担い手不足への課題意識がありますが、具体的にどのような支援があれば助かりますか？"
       ],
       "survey_responded": false,
-      "source_file": "04_南部（太良・嬉野・白石・有田）/吉原農産.md",
-      "legacy_ids": [
-        "member-037",
-        "south-02",
-        "south-01"
-      ]
+      "source_file": "04_南部（太良・嬉野・白石・有田）/吉原農産.md"
     },
     {
       "id": "kanehiro-farm",
       "name": "有限会社かねひろ",
       "name_short": "かねひろ",
       "entity_type": "有限会社",
+      "member_type": "正会員",
       "area": {
         "code": "south",
         "label": "南部",
@@ -3887,8 +3668,8 @@
         "lng": 130.191799
       },
       "contact": {
-        "representative": "起点情報に川﨑豊洋氏。一次資料では未確認",
-        "phone": null
+        "representative": "川﨑 豊洋",
+        "phone": "0954-68-2883"
       },
       "business": {
         "summary": "みかん・ブドウ（シャインマスカット）の栽培、養蜂（はちみつ生産）、水産加工品（海苔）の取り扱い",
@@ -3962,18 +3743,14 @@
         "今後の商品開発や新規事業（加工品、体験農園等）の計画はありますか？"
       ],
       "survey_responded": false,
-      "source_file": "04_南部（太良・嬉野・白石・有田）/有限会社かねひろ.md",
-      "legacy_ids": [
-        "member-038",
-        "south-03",
-        "south-02"
-      ]
+      "source_file": "04_南部（太良・嬉野・白石・有田）/有限会社かねひろ.md"
     },
     {
       "id": "nakashima-farm",
       "name": "有限会社ナカシマファーム",
       "name_short": "ナカシマファーム",
       "entity_type": "有限会社",
+      "member_type": "正会員",
       "area": {
         "code": "south",
         "label": "南部",
@@ -3987,8 +3764,8 @@
         "lng": 130.072663
       },
       "contact": {
-        "representative": null,
-        "phone": null
+        "representative": "中島 構治",
+        "phone": "0954-66-5072"
       },
       "business": {
         "summary": "ホルスタイン約100頭の飼育、チーズ製造販売、堆肥製造販売、米・麦・飼料稲の栽培、カフェ事業",
@@ -4100,17 +3877,14 @@
         "補助金・助成について：これまで申請・受給した補助金や国のプロジェクト（スマート農業等）の事例があれば、取組内容や成果について教えてください。"
       ],
       "survey_responded": false,
-      "source_file": "04_南部（太良・嬉野・白石・有田）/有限会社ナカシマファーム.md",
-      "legacy_ids": [
-        "member-039",
-        "south-04"
-      ]
+      "source_file": "04_南部（太良・嬉野・白石・有田）/有限会社ナカシマファーム.md"
     },
     {
       "id": "sadamatsufarm",
       "name": "有限会社定松ファーム",
       "name_short": "定松ファーム",
       "entity_type": "有限会社",
+      "member_type": "正会員",
       "area": {
         "code": "south",
         "label": "南部",
@@ -4125,7 +3899,7 @@
       },
       "contact": {
         "representative": "定松右樹",
-        "phone": null
+        "phone": "0954-65-2668"
       },
       "business": {
         "summary": "米・麦を主体とした露地野菜（玉ねぎ、キャベツ等）生産の複合営農",
@@ -4203,17 +3977,14 @@
         "企業理念「健康第一」に基づく品質管理・衛生管理の具体的手法について教えてください。"
       ],
       "survey_responded": false,
-      "source_file": "04_南部（太良・嬉野・白石・有田）/有限会社定松ファーム.md",
-      "legacy_ids": [
-        "member-040",
-        "south-05"
-      ]
+      "source_file": "04_南部（太良・嬉野・白石・有田）/有限会社定松ファーム.md"
     },
     {
       "id": "iwaishi-nosan",
       "name": "有限会社岩石農産",
       "name_short": "岩石農産",
       "entity_type": "有限会社",
+      "member_type": "正会員",
       "area": {
         "code": "south",
         "label": "南部",
@@ -4228,7 +3999,7 @@
       },
       "contact": {
         "representative": "岩石学",
-        "phone": null
+        "phone": "0954-65-2843"
       },
       "business": {
         "summary": "水稲（夢しずく・ひなたまる・さがびより）、麦、大豆、タマネギ、キャベツ、菜種等多品目の農産物生産",
@@ -4335,18 +4106,14 @@
         "後継者育成や人材確保の課題と、それに対する取り組みについて教えてください。"
       ],
       "survey_responded": true,
-      "source_file": "04_南部（太良・嬉野・白石・有田）/有限会社岩石農産.md",
-      "legacy_ids": [
-        "member-041",
-        "south-06",
-        "south-03"
-      ]
+      "source_file": "04_南部（太良・嬉野・白石・有田）/有限会社岩石農産.md"
     },
     {
       "id": "nagafuchi-co",
       "name": "有限会社永渕ファームリンク",
       "name_short": "永渕ファームリンク",
       "entity_type": "有限会社",
+      "member_type": "正会員",
       "area": {
         "code": "south",
         "label": "南部",
@@ -4360,8 +4127,8 @@
         "lng": 130.176945
       },
       "contact": {
-        "representative": "永渕政春",
-        "phone": null
+        "representative": "永渕 政春",
+        "phone": "09546-8-3667"
       },
       "business": {
         "summary": "自社ブランド豚「金星佐賀豚」の飼育・加工・販売。加工品（餃子等）製造、直営飲食店での提供",
@@ -4440,17 +4207,14 @@
         "環境保全や地域貢献（緑豊かな多良岳周辺利用）に関する取り組みはありますか？"
       ],
       "survey_responded": true,
-      "source_file": "04_南部（太良・嬉野・白石・有田）/有限会社永渕ファームリンク.md",
-      "legacy_ids": [
-        "member-042",
-        "south-07"
-      ]
+      "source_file": "04_南部（太良・嬉野・白石・有田）/有限会社永渕ファームリンク.md"
     },
     {
       "id": "agri-iwanaga",
       "name": "株式会社アグリイワナガ",
       "name_short": "アグリイワナガ",
       "entity_type": "株式会社",
+      "member_type": "正会員",
       "area": {
         "code": "south",
         "label": "南部",
@@ -4465,7 +4229,7 @@
       },
       "contact": {
         "representative": "岩永新一郎",
-        "phone": "090-5083-2212"
+        "phone": "0952-84-6911"
       },
       "business": {
         "summary": "水稲（飼料用米）、大麦、レンコンの栽培",
@@ -4544,18 +4308,14 @@
         "就農希望者への指導や研修受け入れ、学校教育との連携（体験学習など）の予定はありますか？"
       ],
       "survey_responded": true,
-      "source_file": "04_南部（太良・嬉野・白石・有田）/株式会社アグリイワナガ.md",
-      "legacy_ids": [
-        "member-043",
-        "south-08",
-        "south-04"
-      ]
+      "source_file": "04_南部（太良・嬉野・白石・有田）/株式会社アグリイワナガ.md"
     },
     {
       "id": "asukaen",
       "name": "株式会社明日香園",
       "name_short": "明日香園",
       "entity_type": "株式会社",
+      "member_type": "正会員",
       "area": {
         "code": "south",
         "label": "南部",
@@ -4570,7 +4330,7 @@
       },
       "contact": {
         "representative": "向井明日香",
-        "phone": null
+        "phone": "0954-67-1656"
       },
       "business": {
         "summary": "",
@@ -4675,17 +4435,14 @@
         "農政の補助金や認定制度（GAP認証等）を活用していますか？今後の取得予定はありますか？"
       ],
       "survey_responded": true,
-      "source_file": "04_南部（太良・嬉野・白石・有田）/株式会社明日香園.md",
-      "legacy_ids": [
-        "member-044",
-        "south-09"
-      ]
+      "source_file": "04_南部（太良・嬉野・白石・有田）/株式会社明日香園.md"
     },
     {
       "id": "shirahama-nosan",
       "name": "白浜農産",
       "name_short": "白浜農産",
       "entity_type": null,
+      "member_type": "青年会員",
       "area": {
         "code": "south",
         "label": "南部",
@@ -4757,12 +4514,7 @@
         "「持続可能な農業」を2030年ビジョンに掲げていますが、具体的にどのような姿を思い描いていますか？"
       ],
       "survey_responded": false,
-      "source_file": "04_南部（太良・嬉野・白石・有田）/白浜農産.md",
-      "legacy_ids": [
-        "member-045",
-        "south-10",
-        "south-05"
-      ]
+      "source_file": "04_南部（太良・嬉野・白石・有田）/白浜農産.md"
     }
   ]
 }

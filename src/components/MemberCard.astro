@@ -1,7 +1,7 @@
 ---
-import type { Member } from '../lib/members';
-import { briefProducts, fallback } from '../lib/members';
-import Badge from './Badge.astro';
+import type { Member } from "../lib/members";
+import { briefProducts, fallback } from "../lib/members";
+import Badge from "./Badge.astro";
 
 export interface Props {
   member: Member;
@@ -10,34 +10,54 @@ export interface Props {
 
 const { member, href } = Astro.props;
 const channels = (member.sales_channels ?? [])
-  .map((value) => String(value ?? '').trim())
+  .map((value) => String(value ?? "").trim())
   .filter((value) => value.length > 0)
   .slice(0, 4);
 
-const areaCode = member.area?.code ?? 'default';
+const areaCode = member.area?.code ?? "default";
 const dotClass = `area-dot area-dot-${areaCode}`;
 ---
 
-<article class="accent-border-leaf rounded-xl border border-line bg-card p-5 shadow-card card-interactive group">
+<article
+  class="accent-border-leaf rounded-xl border border-line bg-card p-5 shadow-card card-interactive group"
+>
   <h2 class="text-base font-bold text-ink">
-    <a href={href} class="no-underline transition-colors group-hover:text-brand hover:no-underline">{fallback(member.name)}</a>
+    <a
+      href={href}
+      class="no-underline transition-colors group-hover:text-brand hover:no-underline"
+      >{fallback(member.name)}</a
+    >
   </h2>
 
   <dl class="mt-3 space-y-2.5 text-sm">
-    <div class="flex items-center gap-1">
-      <dt class="text-xs text-ink-soft">エリア</dt>
+    <div class="flex items-baseline gap-2">
+      <dt class="text-xs text-ink-soft w-16 shrink-0">エリア</dt>
+      <dd class="flex items-center font-medium text-ink">
+        <span class={dotClass}></span>
+        {fallback(member.area?.label)}
+      </dd>
     </div>
-    <dd class="flex items-center font-medium text-ink">
-      <span class={dotClass}></span>
-      {fallback(member.area?.label)}
-    </dd>
-    <div>
-      <dt class="text-xs text-ink-soft">主な生産品</dt>
-      <dd class="mt-0.5 font-medium text-ink">{briefProducts(member, 2)}</dd>
+    <div class="flex items-baseline gap-2">
+      <dt class="text-xs text-ink-soft w-16 shrink-0">主な生産品</dt>
+      <dd class="font-medium text-ink">{briefProducts(member, 1)}</dd>
     </div>
+    {
+      member.contact?.representative && (
+        <div class="flex items-baseline gap-2">
+          <dt class="text-xs text-ink-soft w-16 shrink-0">代表者</dt>
+          <dd class="font-medium text-ink">{member.contact.representative}</dd>
+        </div>
+      )
+    }
   </dl>
 
   <div class="mt-4 flex flex-wrap gap-2">
-    {channels.length > 0 ? channels.map((channel) => <Badge label={channel} />) : <Badge label="販路情報なし" />}
+    {
+      channels.length > 0 ? (
+        channels.map((channel) => <Badge label={channel} />)
+      ) : (
+        <Badge label="販路情報なし" />
+      )
+    }
   </div>
 </article>

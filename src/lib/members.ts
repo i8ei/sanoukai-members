@@ -60,7 +60,9 @@ type MembersFile = {
 let cache: MembersFile | null = null;
 
 export async function loadMembersFile(): Promise<MembersFile> {
-  if (cache) return cache;
+  // Disable memory cache during development so data changes are reflected
+  const isProd = typeof import.meta !== 'undefined' && import.meta.env && import.meta.env.PROD;
+  if (cache && isProd) return cache;
 
   const candidatePaths = [
     path.resolve(process.cwd(), 'members.generated.json'),
