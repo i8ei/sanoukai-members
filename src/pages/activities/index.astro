@@ -1,0 +1,207 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+const BASE = import.meta.env.BASE_URL.endsWith("/")
+  ? import.meta.env.BASE_URL
+  : `${import.meta.env.BASE_URL}/`;
+---
+
+<BaseLayout
+  title="活動・事業 | 佐賀県農業法人協会"
+  description="佐賀県農業法人協会の年間を通じた活動内容や事業予定（研修、視察、交流、次世代育成など）をご紹介します。"
+>
+  <div class="space-y-12 md:space-y-16">
+    <!-- Header Section -->
+    <section class="mx-auto max-w-4xl text-center">
+      <h1 class="text-3xl font-black tracking-tight text-ink md:text-5xl">
+        活動・事業
+      </h1>
+      <p class="mt-4 text-base leading-relaxed text-ink-soft md:text-lg">
+        「ともに学び、ともに成長し、佐賀の農業の未来を創る」<br
+          class="hidden md:block"
+        />
+        私たち佐賀県農業法人協会は、単なる親睦団体ではありません。<br
+          class="hidden md:block"
+        />
+        経営の近代化や情報交換、次世代の育成を目指し、年間を通じて活発な活動を行っています。
+      </p>
+    </section>
+
+    <!-- 3 Pillars Section -->
+    <section class="mx-auto max-w-6xl">
+      <h2
+        class="mb-8 text-center text-2xl font-bold tracking-tight text-ink md:text-3xl"
+      >
+        活動の3本柱
+      </h2>
+      <div class="grid grid-cols-1 gap-6 md:grid-cols-3 md:gap-8">
+        <!-- Pillar 1 -->
+        <article
+          class="flex flex-col items-center rounded-2xl border border-brand/20 bg-gradient-to-b from-brand/5 to-transparent p-6 text-center shadow-sm md:p-8"
+        >
+          <div
+            class="mb-5 flex h-16 w-16 items-center justify-center rounded-2xl bg-brand text-3xl text-white shadow-md"
+          >
+            🌱
+          </div>
+          <h3 class="text-xl font-bold text-ink">学び・経営力アップ</h3>
+          <p class="mt-3 text-sm leading-relaxed text-ink-soft">
+            変化の激しい農業界を生き抜くため、県内外の先進的なモデルを学びます。経営に直結する知見を深める場として、各種研修セミナ―や県外視察ツアーを実施しています。
+          </p>
+          <div class="mt-auto pt-5">
+            <span
+              class="inline-block rounded-full bg-white px-3 py-1 text-xs font-semibold text-brand shadow-sm"
+              >研修・視察</span
+            >
+          </div>
+        </article>
+
+        <!-- Pillar 2 -->
+        <article
+          class="flex flex-col items-center rounded-2xl border border-amber-600/20 bg-gradient-to-b from-amber-600/5 to-transparent p-6 text-center shadow-sm md:p-8"
+        >
+          <div
+            class="mb-5 flex h-16 w-16 items-center justify-center rounded-2xl bg-amber-600 text-3xl text-white shadow-md"
+          >
+            🤝
+          </div>
+          <h3 class="text-xl font-bold text-ink">交流・ネットワーキング</h3>
+          <p class="mt-3 text-sm leading-relaxed text-ink-soft">
+            トップランナーたちが集まり、本音で経営の悩みを相談したり情報交換ができる貴重な場です。会員同士の繋がりを深める意見交換会や、九州ブロックとの合同合同シンポジウムを行っています。
+          </p>
+          <div class="mt-auto pt-5">
+            <span
+              class="inline-block rounded-full bg-white px-3 py-1 text-xs font-semibold text-amber-600 shadow-sm"
+              >会員間交流</span
+            >
+          </div>
+        </article>
+
+        <!-- Pillar 3 -->
+        <article
+          class="flex flex-col items-center rounded-2xl border border-sky-600/20 bg-gradient-to-b from-sky-600/5 to-transparent p-6 text-center shadow-sm md:p-8"
+        >
+          <div
+            class="mb-5 flex h-16 w-16 items-center justify-center rounded-2xl bg-sky-600 text-3xl text-white shadow-md"
+          >
+            🎓
+          </div>
+          <h3 class="text-xl font-bold text-ink">次世代育成・地域貢献</h3>
+          <p class="mt-3 text-sm leading-relaxed text-ink-soft">
+            佐賀の未来の農業を担う若者を増やし、応援するための活動を積極的に行っています。就農応援フェアへの出展や県立高校関係者との意見交換、次世代農業サミットでの学生交流などが中心です。
+          </p>
+          <div class="mt-auto pt-5">
+            <span
+              class="inline-block rounded-full bg-white px-3 py-1 text-xs font-semibold text-sky-600 shadow-sm"
+              >担い手・発信</span
+            >
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section
+      class="mx-auto max-w-4xl rounded-3xl border border-line bg-card p-6 shadow-card md:p-10"
+    >
+      <h2
+        class="mb-8 border-b border-line pb-4 text-2xl font-bold tracking-tight text-ink md:text-3xl"
+      >
+        主なスケジュール（R7〜R8年度予定）
+      </h2>
+
+      <!-- Timeline Container -->
+      <div
+        class="relative border-l-2 border-brand/30 ml-3 md:ml-6 space-y-10 py-2"
+      >
+        <!-- Spring -->
+        <div class="relative pl-8 md:pl-12">
+          <span
+            class="absolute -left-[17px] top-1 flex h-8 w-8 items-center justify-center rounded-full border-4 border-card bg-brand text-sm text-white shadow-sm"
+            >🌸</span
+          >
+          <h3 class="text-lg font-bold text-brand">春（4月〜5月）</h3>
+          <p class="mt-1 font-semibold text-ink">年度総会・意見交換会</p>
+          <p class="mt-2 text-sm leading-relaxed text-ink-soft">
+            協会の1年がスタート。総会と合わせて農林水産部との意見交換や、全会員が集う懇親会で結束を高めます。
+          </p>
+        </div>
+
+        <!-- Summer -->
+        <div class="relative pl-8 md:pl-12">
+          <span
+            class="absolute -left-[17px] top-1 flex h-8 w-8 items-center justify-center rounded-full border-4 border-card bg-amber-500 text-sm text-white shadow-sm"
+            >🌻</span
+          >
+          <h3 class="text-lg font-bold text-amber-600">夏（7月〜8月）</h3>
+          <p class="mt-1 font-semibold text-ink">
+            次世代サミット・県外視察ツアー
+          </p>
+          <p class="mt-2 text-sm leading-relaxed text-ink-soft">
+            全国の若手農業者と交流する「次世代農業サミット（大分県など）」に参加。また、8月末には県外先進地（岩手県など）への農業視察を行い、新たな知見を佐賀に持ち帰ります。
+          </p>
+        </div>
+
+        <!-- Autumn -->
+        <div class="relative pl-8 md:pl-12">
+          <span
+            class="absolute -left-[17px] top-1 flex h-8 w-8 items-center justify-center rounded-full border-4 border-card bg-orange-500 text-sm text-white shadow-sm"
+            >🍁</span
+          >
+          <h3 class="text-lg font-bold text-orange-600">秋（9月〜11月）</h3>
+          <div class="mt-2 rounded-lg bg-brand/10 p-4 border border-brand/20">
+            <p class="font-bold text-brand">
+              【注目】佐賀農業法人協会設立30周年事業（R8年度 11月）
+            </p>
+            <p class="mt-1 text-sm text-ink-soft">
+              これまでの歩みを振り返り、未来への活力を生み出す特別な記念式典や事業を予定しています。
+            </p>
+          </div>
+          <p class="mt-4 text-sm leading-relaxed text-ink-soft">
+            日々の生産活動が忙しい時期ですが、各種研修セミナーや県内外との交流を深める重要なフェーズでもあります。
+          </p>
+        </div>
+
+        <!-- Winter -->
+        <div class="relative pl-8 md:pl-12">
+          <span
+            class="absolute -left-[17px] top-1 flex h-8 w-8 items-center justify-center rounded-full border-4 border-card bg-sky-500 text-sm text-white shadow-sm"
+            >❄️</span
+          >
+          <h3 class="text-lg font-bold text-sky-600">冬（1月〜3月）</h3>
+          <p class="mt-1 font-semibold text-ink">就農応援・次世代育成</p>
+          <p class="mt-2 text-sm leading-relaxed text-ink-soft">
+            「佐賀就農応援フェアinさが」への出展や県立高校関係者との意見交換会など、佐賀の農業界へ入る次世代の後押しをする活動を集中的に行います。「九州沖縄農業法人シンポジウム」など広域での活動も活発化します。
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="mx-auto mt-12 max-w-4xl text-center pb-8">
+      <h2 class="text-2xl font-bold text-ink">
+        ともに歩む仲間を募集しています
+      </h2>
+      <p class="mt-3 text-sm text-ink-soft mb-6">
+        佐賀県の農業を盛り上げる法人の方、また活動を支援してくださる賛助企業の方をお待ちしています。
+      </p>
+      <a
+        href={`${BASE}join/`}
+        class="inline-flex items-center justify-center rounded-xl bg-brand px-8 py-3.5 text-base font-bold text-white shadow-lg shadow-brand/30 transition-all hover:bg-brand-dark hover:shadow-xl hover:-translate-y-0.5"
+      >
+        入会のご案内はこちら
+        <svg
+          class="ml-2 h-5 w-5"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+        </svg>
+      </a>
+    </section>
+  </div>
+</BaseLayout>
