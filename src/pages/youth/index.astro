@@ -1,5 +1,6 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
+import SimpleCard from "../../components/SimpleCard.astro";
 import { getYouthMembers } from "../../lib/members";
 
 const youthMembers = await getYouthMembers();
@@ -23,20 +24,14 @@ const youthMembers = await getYouthMembers();
     </article>
 
     <article class="grid grid-cols-1 gap-4 md:grid-cols-3">
-      {
-        youthMembers.map((m) => (
-          <div class="rounded-xl border border-line bg-card p-5 shadow-card transition-all duration-300 hover:shadow-card-hover hover:-translate-y-0.5">
-            <p class="text-lg font-bold text-ink">{m.name}</p>
-            <p class="mt-1 text-base text-ink-soft">{m.representative}</p>
-            <p class="mt-2 text-sm text-ink-soft">{m.address}</p>
-            {m.businessSummary && (
-              <p class="mt-2 text-sm text-ink-soft bg-bg p-2 rounded-md">
-                {m.businessSummary}
-              </p>
-            )}
-          </div>
-        ))
-      }
+      {youthMembers.map((m) => (
+        <SimpleCard
+          name={m.name}
+          subtitle={m.representative}
+          address={m.address}
+          note={m.businessSummary}
+        />
+      ))}
     </article>
   </section>
 </BaseLayout>

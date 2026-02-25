@@ -1,5 +1,6 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
+import SimpleCard from "../../components/SimpleCard.astro";
 import { getSupportingMembers } from "../../lib/members";
 
 const supporters = await getSupportingMembers();
@@ -23,15 +24,13 @@ const supporters = await getSupportingMembers();
     </article>
 
     <article class="grid grid-cols-1 gap-4 md:grid-cols-3">
-      {
-        supporters.map((s) => (
-          <div class="rounded-xl border border-line bg-card p-5 shadow-card transition-all duration-300 hover:shadow-card-hover hover:-translate-y-0.5">
-            <p class="text-lg font-bold text-ink">{s.name}</p>
-            <p class="mt-1 text-base text-ink-soft">{s.type}</p>
-            <p class="mt-2 text-sm text-ink-soft">{s.address}</p>
-          </div>
-        ))
-      }
+      {supporters.map((s) => (
+        <SimpleCard
+          name={s.name}
+          subtitle={s.type}
+          address={s.address}
+        />
+      ))}
     </article>
   </section>
 </BaseLayout>
