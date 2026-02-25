@@ -48,3 +48,6 @@ Co-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>
 - 2026-02-25 08:10 UTC | a87db0c | i8ei | fix: 明日香園の受賞歴から有功章・交付金を削除
 
 Co-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>
+- 2026-02-25 08:40 UTC | 120b3a9 | i8ei | chore: 内部調査メモ（unconfirmed_items・interview_questions）を全会員から削除
+
+Co-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>
