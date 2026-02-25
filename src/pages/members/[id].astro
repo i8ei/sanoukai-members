@@ -95,7 +95,7 @@ const dotClass = `area-dot area-dot-${areaCode}`;
       <article class="rounded-xl overflow-hidden border border-line shadow-card">
         <div class="grid gap-1 {(member.images ?? []).length === 1 ? '' : 'sm:grid-cols-2'}">
           {(member.images ?? []).map((img) => (
-            <figure class="relative aspect-video overflow-hidden bg-bg-soft">
+            <figure class="relative h-56 overflow-hidden bg-bg-soft sm:h-64">
               <img
                 src={img.path}
                 alt={img.caption ?? fallback(member.name)}
