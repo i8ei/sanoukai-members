@@ -1,0 +1,478 @@
+{
+  "count": 42,
+  "members": [
+    {
+      "id": "minori-farm1961",
+      "name": "有限会社みのり農場",
+      "area": "西部",
+      "website": "https://minori-farm1961.com",
+      "products": [
+        "平飼い卵「やさしい卵」",
+        "食肉用鶏",
+        "鳥飯弁当（鶏めし弁当）",
+        "「鳥コロ焼き」、自家製コロッケ等",
+        "無農薬野菜"
+      ]
+    },
+    {
+      "id": "pig-yoshii",
+      "name": "有限会社よしい",
+      "area": "西部",
+      "website": "https://pig-yoshii.jp",
+      "products": [
+        "九州ブランド豚「和豚もちぶた」",
+        "もみ殻シリカ",
+        "堆肥"
+      ]
+    },
+    {
+      "id": "maruichi-nosan",
+      "name": "有限会社マルイチ農産",
+      "area": "西部",
+      "website": null,
+      "products": []
+    },
+    {
+      "id": "yamanaka-farm",
+      "name": "有限会社ヤマナカ",
+      "area": "西部",
+      "website": null,
+      "products": [
+        "豚肉"
+      ]
+    },
+    {
+      "id": "yonekura-engei",
+      "name": "有限会社ヨネクラ園芸",
+      "area": "西部",
+      "website": null,
+      "products": [
+        "生鮮",
+        "生鮮"
+      ]
+    },
+    {
+      "id": "imari-gf",
+      "name": "有限会社伊万里グリーンファーム",
+      "area": "西部",
+      "website": "https://imari-gf.com",
+      "products": [
+        "生鮮",
+        "加工品",
+        "加工品",
+        "加工品",
+        "加工品"
+      ]
+    },
+    {
+      "id": "shibata-livestock",
+      "name": "有限会社柴田畜産",
+      "area": "西部",
+      "website": null,
+      "products": [
+        "豚肉"
+      ]
+    },
+    {
+      "id": "bm",
+      "name": "株式会社BMファーム",
+      "area": "西部",
+      "website": "https://bmfarm.jp",
+      "products": [
+        "米",
+        "麦",
+        "花卉"
+      ]
+    },
+    {
+      "id": "y-k",
+      "name": "株式会社Y.Kカンパニー",
+      "area": "西部",
+      "website": "https://ykcompany.co.jp",
+      "products": [
+        "葉物野菜"
+      ]
+    },
+    {
+      "id": "earthmind-co",
+      "name": "株式会社アースマインド伊万里",
+      "area": "西部",
+      "website": "https://earthmind.co.jp",
+      "products": [
+        "ロクマルパプリカ"
+      ]
+    },
+    {
+      "id": "clavel-japan",
+      "name": "株式会社クラベル・ジャパン",
+      "area": "西部",
+      "website": null,
+      "products": [
+        "カーネーション切花",
+        "花束・フラワーボックス等",
+        "カーネーション由来のアクセサリー",
+        "「唐津花の大学」",
+        "一味唐辛子「赤獅子」「青獅子」"
+      ]
+    },
+    {
+      "id": "citrus-plus",
+      "name": "株式会社シトラスプラス",
+      "area": "西部",
+      "website": null,
+      "products": [
+        "ハウスみかん"
+      ]
+    },
+    {
+      "id": "fermakisu-co",
+      "name": "株式会社フェルマ木須",
+      "area": "西部",
+      "website": "https://fermakisu.co.jp",
+      "products": [
+        "もち麦あわせみそ手作りキット",
+        "きゅうりアイス",
+        "米・麦・大豆等"
+      ]
+    },
+    {
+      "id": "ii29",
+      "name": "株式会社中山牧場",
+      "area": "西部",
+      "website": "https://www.ii29.net",
+      "products": [
+        "黒毛和牛（佐賀牛）",
+        "黒毛和牛炙り焼き",
+        "佐賀牛すじ万能だれ",
+        "佐賀牛100%ハンバーグ",
+        "中山牧場レストハウス"
+      ]
+    },
+    {
+      "id": "yamandori",
+      "name": "株式会社百姓屋",
+      "area": "西部",
+      "website": "https://yamandori.com",
+      "products": [
+        "骨太有明鶏",
+        "山ん鶏（現：伊万里ヤマンドリ）",
+        "花苗"
+      ]
+    },
+    {
+      "id": "asou-engei",
+      "name": "株式会社麻生園芸",
+      "area": "西部",
+      "website": "https://asou-engei.com",
+      "products": [
+        "生鮮",
+        "麺類",
+        "飲料",
+        "麺類"
+      ]
+    },
+    {
+      "id": "aa-saga",
+      "name": "有限会社アサヒ・アグリ佐賀",
+      "area": "中部",
+      "website": "https://aa-saga.jp",
+      "products": [
+        "三瀬産米100%米粉",
+        "自家製粉米粉麺（ストレート麺）",
+        "「そば超えうどん」",
+        "**三瀬ぜんざい**",
+        "希少糖入り和菓子",
+        "甘酒"
+      ]
+    },
+    {
+      "id": "7740farm",
+      "name": "有限会社七島農産",
+      "area": "中部",
+      "website": "https://7740farm.net",
+      "products": [
+        "夢しずく（三日月の夢）",
+        "コシヒカリ（三日月の光）",
+        "さがびより（三日月日和）",
+        "ヒヨクモチ（餅米）",
+        "もち麦"
+      ]
+    },
+    {
+      "id": "shimomura-farm",
+      "name": "有限会社下村ファーム",
+      "area": "中部",
+      "website": null,
+      "products": [
+        "「下村さん家の夢しずく」",
+        "「幸蔵米（こうぞうまい）」",
+        "菜種油「三吉」",
+        "人参・大豆等"
+      ]
+    },
+    {
+      "id": "kitagawa-nosan",
+      "name": "有限会社北川農産",
+      "area": "中部",
+      "website": null,
+      "products": [
+        "米"
+      ]
+    },
+    {
+      "id": "tanakamaru-garden",
+      "name": "有限会社田中丸ガーデン",
+      "area": "中部",
+      "website": null,
+      "products": [
+        "花苗",
+        "野菜苗"
+      ]
+    },
+    {
+      "id": "tanaka-nojo",
+      "name": "有限会社田中農場",
+      "area": "中部",
+      "website": null,
+      "products": [
+        "米",
+        "米",
+        "米"
+      ]
+    },
+    {
+      "id": "shimomuranouen",
+      "name": "株式会社しもむら農園",
+      "area": "中部",
+      "website": "https://shimomuranouen.com",
+      "products": [
+        "米",
+        "野菜",
+        "野菜"
+      ]
+    },
+    {
+      "id": "ikemako2007",
+      "name": "株式会社イケマコ",
+      "area": "中部",
+      "website": "https://ikemako2007.com",
+      "products": [
+        "**イケマコの麦茶**",
+        "**黒豆グラッセ**",
+        "**もち米あま酒**",
+        "日本酒"
+      ]
+    },
+    {
+      "id": "nagaishinousan-co",
+      "name": "株式会社永石農産",
+      "area": "中部",
+      "website": "https://nagaishinousan.co.jp",
+      "products": [
+        "「ホタル米」",
+        "もち麦",
+        "大豆・玉葱苗・雑穀"
+      ]
+    },
+    {
+      "id": "fruits-garden",
+      "name": "株式会社石橋果樹園",
+      "area": "中部",
+      "website": "https://fruits-garden.jp",
+      "products": [
+        "柑橘",
+        "柑橘",
+        "ブドウ",
+        "果樹",
+        "加工品"
+      ]
+    },
+    {
+      "id": "agribase-niiyama",
+      "name": "有限会社アグリベースにいやま",
+      "area": "東部",
+      "website": null,
+      "products": [
+        "米",
+        "麦",
+        "大豆"
+      ]
+    },
+    {
+      "id": "m-s-green",
+      "name": "株式会社M's green",
+      "area": "東部",
+      "website": null,
+      "products": [
+        "野菜",
+        "米",
+        "野菜",
+        "その他"
+      ]
+    },
+    {
+      "id": "ecobitofarm",
+      "name": "株式会社えこびと農園",
+      "area": "東部",
+      "website": "https://www.ecobitofarm.com",
+      "products": [
+        "えごま",
+        "油",
+        "米",
+        "穀物",
+        "ハーブ",
+        "加工品"
+      ]
+    },
+    {
+      "id": "saganvege",
+      "name": "株式会社サガンベジ",
+      "area": "東部",
+      "website": "https://saganvege.com",
+      "products": [
+        "サガンベジ（有機葉物野菜セット）",
+        "植物性で育てたビーガン米"
+      ]
+    },
+    {
+      "id": "towardls-co",
+      "name": "株式会社トワード",
+      "area": "東部",
+      "website": "https://www.towardls.co.jp",
+      "products": [
+        "永遠土（えいえんど）"
+      ]
+    },
+    {
+      "id": "ok",
+      "name": "株式会社基里OKファーム",
+      "area": "東部",
+      "website": "https://www.kizatook.co.jp",
+      "products": [
+        "野菜",
+        "穀物",
+        "加工品",
+        "その他"
+      ]
+    },
+    {
+      "id": "ishiudo-nosan",
+      "name": "株式会社石動農産",
+      "area": "東部",
+      "website": null,
+      "products": [
+        "石動米",
+        "キャベツ",
+        "大麦",
+        "飼料米"
+      ]
+    },
+    {
+      "id": "ojika-farm",
+      "name": "農事組合法人小鹿ファーム",
+      "area": "東部",
+      "website": null,
+      "products": [
+        "こじかの白雪みそ",
+        "こじかの高菜漬け",
+        "キャベツ（寒玉キャベツ等）",
+        "米・麦・大豆"
+      ]
+    },
+    {
+      "id": "aritadori",
+      "name": "ありた株式会社",
+      "area": "南部",
+      "website": "https://www.aritadori.com",
+      "products": [
+        "銘柄鶏「ありたどり」",
+        "味付け唐揚げ、無添加ハムセット、鶏めしの素等",
+        "からあげドンドン"
+      ]
+    },
+    {
+      "id": "kanehiro-farm",
+      "name": "有限会社かねひろ",
+      "area": "南部",
+      "website": null,
+      "products": [
+        "黒酢みかん",
+        "かねひろの黒酢ブラックシャインマスカット～富士の輝き～",
+        "かねひろの国産はちみつ",
+        "佐賀県有明海産 一番摘み海苔「太良嶽」"
+      ]
+    },
+    {
+      "id": "nakashima-farm",
+      "name": "有限会社ナカシマファーム",
+      "area": "南部",
+      "website": "https://nakashima-farm.com",
+      "products": [
+        "できたてモッツァレラチーズ",
+        "さけるチーズ",
+        "ブラウンチーズ",
+        "MILKBREW COFFEE"
+      ]
+    },
+    {
+      "id": "sadamatsufarm",
+      "name": "有限会社定松ファーム",
+      "area": "南部",
+      "website": "https://www.sadamatsufarm.jp",
+      "products": [
+        "米",
+        "麦",
+        "野菜"
+      ]
+    },
+    {
+      "id": "iwaishi-nosan",
+      "name": "有限会社岩石農産",
+      "area": "南部",
+      "website": null,
+      "products": [
+        "夢しずく",
+        "ひなたまる",
+        "さがびより",
+        "麦",
+        "大豆",
+        "タマネギ",
+        "キャベツ",
+        "菜種"
+      ]
+    },
+    {
+      "id": "nagafuchi-co",
+      "name": "有限会社永渕ファームリンク",
+      "area": "南部",
+      "website": "https://www.nagafuchi.co.jp",
+      "products": [
+        "金星佐賀豚",
+        "餃子等",
+        "ファームリンク金星屋"
+      ]
+    },
+    {
+      "id": "agri-iwanaga",
+      "name": "株式会社アグリイワナガ",
+      "area": "南部",
+      "website": null,
+      "products": [
+        "水稲（飼料用米）",
+        "大麦",
+        "レンコン"
+      ]
+    },
+    {
+      "id": "asukaen",
+      "name": "株式会社明日香園",
+      "area": "南部",
+      "website": "https://asukaen.com",
+      "products": [
+        "ユリ束「ゆりざんまい！（10本束）」",
+        "ケイトウ（鶏頭）",
+        "アグリコーラ"
+      ]
+    }
+  ]
+}
