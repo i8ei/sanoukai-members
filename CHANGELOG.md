@@ -24,3 +24,6 @@
 - about/news/youth/supporters: eyebrowラベルを追加しjoinページと統一
 
 Co-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>
+- 2026-02-25 07:43 UTC | 77a35e3 | i8ei | docs: フォーム回答反映手順のドキュメントを追加
+
+Co-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>
