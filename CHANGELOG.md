@@ -36,3 +36,6 @@ Co-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>
 - 2026-02-25 07:50 UTC | 41cbf63 | i8ei | refactor: BASE URLをsrc/lib/config.tsに共通化
 
 Co-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>
+- 2026-02-25 08:01 UTC | 26c37d2 | i8ei | feat: 会員詳細ページに画像表示エリアを追加（明日香園テスト）
+
+Co-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>
