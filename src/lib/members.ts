@@ -44,6 +44,10 @@ export type Member = {
     sns?: string[];
     notes?: string | null;
   };
+  images?: Array<{
+    path: string;
+    caption?: string | null;
+  }>;
   shelf_potential?: string | null;
   unconfirmed_items?: string[];
   interview_questions?: string[];

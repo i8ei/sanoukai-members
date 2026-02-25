@@ -90,6 +90,29 @@ const dotClass = `area-dot area-dot-${areaCode}`;
       </div>
     </article>
 
+    <!-- ═══ Images ═══ -->
+    {(member.images ?? []).length > 0 && (
+      <article class="rounded-xl overflow-hidden border border-line shadow-card">
+        <div class="grid gap-1 {(member.images ?? []).length === 1 ? '' : 'sm:grid-cols-2'}">
+          {(member.images ?? []).map((img) => (
+            <figure class="relative aspect-video overflow-hidden bg-bg-soft">
+              <img
+                src={img.path}
+                alt={img.caption ?? fallback(member.name)}
+                class="h-full w-full object-cover"
+                loading="lazy"
+              />
+              {img.caption && (
+                <figcaption class="absolute bottom-0 left-0 right-0 bg-black/40 px-3 py-1.5 text-xs text-white backdrop-blur-sm">
+                  {img.caption}
+                </figcaption>
+              )}
+            </figure>
+          ))}
+        </div>
+      </article>
+    )}
+
     <!-- ═══ Basic Info ═══ -->
     <article
       class="accent-border-brand rounded-xl border border-line bg-card p-5 shadow-card md:p-6 animate-fade-in-up stagger-1"

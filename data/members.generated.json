@@ -4344,7 +4344,13 @@
         "農政の補助金や認定制度（GAP認証等）を活用していますか？今後の取得予定はありますか？"
       ],
       "survey_responded": true,
-      "source_file": "04_南部（太良・嬉野・白石・有田）/株式会社明日香園.md"
+      "source_file": "04_南部（太良・嬉野・白石・有田）/株式会社明日香園.md",
+      "images": [
+        {
+          "path": "/sanoukai-members/images/members/asukaen/main.webp",
+          "caption": "生産した花々"
+        }
+      ]
     }
   ]
 }
