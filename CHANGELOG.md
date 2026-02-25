@@ -45,3 +45,6 @@ Co-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>
 - 2026-02-25 08:07 UTC | b57b969 | i8ei | fix: awardsのフィールド名ズレを修正（title→name, description→detail）・型定義をJSONの実態に合わせる
 
 Co-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>
+- 2026-02-25 08:10 UTC | a87db0c | i8ei | fix: 明日香園の受賞歴から有功章・交付金を削除
+
+Co-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>
