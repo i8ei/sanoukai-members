@@ -50,7 +50,7 @@ const oneLineIntro = isPresent(summary)
   ? String(summary)
   : `${fallback(member.name)}の紹介ページです。`;
 const certifications = toTextList(member.certifications);
-const awards = (member.awards ?? []).filter((award) => isPresent(award?.title));
+const awards = (member.awards ?? []).filter((award) => isPresent(award?.name));
 const areaCode = member.area?.code ?? "default";
 const dotClass = `area-dot area-dot-${areaCode}`;
 ---
@@ -255,7 +255,7 @@ const dotClass = `area-dot area-dot-${areaCode}`;
               awards.length > 0
                 ? awards
                     .map((award) =>
-                      [award.year, award.title]
+                      [award.year, award.name]
                         .filter((part) => isPresent(part))
                         .join(" "),
                     )

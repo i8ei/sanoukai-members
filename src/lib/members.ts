@@ -34,21 +34,28 @@ export type Member = {
   }>;
   sales_channels?: string[];
   certifications?: string[];
+  member_type?: string;
   awards?: Array<{
-    title?: string | null;
-    year?: string | null;
-    description?: string | null;
+    name?: string | null;
+    year?: number | string | null;
+    detail?: string | null;
   }>;
   web_presence?: {
     website?: string | null;
-    sns?: string[];
+    sns?: Array<{ platform?: string; url?: string | null }>;
+    ec?: string[];
+    media_mentions?: string[];
     notes?: string | null;
   };
   images?: Array<{
     path: string;
     caption?: string | null;
   }>;
-  shelf_potential?: string | null;
+  shelf_potential?: {
+    categories?: string[];
+    key_products?: string[];
+    selling_points?: string[];
+  } | string | null;
   unconfirmed_items?: string[];
   interview_questions?: string[];
   survey_responded?: boolean;
