@@ -17,3 +17,10 @@
 - 2026-02-24 01:38 UTC | 2c9a8c5 | i8ei | feat: 活動・事業ページを新設しナビゲーション順序を調整
 - 2026-02-24 01:59 UTC | fb0c0c8 | i8ei | リファクタリング: 会員地図コンポーネント化、データ取得統合、CSS整理
 - 2026-02-24 02:19 UTC | c1972b0 | i8ei | UI: 修正案募集用のバナーを追加
+- 2026-02-25 07:31 UTC | 3df2c13 | i8ei | fix: 販路情報なし非表示・地図ポップアップリンク追加・ページヘッダー統一
+
+- MemberCard: 販路情報なしのバッジを非表示に（データ準備中のため）
+- 地図ページ: マーカーポップアップに「詳細を見る →」リンクを追加
+- about/news/youth/supporters: eyebrowラベルを追加しjoinページと統一
+
+Co-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>
