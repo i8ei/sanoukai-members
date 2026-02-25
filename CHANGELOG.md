@@ -33,3 +33,6 @@ Co-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>
 - 2026-02-25 07:48 UTC | 7aceaa3 | i8ei | refactor: youth/supportersカードをSimpleCardコンポーネントに共通化
 
 Co-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>
+- 2026-02-25 07:50 UTC | 41cbf63 | i8ei | refactor: BASE URLをsrc/lib/config.tsに共通化
+
+Co-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>
