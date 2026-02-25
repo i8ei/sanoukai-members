@@ -2,9 +2,9 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import MemberCard from '../../components/MemberCard.astro';
 import { getMembers } from '../../lib/members';
+import { BASE } from '../../lib/config';
 
 const members = await getMembers();
-const BASE = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
 const normalizeText = (value: string) => value.toLowerCase().replace(/\s+/g, ' ').trim();
 const areaOptions = Array.from(
   new Map(
