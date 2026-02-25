@@ -42,3 +42,6 @@ Co-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>
 - 2026-02-25 08:02 UTC | 12bdddc | i8ei | fix: 会員詳細の画像高さを調整（h-56）
 
 Co-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>
+- 2026-02-25 08:07 UTC | b57b969 | i8ei | fix: awardsのフィールド名ズレを修正（title→name, description→detail）・型定義をJSONの実態に合わせる
+
+Co-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>
