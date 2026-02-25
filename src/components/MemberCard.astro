@@ -51,13 +51,9 @@ const dotClass = `area-dot area-dot-${areaCode}`;
     }
   </dl>
 
-  <div class="mt-4 flex flex-wrap gap-2">
-    {
-      channels.length > 0 ? (
-        channels.map((channel) => <Badge label={channel} />)
-      ) : (
-        <Badge label="販路情報なし" />
-      )
-    }
-  </div>
+  {channels.length > 0 && (
+    <div class="mt-4 flex flex-wrap gap-2">
+      {channels.map((channel) => <Badge label={channel} />)}
+    </div>
+  )}
 </article>

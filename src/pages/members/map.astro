@@ -385,7 +385,7 @@ const mapMembers = rawMembers
     </div>
   </section>
 
-  <script define:vars={{ membersData: mapMembers }}>
+  <script define:vars={{ membersData: mapMembers, baseUrl: BASE }}>
     document.addEventListener("DOMContentLoaded", function () {
       const toggleBtn = document.getElementById("panel-toggle");
       const panel = document.getElementById("filter-panel");
@@ -504,7 +504,8 @@ const mapMembers = rawMembers
           m.product_count +
           "件 / 受賞 " +
           m.award_count +
-          "件</div>"
+          "件</div>" +
+          '<div style="margin-top:8px"><a href="' + baseUrl + 'members/' + m.id + '/" style="font-size:12px;color:#2D6A4F;font-weight:bold;text-decoration:none">詳細を見る →</a></div>'
         );
       }
 
