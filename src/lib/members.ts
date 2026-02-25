@@ -56,8 +56,6 @@ export type Member = {
     key_products?: string[];
     selling_points?: string[];
   } | string | null;
-  unconfirmed_items?: string[];
-  interview_questions?: string[];
   survey_responded?: boolean;
   source_file?: string;
   legacy_ids?: string[];
